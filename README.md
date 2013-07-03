@@ -87,8 +87,6 @@ tistory/
 
 ### Previews
 
-* `DocPad` **Spider's Web** for docpad - [preview](http://markquery.github.io/docpad-spidersweb-preview)
-* `DocPad` **Doo Be Doo** for docpad - [preview](http://markquery.github.io/docpad-doobedoo-preview)
 * `Tistory` **Spider's Web** for tistory - [preview](http://markquery-spidersweb.tistory.com)
 * `Tistory` **Doo Be Doo** for tistory - [preview](http://markquery-doobedoo.tistory.com)
 
