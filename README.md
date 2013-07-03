@@ -54,7 +54,7 @@ tistory/
     ├── jquery-1.10.1.min.js
     ├── main.css (site design css file)
     ├── markquery-icon-64.png
-    ├── markquery-slide.png
+    ├── markquery-slide-fluid.png
     ├── modernizr-2.6.2.min
     ├── prettify.css
     ├── prettify.js
@@ -87,8 +87,8 @@ tistory/
 
 ### Previews
 
-* `DocPad` **Spider's Web** for docpad - [preview](http://markquery.github.io/docpad-spidersweb)
-* `DocPad` **Doo Be Doo** for docpad - [preview](http://markquery.github.io/docpad-doobedoo)
+* `DocPad` **Spider's Web** for docpad - [preview](http://markquery.github.io/docpad-spidersweb-preview)
+* `DocPad` **Doo Be Doo** for docpad - [preview](http://markquery.github.io/docpad-doobedoo-preview)
 * `Tistory` **Spider's Web** for tistory - [preview](http://markquery-spidersweb.tistory.com)
 * `Tistory` **Doo Be Doo** for tistory - [preview](http://markquery-doobedoo.tistory.com)
 
