@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/*
+Customize your contents 
+---------------------------------------------------
+Skeleton name:      Doo Be Doo (fullscreen layout)
+Version:            1.0.0
+Author:             Ungki, H
+
+Homepage:           http://markquery.github.io
+GitHub:             https://github.com/markquery
+Korean page:        http://markquery.kr
+Twitter:            @markquery
+email:              ungki.h@gmail.com
+
+License:            MIT License
+License URI:        http://markquery.github.io/license
+---------------------------------------------------
+*/
+
+/* text size
+--------------------------------------------------- */
+.text-size-10 {
+  font-size:10px;
+}
+.text-size-12 {
+  font-size:12px;
+}
+.text-size-18 {
+  font-size: 18px;
+}
+/* text lineheight
+--------------------------------------------------- */
+.text-lineheight-20 {
+  line-height:20px;
+}
+.text-lineheight-24 {
+  line-height:24px;
+}
+/* ahover
+--------------------------------------------------- */
+a.ahover-fff-ddd{color:#fff;text-decoration:none;padding-bottom:2px}a.ahover-fff-ddd:hover,a.ahover-fff-ddd:focus{color:#ddd;text-decoration:none;border-bottom:1px solid #ddd;padding-bottom:2px}
+a.ahover-111-555{color:#111;text-decoration:none;padding-bottom:2px}a.ahover-111-555:hover,a.ahover-111-555:focus{color:#555;text-decoration:none;border-bottom:1px solid #555;padding-bottom:2px}
+a.ahover-cfcfd5-666{color:#cfcfd5;text-decoration:none;padding-bottom:2px}a.ahover-cfcfd5-666:hover,a.ahover-cfcfd5-666:focus{color:#666;text-decoration:none;border-bottom:1px solid #666;padding-bottom:2px}
+/* nestedhover 
+--------------------------------------------------- */
+.nestedhover-cfcfd5-fff a{color:#cfcfd5;text-decoration:none;padding-bottom:2px}.nestedhover-cfcfd5-fff a:hover,.nestedhover-cfcfd5-fff a:focus{color:#fff;text-decoration:none;border-bottom:1px solid #fff;padding-bottom:2px}
+.nestedhover-111-555 a{color:#111;text-decoration:none;padding-bottom:2px}.nestedhover-111-555 a:hover,.nestedhover-111-555 a:focus{color:#555;text-decoration:none;border-bottom:1px solid #555;padding-bottom:2px}
+
+/* padding
+--------------------------------------------------- */
+.padding-20 {
+  padding:20px;
+}
+/* width padding
+--------------------------------------------------- */
+.width-padding-20 {
+  padding-right:20px;
+  padding-left:20px;
+}
+/* to maintain padding for small devices
+--------------------------------------------------- */
+.h-p-20 {
+  padding-top:20px;
+  padding-bottom:20px;
+}
+/* to maintain margin for small devices
+--------------------------------------------------- */
+.m-l-20 {
+  margin-left: 20px;
+}
+/* margin right 
+--------------------------------------------------- */
+.margin-right-20 {
+  margin-right: 20px;
+}
+/* margin bottom 
+--------------------------------------------------- */
+.margin-bottom-40 {
+  margin-bottom: 40px;
+}
+.margin-bottom-60 {
+  margin-bottom:60px;
+}
+/* background mask image 
+--------------------------------------------------- */
+.bgmask-hollys {
+background:url(./images/hollys.png)
+}
+/* bgcolor
+--------------------------------------------------- */
+.bgcolor-eee {
+  background-color:#eee;
+}
+.bgcolor-fff {
+  background-color:#fff;
+}
+.bgcolor-f8f8f8 {
+  background-color:#f8f8f8;
+}
+/* imghover
+--------------------------------------------------- */
+.imghover-373737-4bf{background-color:#373737}img.imghover-373737-4bf:hover{background-color:#4bf;transition-duration:.7s;-webkit-transition-duration:.7s;-moz-transition-duration:.7s;-ms-transition-duration:.7s;-o-transition-duration:.7s}
+.imghover-373737-f3ce00{background-color:#373737}img.imghover-373737-f3ce00:hover{background-color:#f3ce00;transition-duration:.7s;-webkit-transition-duration:.7s;-moz-transition-duration:.7s;-ms-transition-duration:.7s;-o-transition-duration:.7s}
+.imghover-373737-6bb130{background-color:#373737}img.imghover-373737-6bb130:hover{background-color:#6bb130;transition-duration:.7s;-webkit-transition-duration:.7s;-moz-transition-duration:.7s;-ms-transition-duration:.7s;-o-transition-duration:.7s}
+.imghover-373737-fb502b{background-color:#373737}img.imghover-373737-fb502b:hover{background-color:#fb502b;transition-duration:.7s;-webkit-transition-duration:.7s;-moz-transition-duration:.7s;-ms-transition-duration:.7s;-o-transition-duration:.7s}
+
+/* border
+--------------------------------------------------- */
+.border-top-ddd {
+  border-top:1px solid #ddd;
+}
+.border-right-ccc {
+  border-right: 1px solid #ccc;
+}
+.border-bottom-ccc {
+  border-bottom: 1px solid #ccc;
+}
+/* hr
+--------------------------------------------------- */
+.hr-111-666 { border-top:1px solid #111; border-bottom:1px solid #666; }
