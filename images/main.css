@@ -18,6 +18,14 @@ License URI:        http://markquery.github.io/license
 ---------------------------------------------------
 */
 
+/*
+Posts use the hNews microformat. (http://microformats.org/wiki/hnews)
+.hentry {}
+.entry-content {}
+.byline {}
+*/
+
+
 /* site style
 -------------------------------------------------- */
 body {
@@ -74,12 +82,12 @@ header.site-header h2 .site-desc {
 
 /* content
 -------------------------------------------------- */
-header.article-header {
+header.entry-title {
 margin-bottom:20px;
 padding-bottom:5px;
 border-bottom:1px solid #ccc;
 }
-header.article-header p {
+header.entry-title p {
  color:#999;
 }
 .article-tags {
@@ -646,12 +654,14 @@ footer ul li {
   color: #333;
 }
 figure {
-  margin: 0;
+  margin: 10px 0;
   padding: 0;
 }
 figcaption {
   margin: 0;
   padding: 0;
+  color:#999;
+  font-style: italic;
 }
 .text-justify {
   text-align: justify;

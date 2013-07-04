@@ -284,12 +284,16 @@
 ================================================== -->
 <s_notice_rep>
 <article role="main" id="content" class="clearfix">
-<header class="article-header">
+<div class="hentry">
+<header class="entry-title">
 	<h1><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></h1>
 	<time class="mobile-wrap" datetime="[##_article_rep_date_##]">[##_article_rep_date_##]</time>
-	<p>Posted in <strong><a href="[##_blog_link_##]notice">Notice</a></strong>  by [##_blogger_##]</p>
+	<p>Posted in <strong><a href="[##_blog_link_##]notice">Notice</a></strong>  by <span class="byline">[##_blogger_##]</span></p>
 </header>
+	<div class="entry-content">
 	<p>[##_notice_rep_desc_##]</p>
+	</div>
+</div>
 </article>
 </s_notice_rep>
 
@@ -297,16 +301,20 @@
 ================================================== -->
 <s_article_protected>
 <article role="main" id="content" class="clearfix">
-<header class="article-header">
+<div class="hentry">
+<header class="entry-title">
 	<h1><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h1>
 	<time class="mobile-wrap" datetime="[##_article_rep_date_##]">[##_article_rep_date_##]</time>
-	<p>Posted in <strong><a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></strong> by [##_blogger_##]</p>
+	<p>Posted in <strong><a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></strong> by <span class="byline">[##_blogger_##]</span></p>
 </header>
+	<div class="entry-content">
 	<p>보호되어 있는 글입니다. 내용을 보시려면 비밀번호를 입력하세요.</p>
 	<p><label for="[##_article_password_##]">비밀번호 ::</label>
 	<input type="password" maxlength="16" id="[##_article_password_##]" name="[##_article_password_##]" value="" onkeydown="if (event.keyCode == 13)[##_article_dissolve_##]" />
 	<input type="button" class="btn" value="submit" onclick="[##_article_dissolve_##]" />
 	</p>
+	</div>
+</div>
 </article>
 </s_article_protected>
 
@@ -314,13 +322,14 @@
 ================================================== -->
 <s_article_rep>
 <article role="main" id="content" class="clearfix">
+<div class="hentry">
 
 <!-- Entry : atricle-header
 ================================================== -->      
-<header class="article-header">
+<header class="entry-title">
 	<h1><a class="text-size-18 ahover-111-555" href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h1>
 	<time class="mobile-wrap" datetime="[##_article_rep_date_##]">[##_article_rep_date_##]</time>
-	<p>Posted in <a class="ahover-cfcfd5-666" href="[##_article_rep_category_link_##]"><strong>[##_article_rep_category_##]</strong></a> by [##_blogger_##]</p>
+	<p>Posted in <a class="ahover-cfcfd5-666" href="[##_article_rep_category_link_##]"><strong>[##_article_rep_category_##]</strong></a> by <span class="byline">[##_blogger_##]</span></p>
 </header>
 
 <!-- Entry : article-admin 
@@ -334,7 +343,9 @@
 
 <!-- Entry : article-body
 ================================================== -->
+<div class="entry-content">
 [##_article_rep_desc_##]
+</div>
       
 <div class="article-tags mobile-wrap nestedhover-111-555">
 <s_tag_label>
@@ -463,6 +474,7 @@
 		
 </div><!-- Entry : article-footer -->
 
+</div>
 </article>
 </s_article_rep>
 
