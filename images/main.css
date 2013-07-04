@@ -90,11 +90,11 @@ border-bottom:1px solid #ccc;
 header.entry-title p {
  color:#999;
 }
-.article-tags {
+.entry-tags {
   margin-top:10px;
   margin-bottom:10px;
 }
-.article-footer {
+.entry-footer {
   margin-top:10px;
   padding-top:20px;
   padding-bottom:20px;
