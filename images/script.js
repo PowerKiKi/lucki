@@ -1,13 +1,12 @@
 (function() {
   $(function() {
-    var $window;
-
     $("[href^=#none]").click(function(e) {
       return e.preventDefault();
     });
-    $(function() {});
-    $window = $(window);
-    window.prettyPrint && prettyPrint();
+    $("a[data-toggle=popover]").popover().click(function(e) {
+      return e.preventDefault();
+    });
+    $("a[data-toggle=tooltip]").tooltip();
     $(function() {});
     $(".carousel").carousel;
     ({
@@ -26,16 +25,11 @@
         scrollTop: 0
       }, 600, false);
     });
-    $("a[data-toggle=popover]").popover().click(function(e) {
-      return e.preventDefault();
-    });
-    $("a[data-toggle=tooltip]").tooltip();
     $(".font-resize").jfontsize({
-      btnMinusClasseId: "#jfontsize-m",
-      btnDefaultClasseId: "#jfontsize-d",
-      btnPlusClasseId: "#jfontsize-p"
+      btnMinusClasseId: ".jfontsize-m",
+      btnDefaultClasseId: ".jfontsize-d",
+      btnPlusClasseId: ".jfontsize-p"
     });
-
-});
+  });
 
 }).call(this);

@@ -4,10 +4,10 @@
 		<name>markquery skeleton - Doo Be Doo</name>
 		<version>1.0.0</version>
 		<description>
-			<![CDATA[마크쿼리 skeleton - Doo Be Doo입니다. 풀스크린 레이아웃입니다.]]>
+			<![CDATA[마크쿼리 skeleton - Doo Be Doo입니다]]>
 		</description>
 		<license>
-			<![CDATA[markquery.github.io/license]]>
+			<![CDATA[http://markquery.github.io/license]]>
 		</license>
 		<tags>
 			<tag>콘텐츠 편집디자인</tag> <tag>HTML5</tag> <tag>CSS3</tag> <tag>bootstrap</tag>
@@ -15,7 +15,7 @@
 	</information>
 <author>
 		<name>Ungki, H</name>
-		<homepage>http://markquery.github.io</homepage>
+		<homepage>http://markquery.com</homepage>
 		<email>ungki.h@gmail.com</email>
 	</author> 
 	<default>
