@@ -51,7 +51,7 @@
 
 <nav role="navigation">
 <div class="navbar navbar-fixed-top">
-	<div class="container skeleton-nav">
+	<div class="container">
 	<div class="row">
 	<div class="col-lg-12 col-sm-12">
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -84,8 +84,8 @@
 </nav>
 
 <div class="clearfix">
-<div class="container skeleton"><!-- site layout : container --> 
-
+<div class="wrapper skeleton-header"><!-- site layout : container --> 
+<div class="container"><!-- header layout : container --> 
 <header role="banner" class="banner">
 <div class="row">
 <div class="col-lg-12 col-sm-12">
@@ -96,10 +96,17 @@
 </div>
 </div>
 </header>
+</div><!-- /.container -->
+</div><!-- /.wrapper -->
+</div><!-- /.clearfix -->
 
+<div class="clearfix">
+<div class="wrapper">
+<div class="container"><!-- main layout : container --> 
 <main role="main"  id="content">
-<div class="row"><!-- site layout : row -->
-<div class="col-lg-9 col-sm-9 skeleton-content"><!-- site layout : content column -->
+
+<div class="row"><!-- main layout : content row -->
+<div class="col-lg-12 col-sm-12"><!-- main layout : content column -->
 <article role="article" class="hentry">
 <div id="changeFontFamily" class="font-resize"><!-- font utility javascript-->
 
@@ -422,10 +429,8 @@
 ================================================== -->
 <s_ad_div>
 <div class="alert alert-info fade in">
-	<div class="globe-hover-111-555">
 	<button type="button" class="close" data-dismiss="alert">&times;</button>
 	<a href="[##_s_ad_m_link_##]">수 정</a> : <a href="#" onclick="[##_s_ad_m_onclick_##]"> 수정(창으로)</a> | ([##_s_ad_s1_label_##])→ <a href="#" onclick="[##_s_ad_s2_onclick_##]">[##_s_ad_s2_label_##]</a> | <a href="#" onclick="[##_s_ad_t_onclick_##]"> 관련글(트랙백)</a> | <a href="#" onclick="[##_s_ad_d_onclick_##]"> 삭제</a>
-	</div>
 </div>
 </s_ad_div>
 
@@ -589,33 +594,42 @@
 
 	</div><!-- font utility -->
 </article>
-</div><!-- site layout : content /.column -->
+</div><!-- main layout : content /.column -->
+</div><!-- main layout : content /.row -->
 
-<div class="col-lg-3 col-sm-3"><!-- site layout : widget column -->
+<div class="row"><!-- main layout : widget row -->
+<div class="col-lg-12 col-sm-12"><!-- main layout : widget column -->
 <aside role="complementary">
 <s_sidebar>
 
+	<div class="row">
 	<s_sidebar_element>
 	<!-- catetories -->
+	<div class="col-lg-4 col-sm-4">
 	<section class="widget">
 	<div class="widget-inner">
 	<h3>Categories</h3>
 	[##_category_list_##]
 	</div>
 	</section>
+	</div>
 	</s_sidebar_element>
+
 
 	<s_sidebar_element>
 	<!-- Recent atricle -->
+	<div class="col-lg-4 col-sm-4">
 	<section class="widget">
 	<div class="widget-inner">
 	<h3>Recent Articles</h3>
 	<div class="widget-feed"></div>
 	</section>
+	</div>
 	</s_sidebar_element>
 
 	<s_sidebar_element>
 	<!-- Recent comment -->
+	<div class="col-lg-4 col-sm-4">
 	<section class="widget">
 	<div class="widget-inner">
 	<h3>Recent Comments</h3>
@@ -628,10 +642,12 @@
 	</ul>                         
 	</div>
 	</section>
+	</div>
 	</s_sidebar_element>
 
 	<s_sidebar_element>
 	<!-- Recent Trackback -->
+	<div class="col-lg-4 col-sm-4">
 	<section class="widget">
 	<div class="widget-inner">
 	<h3>Recent Trackbacks</h3>
@@ -646,11 +662,13 @@
 	</ul>
 	</div>
 	</section>
+	</div>
 	</s_sidebar_element>
 
 	<s_sidebar_element>
 	<!-- Notice list -->
 	<s_rct_notice>
+	<div class="col-lg-4 col-sm-4">
 	<section class="widget">
 	<div class="widget-inner">
 	<h3>Notice</h3>
@@ -661,11 +679,13 @@
 	</ul>
 	</div>
 	</section>
+	</div>
 	</s_rct_notice>
 	</s_sidebar_element>
 
 	 <s_sidebar_element>
 	 <!-- Global tags -->
+	<div class="col-lg-4 col-sm-4">
 	<section class="widget">
 	<div class="widget-inner">
 	<h3>Tag List</h3>
@@ -676,10 +696,12 @@
 	</ul>
 	</div>
 	</section>
+	</div>
 	</s_sidebar_element>
 
 	 <s_sidebar_element>
 	 <!-- Links -->
+	<div class="col-lg-4 col-sm-4">
 	<section class="widget">
 	<div class="widget-inner">
 	<h3>Links</h3>
@@ -690,18 +712,22 @@
 	</ul>
 	</div>
 	</section>
+	</div>
 	</s_sidebar_element>
 
+	</div><!-- /.row -->
 </s_sidebar>
 </aside>
-</div><!-- site layout : widget /.column -->
+</div><!-- main layout : widget /.column -->
+</div><!-- main layout : widget /.row -->
 
-</div><!-- site layout : /.row -->
 </main>
-</div><!-- site layout : /.container -->
+</div><!-- main layout : /.container -->
+</div><!-- main layout : /.wrapper -->
 </div><!-- /.clearfix -->
 
-<div class="container skeleton-footer">
+<div class="wrapper skeleton-footer">
+<div class="container">
 <footer role="contentinfo">
 	<div class="source-org vcard copyright">
 		<!-- Your Footer Here / http://microformats.org/profile/hcard-->
@@ -737,6 +763,7 @@
 		</div>
 	</div><!-- /.vcard microformats -->
 </footer>
+</div>
 </div>
 
 <a href="#" class="scrollup"> Back to Top <span class="glyphicon glyphicon-arrow-up"></span></a>

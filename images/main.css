@@ -17,54 +17,36 @@ License:    http://markquery.github.io/license
 body {
   position: relative; /* For scrollyspy */
   padding-top: 50px;  /*Account for fixed navbar */
+}
+.skeleton-header {
   background-color: #eee;
-}
-.skeleton {
-  padding: 0 20px;
-  border:1px solid #ccc;
-  background-color:#fff;
-  /*box-shadow: 0 0 5px 0 rgba(0, 0, 0, .25);*/
-}
-.skeleton-nav {
-  padding: 0 20px;
-  border:1px solid #ccc;
-  background-color:#fff;
-  /*box-shadow: 0 0 5px 0 rgba(0, 0, 0, .25);*/
-}
-.skeleton-content {
-  min-height:1000px;
-  border-right:1px solid #ccc;
 }
 .skeleton-footer {
   padding:20px;
   background: url(../images/footer.png);
-  /*box-shadow: 0 0 5px 0 rgba(0, 0, 0, .25);*/
 }
 
 /* site header
 -------------------------------------------------- */
 header.banner {
-  margin: 20px 0;
-  padding:40px 0 60px;
+  margin: 0;
+  padding:80px 0 100px;
 }
 header.banner img {
   vertical-align: middle;
 }
 header.banner h1 {
-  text-indent: 20px;
   font-weight: bold;
 }
 header.banner h1 a {
-  color: #111;
-  text-indent: 1em;
+  color: #fff;
 }
 header.banner h1 a:hover {
   color:#999;
 }
 header.banner h2 {
-  color:#999;
-  font-size: 14px;
-  text-indent: 20px;
+  color:#ECB2B2;
+  font-size: 16px;
 }
 
 /* site footer
@@ -95,7 +77,10 @@ footer ul li {
 
 /* content / Posts use the hNews microformat. (http://microformats.org/wiki/hnews)
 -------------------------------------------------- */
-main { border-top: 1px solid #ccc; }
+main { 
+  margin-top: 40px; 
+  border-top: 1px solid #ccc;
+}
 .hentry { 
   padding-bottom:40px;  
   border-bottom:1px solid #eee; 
@@ -456,21 +441,15 @@ figcaption {
     padding-left: 0;
     padding-right: 0;
   }
-  .skeleton, .skeleton-nav, .skeleton-footer {
+  .skeleton-footer {
     padding: 0;
   }
-  .skeleton-content {
-    min-height:200px;
-  }
   header.banner {
-    padding-bottom:0;
+    padding:20px 0;
     text-align: center;
   }
   .comment small {
     font-size:8px;
-  }
-  header.banner h1, header.banner h2 {
-    text-indent: 0;
   }
   footer ul li, footer p {
     font-size:10px;
