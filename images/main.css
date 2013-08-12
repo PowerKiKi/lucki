@@ -437,10 +437,6 @@ figcaption {
   body [class*="height"] {
     height: auto;
   } 
-  nav > .navbar {
-    padding-left: 0;
-    padding-right: 0;
-  }
   .skeleton-footer {
     padding: 0;
   }
