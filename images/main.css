@@ -19,34 +19,29 @@ body {
   padding-top: 50px;  /*Account for fixed navbar */
 }
 .skeleton-header {
-  background-color: #eee;
+  margin: 0;
+  padding:80px 0 100px;
+  background-color: #f8f8f8;
+}
+.skeleton-header img {
+  vertical-align: middle;
+}
+.skeleton-header h1 {
+  font-weight: bold;
+}
+.skeleton-header h1 a {
+  color: #e2e2e2;
+}
+.skeleton-header h1 a:hover {
+  color:#999;
+}
+.skeleton-header h2 {
+  color:#ecbebe;
+  font-size: 16px;
 }
 .skeleton-footer {
   padding:20px;
   background: url(../images/footer.png);
-}
-
-/* site header
--------------------------------------------------- */
-header.banner {
-  margin: 0;
-  padding:80px 0 100px;
-}
-header.banner img {
-  vertical-align: middle;
-}
-header.banner h1 {
-  font-weight: bold;
-}
-header.banner h1 a {
-  color: #fff;
-}
-header.banner h1 a:hover {
-  color:#999;
-}
-header.banner h2 {
-  color:#ECB2B2;
-  font-size: 16px;
 }
 
 /* site footer
@@ -347,13 +342,6 @@ figcaption {
   opacity: 0.7;
   font-size:10px;
 }
-.skip {
-  overflow: hidden;
-  position:absolute;
-  z-index:1020;  
-  width:100%;
-  left:-9999em;   
-}
 .text-justify {
   text-align: justify;
 }
@@ -425,9 +413,9 @@ figcaption {
 ------------------------- */
 @media (max-width: 767px) {
   /* Remove any padding from the body */
-  body {
+  /*body {
     padding: 0;
-  }
+  }*/
   body [class*="padding"] {
     padding: 0;
   }
@@ -437,12 +425,12 @@ figcaption {
   body [class*="height"] {
     height: auto;
   } 
-  .skeleton-footer {
-    padding: 0;
-  }
-  header.banner {
+  .skeleton-header {
     padding:20px 0;
     text-align: center;
+  } 
+  .skeleton-footer {
+    padding: 0;
   }
   .comment small {
     font-size:8px;
@@ -450,10 +438,6 @@ figcaption {
   footer ul li, footer p {
     font-size:10px;
   }
-  /* utility */
-  .skip {
-    display:none;
-  } 
   .scrollup {
     display:none !important;
   }
