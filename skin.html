@@ -20,7 +20,6 @@
 	<link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]">
 
 	<link href="./images/bootstrap.css" rel="stylesheet">
-	<link href="./images/main.css" rel="stylesheet"> 
 	<link rel="stylesheet" media="screen" type="text/css" href="./style.css">
 	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
 
@@ -33,7 +32,7 @@
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 		<script async src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<script src="./images/respond.min.js"></script>
+		<link href="./images/ie.css" rel="stylesheet">
 	<![endif]-->
 
 	<!--[if IE 7]>
@@ -49,7 +48,7 @@
 
 <a href="#content" class="sr-only">skip to content</a>
 
-<header class="navbar navbar-fixed-top" role="banner">
+<header class="navbar navbar-fixed-top navbar-default" role="banner">
 	<div class="container skeleton-nav">
 		<div class="navbar-header">
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -617,8 +616,8 @@
 	<section class="widget">
 	<div class="widget-inner">
 	<h3>Recent Articles</h3>
-	<div class="widget-feed"></div>
 	</section>
+	<div class="widget-feed"></div>
 	</div>
 	</s_sidebar_element>
 
@@ -736,9 +735,7 @@
 		<div class="row">
 		<div class="col-xs-12">
 		<ul class="license-links">
-		<li>Customize Your Contents <a title="go to markquery" href="http://markquery.com/" target="_blank">MARKQUERY</a></li>
-		<li class="text-muted">&middot;</li>
-		<li>Project maintained  by <a title ="go to github project" href="https://github.com/markquery/">Ungki, H</a></li>
+		<li>Customize Your Contents <a title="go to markquery" href="http://markquery.com/" target="_blank">MARKQUERY</a> Project maintained  by <a title ="go to github project" href="https://github.com/markquery/">Ungki, H</a></li>
 		<li class="text-muted">&middot;</li>
 		<li>Hosted by <a title="go to daum" href="http://daum.net/" target="_blank">Daum</a></li>
 		<li class="text-muted">&middot;</li>
@@ -775,7 +772,7 @@
 <!-- get recent article included thumbnail -->
 <script>
    jQuery(function($) {
-        $(".menu-feed").rss("http://markquery.com/feed", {
+        $(".widget-feed").rss("http://markquery.com/feed", {
           limit: 5,
           effect: 'slideFast',
           layoutTemplate: '<ul class=\"media-list\">{entries}</ul>',
