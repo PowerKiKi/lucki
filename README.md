@@ -1,4 +1,4 @@
-# [Doo Be Doo v1.0.0](http://markquery.com) 
+# [Doo Be Doo](http://markquery.com) 
 
 MARKQUERY Skeleton For Tistory with Bootstrap 3
 

@@ -4,7 +4,7 @@
 Customize your contents - markquery skeleton
 -------------------------------------------------------------
 name:    Doo Be Doo
-Version:    1.0.0
+Version:    1.0.1
 Author:    Ungki, H
 
 Homepage:    http://markquery.com
@@ -334,6 +334,9 @@ figcaption {
   color:#999;
   font-style: italic;
 }
+.img-center {
+  margin: 0 auto;
+}
 .scrollup {
   position: fixed;
   display: none;
@@ -398,22 +401,9 @@ figcaption {
   border-bottom:1px dotted #999;
 }
 
-/* Tablet to desktop
-------------------------- */
-@media (min-width: 768px) and (max-width: 979px) {
-  /* Remove any padding from the body */
-  /*body {
-    padding-top: 0;
-  }*/
-  /* utility */
-  .scrollup {
-    display:none !important;
-  }
-}
-
 /* Tablet
 ------------------------- */
-@media (max-width: 767px) {
+@media screen and (max-width: 768px) {
   /* Remove any padding from the body */
   /*body {
     padding: 0;
@@ -450,3 +440,16 @@ figcaption {
     float:right;
   }
 }
+
+@media screen and (max-width: 992px) { 
+  /* Remove any padding from the body */
+  /*body {
+    padding-top: 0;
+  }*/
+  /* utility */
+  .scrollup {
+    display:none !important;
+  }
+}
+
+@media (min-width: 1200px) { }
