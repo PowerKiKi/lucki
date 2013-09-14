@@ -7,6 +7,7 @@
 - `문단간격 없음 사용` 설정 해제. 기존의 콘텐츠에서는 에디터모드에서 체크 해제
 - `entry-title` 본문 제목 폰트 사이즈 18px로 설정 
 - `pagination`의 `interword` 오류 수정
+- `video` `iframe` `object` `embed`에 max-width:100%; `.media-container` 추가
 
 # v1.0.1 (September 3, 2013)
 
