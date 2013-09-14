@@ -4,7 +4,7 @@
 Customize your contents - markquery skeleton
 -------------------------------------------------------------
 name:    Doo Be Doo
-Version:    1.0.1
+Version:    1.0.2
 Author:    Ungki, H
 
 Homepage:    http://markquery.com
@@ -25,9 +25,6 @@ body {
   padding:80px 0 100px;
   background-color: #f8f8f8;
 }
-.skeleton-header img {
-  vertical-align: middle;
-}
 .skeleton-header h1 {
   font-weight: bold;
 }
@@ -43,7 +40,7 @@ body {
 }
 .skeleton-footer {
   padding:20px;
-  background: url(../images/footer.png);
+  background: url(./images/footer.png);
 }
 
 /* site footer
@@ -92,7 +89,7 @@ main {
   padding:10px 0;
   border-bottom:1px solid #ccc;
 }
-.entry-title {}
+.entry-title { font-size:18px; }
 .entry-summary {}
 .entry-content { padding-bottom:40px; }
 .byline {}
@@ -233,7 +230,7 @@ font-weight:bold;
 }
 ul.pagination .interword {
 float: left;
-padding: 4px 12px;
+padding: 6px 12px;
 line-height: 20px;
 text-decoration: none;
 background-color: #fff;
@@ -325,11 +322,11 @@ border-left-width: 0;
   text-shadow: none;
 }
 figure {
-  margin: 10px 0;
+  margin: 0;
   padding: 0;
 }
 figcaption {
-  margin: 0;
+  margin: 10px 0;
   padding: 0;
   color:#999;
   font-style: italic;
@@ -356,42 +353,101 @@ figcaption {
 .responsive-left2right {
   float:left;
 }
+iframe, object, embed { max-width:100%; } 
+video { max-width:100%; height: auto; } 
+.media-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.media-container iframe,  
+.media-container object,  
+.media-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* Tistory utility  
    ------------------------------------------------ */
 .tistorytoolbar {
   display: none !important;
 }
-.cap1 {
-  color:#999;
-  text-align:center;
+.entry-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
-.imageblock  {
-  margin:0;
-  padding:0;
+.imageblock { max-width:100%; } 
+
+body.tistory_grid_350 div#ttCanvas,
+body.tistory_grid_385 div#ttCanvas,
+body.tistory_grid_420 div#ttCanvas,
+body.tistory_grid_455 div#ttCanvas,
+body.tistory_grid_490 div#ttCanvas,
+body.tistory_grid_525 div#ttCanvas,
+body.tistory_grid_560 div#ttCanvas,
+body.tistory_grid_595 div#ttCanvas,
+body.tistory_grid_630 div#ttCanvas,
+body.tistory_grid_665 div#ttCanvas,
+body.tistory_grid_700 div#ttCanvas,
+body.tistory_grid_735 div#ttCanvas,
+body.tistory_grid_770 div#ttCanvas,
+body.tistory_grid_805 div#ttCanvas,
+body.tistory_grid_840 div#ttCanvas,
+body.tistory_grid_875 div#ttCanvas,
+body.tistory_grid_910 div#ttCanvas,
+body.tistory_grid_945 div#ttCanvas,
+body.tistory_grid_980 div#ttCanvas,
+body.tistory_grid_1015 div#ttCanvas,
+body.tistory_grid_1050 div#ttCanvas { max-width: 100% !important; }
+.tt-span-1,
+.tt-span-2,
+.tt-span-3,
+.tt-span-4,
+.tt-span-5,
+.tt-span-6,
+.tt-span-7,
+.tt-span-8,
+.tt-span-9,
+.tt-span-10,
+.tt-span-11,
+.tt-span-12 {
+max-width: 100% !important;
 }
-.dual {
-  margin-bottom:5px;
-  background-color:#eee;
-}
-.triple {
-  margin-bottom:5px;
-  background-color:#eee;
+@media screen and (max-width: 1200px) {
+.tt-span-1,
+.tt-span-2,
+.tt-span-3,
+.tt-span-4,
+.tt-span-5,
+.tt-span-6,
+.tt-span-7,
+.tt-span-8,
+.tt-span-9,
+.tt-span-10,
+.tt-span-11,
+.tt-span-12 { width:100% !important; }
 }
 .moreless_fold {
   padding-left: 10px; 
-  background: url(../images/btn_more.gif) no-repeat 0 50%; 
+  background: url(./images/btn_more.gif) no-repeat 0 50%; 
   color: #08c; 
   font-weight:bold;
 }
 .moreless_top {
   padding-left: 10px; 
-  background: url(../images/btn_less.gif) no-repeat 0 50%;
+  background: url(./images/btn_less.gif) no-repeat 0 50%;
   color: #08c; 
   font-weight:bold;
  }
 .moreless_bottom {
   padding-left: 10px; 
-  background: url(../images/btn_less.gif) no-repeat 0 50%; 
+  background: url(./images/btn_less.gif) no-repeat 0 50%; 
   color: #08c; 
   font-weight:bold;
 }
@@ -442,10 +498,6 @@ figcaption {
 }
 
 @media screen and (max-width: 992px) { 
-  /* Remove any padding from the body */
-  /*body {
-    padding-top: 0;
-  }*/
   /* utility */
   .scrollup {
     display:none !important;
