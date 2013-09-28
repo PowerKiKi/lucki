@@ -8,8 +8,9 @@ module.exports = function(grunt) {
       },
       all: [
         'Gruntfile.js',
-        'scripts/*.js',
-        'scripts/bootstrap/*.js'
+        'grunt/scripts/*.js',
+        'grunt/scripts/bootstrap/*.js',
+        '!grunt/scripts/bootstrap.js'
       ]
     },
     recess: {
@@ -19,10 +20,11 @@ module.exports = function(grunt) {
           compress: true
         },
         files: {
-          'styles/bootstrap.css': [
-            'styles/style.less',
-            'styles/*.less',
-            'styles/*.css'
+          'grunt/styles/bootstrap.css': [
+            'grunt/styles/style.less',
+            'grunt/styles/*.less',
+            'grunt/styles/*.css',
+            '!grunt/styles/bootstrap.css'
           ]
         }
       }
@@ -30,20 +32,20 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         files: {
-          'scripts/bootstrap.js': [
-            'scripts/bootstrap/transition.js',
-            'scripts/bootstrap/alert.js',
-            'scripts/bootstrap/button.js',
-            'scripts/bootstrap/carousel.js',
-            'scripts/bootstrap/collapse.js',
-            'scripts/bootstrap/dropdown.js',
-            'scripts/bootstrap/modal.js',
-            'scripts/bootstrap/tooltip.js',
-            'scripts/bootstrap/popover.js',
-            'scripts/bootstrap/scrollspy.js',
-            'scripts/bootstrap/tab.js',
-            'scripts/bootstrap/affix.js',
-            'scripts/*.js'
+          'grunt/scripts/bootstrap.js': [
+            'grunt/scripts/bootstrap/transition.js',
+            'grunt/scripts/bootstrap/alert.js',
+            'grunt/scripts/bootstrap/button.js',
+            'grunt/scripts/bootstrap/carousel.js',
+            'grunt/scripts/bootstrap/collapse.js',
+            'grunt/scripts/bootstrap/dropdown.js',
+            'grunt/scripts/bootstrap/modal.js',
+            'grunt/scripts/bootstrap/tooltip.js',
+            'grunt/scripts/bootstrap/popover.js',
+            'grunt/scripts/bootstrap/scrollspy.js',
+            'grunt/scripts/bootstrap/tab.js',
+            'grunt/scripts/bootstrap/affix.js',
+            'grunt/scripts/*.js'
           ]
         }
       }
@@ -51,7 +53,7 @@ module.exports = function(grunt) {
     watch: {
       less: {
         files: [
-          'styles/less/*.less'
+          'grunt/styles/less/*.less'
         ],
         tasks: ['recess']
       },
@@ -68,15 +70,15 @@ module.exports = function(grunt) {
           livereload: false
         },
         files: [
-          'styles/bootstrap.css',
-          'scripts/bootstrap.js'
+          'grunt/styles/bootstrap.css',
+          'grunt/scripts/bootstrap.js'
         ]
       }
     },
     clean: {
       dist: [
-        'styles/bootstrap.css',
-        'scripts/bootstrap.js'
+        'grunt/styles/bootstrap.css',
+        'grunt/scripts/bootstrap.js'
       ]
     }
   });
