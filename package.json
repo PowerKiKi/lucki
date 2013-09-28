@@ -1,6 +1,6 @@
 {
-  "name": "tistory-doobedoo",
-  "version": "1.0.0",
+  "name": "tistory-doobedoo-grunt",
+  "version": "1.0.3",
   "author": "Ungki.H <ungki.h@gmail.com>",
   "homepage": "http://markquery.com",
   "repository": {
@@ -15,10 +15,9 @@
     "url": "http://opensource.org/licenses/MIT"
   }],
   "engines": {
-    "node": ">= 0.10.5",
-    "npm": "1.2"    
+    "node": ">= 0.10.0"
   },
-  "dependenciess": {
+  "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-jshint": "~0.6.3",
