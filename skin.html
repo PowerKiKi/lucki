@@ -81,7 +81,7 @@
 </header>
 
 <div class="clearfix">
-<div class="wrapper skeleton-header"><!-- site layout : container --> 
+<div class="wrapper skeleton-header"><!-- header layout : wrapper --> 
 <div class="container"><!-- header layout : container --> 
 <div class="row">
 <div class="col-sm-12">
@@ -96,8 +96,8 @@
 </div><!-- /.clearfix -->
 
 <div class="clearfix">
-<div class="wrapper">
-<div class="container"><!-- main layout : container --> 
+<div class="wrapper"><!-- main layout : wrapper --> 
+<div class="container"><!-- remove div for fullscreen content -->
 <main role="main"  id="content">
 
 <div class="row"><!-- main layout : content row -->
@@ -425,7 +425,7 @@
 <s_ad_div>
 <div class="alert alert-info fade in">
 	<button type="button" class="close" data-dismiss="alert">&times;</button>
-	<a href="[##_s_ad_m_link_##]">수 정</a> : <a href="#" onclick="[##_s_ad_m_onclick_##]"> 수정(창으로)</a> | ([##_s_ad_s1_label_##])→ <a href="#" onclick="[##_s_ad_s2_onclick_##]">[##_s_ad_s2_label_##]</a> | <a href="#" onclick="[##_s_ad_t_onclick_##]"> 관련글(트랙백)</a> | <a href="#" onclick="[##_s_ad_d_onclick_##]"> 삭제</a>
+	<a href="[##_s_ad_m_link_##]">수정</a> : <a href="#" onclick="[##_s_ad_m_onclick_##]">수정(창으로)</a> | ([##_s_ad_s1_label_##])→ <a href="#" onclick="[##_s_ad_s2_onclick_##]">[##_s_ad_s2_label_##]</a> | <a href="#" onclick="[##_s_ad_t_onclick_##]">관련글(트랙백)</a> | <a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a>
 </div>
 </s_ad_div>
 
@@ -615,11 +615,9 @@
 	<!-- Recent atricle -->
 	<div class="col-sm-4">
 	<section class="widget">
-	<div class="widget-inner">
 	<h3>Recent Articles</h3>
-	</section>
 	<div class="widget-feed"></div>
-	</div>
+	</section>
 	</s_sidebar_element>
 
 	<s_sidebar_element>
@@ -735,7 +733,7 @@
 </div><!-- main layout : widget /.row -->
 
 </main>
-</div><!-- main layout : /.container -->
+</div><!-- remove div for fullscreen content -->
 </div><!-- main layout : /.wrapper -->
 </div><!-- /.clearfix -->
 
