@@ -1,3 +1,8 @@
+# v1.2.1 (October 6, 2013)
+
+- 카테고리 소분류 CSS 추가
+- 위젯 타이틀 오류 수정
+
 # v1.2.0 (September 29, 2013)
 
 - `grunt.js` 추가.
@@ -6,7 +11,7 @@
 # v1.0.2 (September 14, 2013)
 
 - `티에디션` 지원. 단, 작은 썸네일 포함된 리스트 (유저선택)
--`.imageblock` 이지윅에디터 이미지 삽입가능 (thanks for an anonymous tip)
+-`.imageblock` 위지윅에디터 이미지 삽입가능 (thanks for an anonymous tip)
 - `col-lg-*` bootstrap v3 공식 업데이트 전 사용하던 불필요한 grid 삭제
 - `figure`, `figcaption` 여백 재설정 caption에 margin:10px 0; 
 - `문단간격 없음 사용` 설정 해제. 기존의 콘텐츠에서는 에디터모드에서 체크 해제
