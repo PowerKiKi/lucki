@@ -1,3 +1,8 @@
+# v1.2.2 (October 20, 2013)
+
+- 'container' 삭제. Doo Be Doo는 완전한 풀스크린
+- 'admin' 등 링크 추가
+ 
 # v1.2.1 (October 6, 2013)
 
 - 카테고리 소분류 CSS 추가

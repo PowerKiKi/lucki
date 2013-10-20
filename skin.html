@@ -80,7 +80,6 @@
 	</div>
 </header>
 
-<div class="clearfix">
 <div class="wrapper skeleton-header"><!-- header layout : wrapper --> 
 <div class="container"><!-- header layout : container --> 
 <div class="row">
@@ -93,21 +92,16 @@
 </div>
 </div><!-- /.container -->
 </div><!-- /.wrapper -->
-</div><!-- /.clearfix -->
 
-<div class="clearfix">
 <div class="wrapper"><!-- main layout : wrapper --> 
-<div class="container"><!-- remove div for fullscreen content -->
 <main role="main"  id="content">
-
-<div class="row"><!-- main layout : content row -->
-<div class="col-sm-12"><!-- main layout : content column -->
 <article role="article" class="hentry">
 <div id="changeFontFamily" class="font-resize"><!-- font utility javascript-->
 
 <!-- Search 
 ================================================== -->
 <s_list>
+<div class="container">
 <section class="search-list">
 	<p>'[##_list_conform_##]'에 해당되는 글 [##_list_count_##]건</p>
 	<ol>
@@ -120,6 +114,7 @@
 	</s_list_rep>
 	</ol>
 </section>
+</div><!-- /.container -->
 </s_list>
 
 <s_rplist>
@@ -141,6 +136,7 @@
 <!-- Local
 ================================================== -->
 <s_local>
+<div class="container">
 <div class="locallog">
 	<h3>Locallog</h3>
 	<s_local_spot_rep>
@@ -150,11 +146,13 @@
 	<div class="info" style="margin-left: [##_local_info_depth_##]px"><a href="[##_local_info_link_##]">[##_local_info_title_##]</a></div>
 	</s_local_info_rep>
 </div>
+</div><!-- /.container -->
 </s_local>
 
 <!-- Tag
 ================================================== -->
 <s_tag>
+<div class="container">
 <div class="taglog">
 	<h3>Tags</h3>
 	<ul class="inline">
@@ -163,20 +161,24 @@
 	</s_tag_rep>
 	</ul>
 </div>
+</div><!-- /.container -->
 </s_tag>
 
 <!-- Media
 ================================================== -->
 <s_media>
+<div class="container">
 <div class="medialog">
 	<h3>Medialog</h3>
 	[##_media_content_##]
 </div>
+</div><!-- /.container -->
 </s_media>
 
 <!-- Guestbook
 ================================================== -->
 <s_guest>
+<div class="container">
 <div class="guestbook">
 	<h3>Guestbook</h3>
 	<s_guest_input_form>
@@ -266,18 +268,23 @@
 		</ol>
 		</s_guest_container>
 </div>
+</div><!-- /.container -->
 </s_guest>
 
 <!-- Notice
 ================================================== -->
 <s_notice_rep>
 <header class="entry-header">
+<div class="container">
 <div class="row"> 
 <div class="col-sm-12">
 	<h1 class="entry-title"><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></h1>
 	<time class="published" datetime="[##_article_rep_date_##]">[##_article_rep_date_##]</time>
-</div>
-</div>
+</div><!-- /.col -->
+</div><!-- /.row -->
+</div><!-- /.container -->
+
+<div class="container">
 <div class="row"> 
 <div class="col-sm-9">
 	<p class="byline author vcard">Posted in <strong><a href="[##_blog_link_##]notice">Notice</a></strong>  by <span class="fn">[##_blogger_##]</span></p>
@@ -311,6 +318,7 @@
 	</div><!-- /.responsive-right2left -->
 </div><!-- /.col -->
 </div><!-- /.row -->
+</div><!-- /.container -->
 </header>
 	<div class="entry-content">
 	[##_notice_rep_desc_##]
@@ -321,12 +329,16 @@
 ================================================== -->
 <s_article_protected>
 <header class="entry-header">
+<div class="container">
 <div class="row"> 
 <div class="col-sm-12">
 	<h1 class="entry-title"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h1>
 	<time class="published" datetime="[##_article_rep_date_##]">[##_article_rep_date_##]</time>
-</div>
-</div>
+</div><!-- /.col -->
+</div><!-- /.row -->
+</div><!-- /.container -->
+
+<div class="container">
 <div class="row"> 
 <div class="col-sm-9">
 	<p class="byline author vcard">Posted in <strong><a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></strong>  by <span class="fn">[##_blogger_##]</span></p>
@@ -360,6 +372,7 @@
 	</div><!-- /.responsive-right2left -->
 </div><!-- /.col -->
 </div><!-- /.row -->
+</div><!-- /.container -->
 </header>
 
 	<div class="entry-content">
@@ -378,13 +391,17 @@
 <!-- Entry : header
 ================================================== -->      
 <header class="entry-header">
+<div class="container">
 <div class="row"> 
 <div class="col-sm-12">
 	<h1 class="entry-title"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h1>
 	<!-- <h2 class="entry-summary"> the_excerpt </h2> -->
 	<time class="published" datetime="[##_article_rep_date_##]">[##_article_rep_date_##]</time>
-</div>
-</div>
+</div><!-- /.col -->
+</div><!-- /.row -->
+</div><!-- /.container -->
+
+<div class="container">
 <div class="row"> 
 <div class="col-sm-9">
 	<p class="byline author vcard">Posted in <a href="[##_article_rep_category_link_##]"><strong>[##_article_rep_category_##]</strong></a> by <span class="fn">[##_blogger_##]</span></p>
@@ -418,15 +435,22 @@
 	</div><!-- /.responsive-right2left -->
 </div><!-- /.col -->
 </div><!-- /.row -->
+</div><!-- /.container -->
 </header>
 
 <!-- Entry : admin 
 ================================================== -->
 <s_ad_div>
+<div class="container">
+<div class="row"> 
+<div class="col-sm-12">
 <div class="alert alert-info fade in">
 	<button type="button" class="close" data-dismiss="alert">&times;</button>
 	<a href="[##_s_ad_m_link_##]">수정</a> : <a href="#" onclick="[##_s_ad_m_onclick_##]">수정(창으로)</a> | ([##_s_ad_s1_label_##])→ <a href="#" onclick="[##_s_ad_s2_onclick_##]">[##_s_ad_s2_label_##]</a> | <a href="#" onclick="[##_s_ad_t_onclick_##]">관련글(트랙백)</a> | <a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a>
 </div>
+</div><!-- /.col -->
+</div><!-- /.row -->
+</div><!-- /.container -->
 </s_ad_div>
 
 <!-- Entry : body
@@ -435,14 +459,24 @@
 [##_article_rep_desc_##]
 </div>
 
+<div class="container">
+<div class="row"> 
+<div class="col-sm-12">
 <section class="entry-tags">
 <s_tag_label>
 <i class="icon-tags"></i> [##_tag_label_rep_##]
 </s_tag_label>
 </section>        
+</div><!-- /.col -->
+</div><!-- /.row -->
+</div><!-- /.container -->
+
 
 <!-- Entry : footer -->
 <div class="entry-footer">
+<div class="container">
+<div class="row"> 
+<div class="col-sm-12">
 
 <!-- Entry : footer : actionTrail
 ================================================== -->
@@ -569,12 +603,18 @@
 </section><!-- Entry : footer : comment -->
 </s_rp>
 		
+</div><!-- /.col -->
+</div><!-- /.row -->
+</div><!-- /.container -->
 </div><!-- Entry : footer -->
 
 </s_article_rep>
 
 <!-- Paging
 ================================================== -->  
+<div class="container">
+<div class="row"> 
+<div class="col-sm-12">
 <section>
 <s_paging>
 	<ul class="pagination">
@@ -586,12 +626,14 @@
 	</ul>
 </s_paging>
 </section>
+</div><!-- /.col -->
+</div><!-- /.row -->
+</div><!-- /.container -->
 
 	</div><!-- font utility -->
 </article>
-</div><!-- main layout : content /.column -->
-</div><!-- main layout : content /.row -->
 
+<div class="container"><!-- main layout : widget container -->
 <div class="row"><!-- main layout : widget row -->
 <div class="col-sm-12"><!-- main layout : widget column -->
 <aside role="complementary">
@@ -736,9 +778,7 @@
 </div><!-- main layout : widget /.row -->
 
 </main>
-</div><!-- remove div for fullscreen content -->
 </div><!-- main layout : /.wrapper -->
-</div><!-- /.clearfix -->
 
 <div class="wrapper skeleton-footer">
 <div class="container">
@@ -757,6 +797,9 @@
 		<li>Today : [##_count_today_##]</li>
 		<li>Yesterday : [##_count_yesterday_##]</li>
 		<li><a title="rss" href="[##_rss_url_##]">RSS</a></li>
+		<li><a title="local" href="[##_localog_link_##]">Localog</a></li>
+		<li><a title="tags" href="[##_taglog_link_##]">Tags</a></li>
+		<li><a title="admin" href="[##_owner_url_##]">Admin</a></li>
 		</ul>
 		</div>
 		</div>
