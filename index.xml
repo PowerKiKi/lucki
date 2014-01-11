@@ -1,55 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <skin>
-	<information>
-		<name>markquery skeleton - Doo Be Doo</name>
-		<version>1.2.1</version>
-		<description>
+    <information>
+        <name>markquery skeleton - Doo Be Doo</name>
+        <version>1.2.1</version>
+        <description>
 			<![CDATA[마크쿼리 skeleton - Doo Be Doo입니다]]>
-		</description>
-		<license>
+        </description>
+        <license>
 			<![CDATA[http://markquery.github.io/license]]>
-		</license>
-		<tags>
-			<tag>콘텐츠 편집디자인</tag> <tag>HTML5</tag> <tag>CSS3</tag> <tag>bootstrap</tag>
-		</tags>
-	</information>
-<author>
-		<name>Ungki, H</name>
-		<homepage>http://markquery.com</homepage>
-		<email>ungki.h@gmail.com</email>
-	</author> 
-	<default>
-		<recentEntries>5</recentEntries>
-		<recentComments>5</recentComments>
-		<recentTrackbacks>5</recentTrackbacks>
-		<itemsOnGuestbook>10</itemsOnGuestbook>
-		<tagsInCloud>10</tagsInCloud>
-		<sortInCloud>3</sortInCloud>
-		<expandComment>1</expandComment>
-		<expandTrackback>1</expandTrackback>
-		<lengthOfRecentNotice>25</lengthOfRecentNotice>
-		<lengthOfRecentEntry>27</lengthOfRecentEntry>
-		<lengthOfRecentComment>30</lengthOfRecentComment>
-		<lengthOfRecentTrackback>30</lengthOfRecentTrackback>
-		<lengthOfLink>30</lengthOfLink>
-		<showListOnCategory>1</showListOnCategory>
-		<showListOnArchive>1</showListOnArchive>
-		<commentMessage>
-			<none>댓글이 없습니다.</none>
-			<single>댓글 &lt;span class="cnt"&gt;하나&lt;/span&gt;가 달렸습니다.</single>
-		</commentMessage>
-		<trackbackMessage>
-			<none>받은 트랙백이 없고</none>
-			<single>트랙백은 &lt;span class="cnt"&gt;하나&lt;/span&gt;</single>
-		</trackbackMessage>
-		<tree>
-			<color>000000</color>
-			<bgColor>ffffff</bgColor>
-			<activeColor>000000</activeColor>
-			<activeBgColor>eeeeee</activeBgColor>
-			<labelLength>27</labelLength>
-			<showValue>1</showValue>
-		</tree>
-		<contentWidth>1170</contentWidth>
-	</default>
+        </license>
+        <tags>
+            <tag>콘텐츠 편집디자인</tag>
+            <tag>HTML5</tag>
+            <tag>CSS3</tag>
+            <tag>bootstrap</tag>
+        </tags>
+    </information>
+    <author>
+        <name>Ungki, H</name>
+        <homepage>http://markquery.com</homepage>
+        <email>ungki.h@gmail.com</email>
+    </author>
+    <default>
+        <recentEntries>5</recentEntries>
+        <recentComments>5</recentComments>
+        <recentTrackbacks>5</recentTrackbacks>
+        <itemsOnGuestbook>10</itemsOnGuestbook>
+        <tagsInCloud>10</tagsInCloud>
+        <sortInCloud>3</sortInCloud>
+        <expandComment>1</expandComment>
+        <expandTrackback>1</expandTrackback>
+        <lengthOfRecentNotice>25</lengthOfRecentNotice>
+        <lengthOfRecentEntry>27</lengthOfRecentEntry>
+        <lengthOfRecentComment>30</lengthOfRecentComment>
+        <lengthOfRecentTrackback>30</lengthOfRecentTrackback>
+        <lengthOfLink>30</lengthOfLink>
+        <showListOnCategory>1</showListOnCategory>
+        <showListOnArchive>1</showListOnArchive>
+        <commentMessage>
+            <none>댓글이 없습니다.</none>
+            <single>댓글 &lt;span class="cnt"&gt;하나&lt;/span&gt;가 달렸습니다.</single>
+        </commentMessage>
+        <trackbackMessage>
+            <none>받은 트랙백이 없고</none>
+            <single>트랙백은 &lt;span class="cnt"&gt;하나&lt;/span&gt;</single>
+        </trackbackMessage>
+        <tree>
+            <color>000000</color>
+            <bgColor>ffffff</bgColor>
+            <activeColor>000000</activeColor>
+            <activeBgColor>eeeeee</activeBgColor>
+            <labelLength>27</labelLength>
+            <showValue>1</showValue>
+        </tree>
+        <contentWidth>1170</contentWidth>
+    </default>
 </skin>

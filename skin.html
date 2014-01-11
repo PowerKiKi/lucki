@@ -1,859 +1,859 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="[##_desc_##]">
-	<meta name="keywords" content="your, site, keyowrd, here">
-	<meta name="author" content="[##_blogger_##]">
-
-	<meta property="og:site_name" content="[##_title_##]">
-	<meta property="og:title" content="[##_page_title_##]">
-	<meta property="og:description" content="[##_desc_##]">
-	<meta property="og:image" content="[##_image_##]"> 
-
-	<title>[##_page_title_##] | [##_title_##]</title>
-
-	<link rel="author" href="./images/humans.txt">
-	<link rel="profile" href="http://microformats.org/profile/hcard">
-	<link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]">
-
-	<link href="./images/bootstrap.css" rel="stylesheet">
-	<link rel="stylesheet" media="screen" type="text/css" href="./style.css">
-	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
-
-	<link rel="shortcut icon" href="[##_blog_link_##]favicon.ico">
-	<link rel="apple-touch-icon-precomposed" href="./images/apple-touch-icon-57x57-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="./images/apple-touch-icon-72x72-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="./images/apple-touch-icon-114x114-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="./images/apple-touch-icon-144x144-precomposed.png">
-
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-		<script async src="./images/html5shiv.js"></script>
-		<link href="./images/ie.css" rel="stylesheet">
-		<script>document.createElement('main');</script>
-	<![endif]-->
-
-	<!--[if IE 7]>
-	  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.min.css" rel="stylesheet">
-	<![endif]-->
-</head>
-
-<body>
-<s_t3>
-<!--[if lt IE 7]>
-<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-<![endif]-->
-
-<a href="#content" class="sr-only">skip to content</a>
-
-<header class="navbar navbar-fixed-top navbar-default" role="banner">
-	<div class="container skeleton-nav">
-		<div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-		<span class="sr-only">Toggle navigation</span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		</button>
-		<a class="navbar-brand" href="[##_blog_link_##]">HOME</a>
-		</div>
-			<nav class="collapse navbar-collapse" role="navigation">
-			<ul class="nav navbar-nav">
-			<li typeof="sioc:Page" about="[##_blog_link_##]category/"><a property="dc:title" href="[##_blog_link_##]category/">category 1</a></li>
-			<li typeof="sioc:Page" about="[##_blog_link_##]category/"><a property="dc:title" href="[##_blog_link_##]category/">category 2</a></li>
-			<li typeof="sioc:Page" about="[##_guestbook_link_##]"><a property="dc:title" href="[##_guestbook_link_##]">GuestBook</a></li>
-				<li>
-				<s_sidebar_element>
-				<s_search>
-				<!-- Search -->
-				<form class="navbar-form">
-				<input role="search" type="text" class="form-control" placeholder="Search" name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }">
-				</form>
-				</s_search>
-				</s_sidebar_element>
-				</li>
-			</ul>
-			</nav>
-	</div>
-</header>
-
-<div class="wrapper skeleton-header"><!-- header layout : wrapper --> 
-<div class="container"><!-- header layout : container --> 
-<div class="row">
-<div class="col-sm-12">
-	<hgroup>
-		<h1><a title="home" href="[##_blog_link_##]">[##_title_##]</a></h1>
-		<h2>[##_desc_##]</h2>
-	</hgroup>
-</div>
-</div>
-</div><!-- /.container -->
-</div><!-- /.wrapper -->
-
-<div class="wrapper"><!-- main layout : wrapper --> 
-<main role="main"  id="content">
-<article role="article" class="hentry">
-<div id="changeFontFamily" class="font-resize"><!-- font utility javascript-->
-
-<!-- Search 
-================================================== -->
-<s_list>
-<div class="container">
-<section class="search-list">
-	<p>'[##_list_conform_##]'에 해당되는 글 [##_list_count_##]건</p>
-	<ol>
-	<s_list_rep>
-	<li>
-	<time class="published" datetime="[##_list_rep_regdate_##]">[##_list_rep_regdate_##]</time>
-	<a href="[##_list_rep_link_##]">[##_list_rep_title_##]</a>
-	<span class="cnt">[##_list_rep_rp_cnt_##]</span>
-	</li>
-	</s_list_rep>
-	</ol>
-</section>
-</div><!-- /.container -->
-</s_list>
-
-<s_rplist>
-<section class="search-list">
-	<p>'[##_rplist_conform_##]'에 해당되는 댓글 [##_rplist_count_##]건</p>    
-	<ol>
-	<s_rplist_rep>
-	<li>
-	<time class="published" datetime="[##_rplist_rep_regdate_##]">[##_rplist_rep_regdate_##]</time>
-	<a href="[##_rplist_rep_link_##]">[##_rplist_rep_body_##]</a>
-	<span class="cnt">[##_rplist_rep_rp_cnt_##]</span>
-	<span class="name">[##_rplist_rep_name_##]</span>
-	</li>
-	</s_rplist_rep>
-	</ol>
-</section>
-</s_rplist>
-
-<!-- Local
-================================================== -->
-<s_local>
-<div class="container">
-<div class="locallog">
-	<h3>Locallog</h3>
-	<s_local_spot_rep>
-	<div class="spot" style="margin-left: [##_local_spot_depth_##]px">[##_local_spot_##]</div>
-	</s_local_spot_rep>
-	<s_local_info_rep>
-	<div class="info" style="margin-left: [##_local_info_depth_##]px"><a href="[##_local_info_link_##]">[##_local_info_title_##]</a></div>
-	</s_local_info_rep>
-</div>
-</div><!-- /.container -->
-</s_local>
-
-<!-- Tag
-================================================== -->
-<s_tag>
-<div class="container">
-<div class="taglog">
-	<h3>Tags</h3>
-	<ul class="inline">
-	<s_tag_rep>
-	<li><a href="[##_tag_link_##]" class="[##_tag_class_##]">[##_tag_name_##]</a></li>
-	</s_tag_rep>
-	</ul>
-</div>
-</div><!-- /.container -->
-</s_tag>
-
-<!-- Media
-================================================== -->
-<s_media>
-<div class="container">
-<div class="medialog">
-	<h3>Medialog</h3>
-	[##_media_content_##]
-</div>
-</div><!-- /.container -->
-</s_media>
-
-<!-- Guestbook
-================================================== -->
-<s_guest>
-<div class="container">
-<div class="guestbook">
-	<h3>Guestbook</h3>
-	<s_guest_input_form>
-	<s_guest_member>
-	<s_guest_form>
-	<form class="form-horizontal">
-	<div class="guestbook-form">
-	<div class="row">
-	<div class="col-sm-6">        
-	<div class="form-group">
-		<label class="control-label" for="inputNAME">NAME</label>
-		<input type="text" class="form-control" id="inputNAME" name="[##_guest_input_name_##]" value="[##_guest_name_##]"> 
-	</div>
-	</div>
-	</div>
-
-	<div class="row">
-	<div class="col-sm-6"> 
-	<div class="form-group">
-		<label class="control-label" for="inputPW">PASSWORD</label>
-		<input type="password" class="form-control" maxlength="10" id="inputPW" name="[##_guest_input_password_##]" value="[##_guest_password_##]">
-	</div>
-	</div>
-	</div>
-
-	<div class="row">
-	<div class="col-sm-6"> 
-	<div class="form-group">
-		<label class="control-label" for="inputURL">URL</label>
-		<input type="text" class="form-control" id="inputURL" name="[##_guest_input_homepage_##]" value="[##_guest_homepage_##]"> 
-	</div>
-	</div>
-	</div>
-	</div><!-- Guestbook : guestbook-form --> 
-		
-	</s_guest_form>
-	</s_guest_member>  
-
-	<div class="row">
-	<div class="col-sm-6">
-	<div class="checkbox">
-		<label class="checkbox" for="secret"><input type="checkbox" id="secret" name="secret"><strong>Secret</strong></label>
-	</div>
-	</div>
-	</div>
-
-	<div class="guestbook-form">
-	<div class="row">
-	<div class="col-sm-8">
-		<textarea name="[##_guest_textarea_body_##]" class="form-control" rows="3"></textarea>
-		<button type="submit" class="btn btn-default btn-lg" value="댓글 달기" onclick="[##_guest_onclick_submit_##]">Submit Comment</button>
-	</div>
-	</div>
-
-	</div><!-- Guestbook : guestbook-form -->
-	</form><!-- Guestbook : form-horizontal -->
-	</s_guest_input_form>
-
-	<s_guest_container>
-	<hr />
-	<ol>
-	<s_guest_rep>
-	<li id='[##_guest_rep_id_##]'>
-	<div class="[##_guest_rep_class_##]">
-		<h4><span class="name">[##_guest_rep_name_##]</span> <small><a href="#" onclick="[##_guest_rep_onclick_delete_##]">modify / delete</a> <a href="#" onclick="[##_guest_rep_onclick_reply_##]">reply</a></small></h4>
-		<time class="published" datetime="[##_guest_rep_date_##]">[##_guest_rep_date_##]</time>
-		<p class="comment-body">[##_guest_rep_desc_##]</p>
-	</div><!-- Guestbook : rep_class -->
-                                
-		<div class="reply">
-		<s_guest_reply_container>
-		<ol>
-		<s_guest_reply_rep>
-			<li id='[##_guest_rep_id_##]'>
-			<div class="[##_guest_rep_class_##]">
-			<h4><small>Reply:</small> <span class="name">[##_guest_rep_name_##]</span> <small><a href="#" onclick="[##_guest_rep_onclick_delete_##]">modify / delete</a></small></h4>
-			<time class="published" datetime="[##_guest_rep_date_##]">[##_guest_rep_date_##]</time>
-			<p class="comment-body">[##_guest_rep_desc_##]</p>
-			</div><!-- Guestbook : rep_class -->
-			</li>
-		</s_guest_reply_rep>
-		</ol>
-		</s_guest_reply_container> 
-		</div><!-- Guestbook : reply -->
-		</li>
-		</s_guest_rep>
-		</ol>
-		</s_guest_container>
-</div>
-</div><!-- /.container -->
-</s_guest>
-
-<!-- Notice
-================================================== -->
-<s_notice_rep>
-<header class="entry-header">
-<div class="container">
-<div class="row"> 
-<div class="col-sm-12">
-	<h1 class="entry-title"><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></h1>
-	<time class="published" datetime="[##_article_rep_date_##]">[##_article_rep_date_##]</time>
-</div><!-- /.col -->
-</div><!-- /.row -->
-</div><!-- /.container -->
-
-<div class="container">
-<div class="row"> 
-<div class="col-sm-9">
-	<p class="byline author vcard">Posted in <strong><a href="[##_blog_link_##]notice">Notice</a></strong>  by <span class="fn">[##_blogger_##]</span></p>
-</div>
-
-<div class="col-sm-3">
-	<div class="responsive-right2left">
-	<div class="btn-group">
-		<button type="button" class="jfontsize-p btn btn-default btn-xs"><i class="icon-plus"></i></button>
-		<button type="button" class="jfontsize-m btn btn-default btn-xs"><i class="icon-minus"></i></button>
-		<div class="btn-group">
-			<button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown">FONT <span class="caret"></span></button>
-			<ul class="dropdown-menu">
-				<li><a href="javascript:changeFontFamily('맑은 고딕, Malgun Gothic, sans-serif');">맑은고딕</a></li>
-				<li><a href="javascript:changeFontFamily('나눔고딕, NanumGothic, sans-serif');">나눔고딕</a></li>
-				<li><a href="javascript:changeFontFamily('다음_Regular, daum_Regular, sans-serif');">다음</a></li>
-				<li><a href="javascript:changeFontFamily('굴림, Gulim, sans-serif');">굴림</a></li>
-				<li><a href="javascript:changeFontFamily('돋움, dotum, sans-serif');">돋움</a></li>
-				<li><a href="javascript:changeFontFamily('바탕, Batang, sans-serif');">바탕</a></li>
-			  	<li><a href="javascript:changeFontFamily('Arial, Helvetica, sans-serif');">Arial</a></li>
-			  	<li><a href="javascript:changeFontFamily('Georgia, serif');">Georgia</a></li>
-			  	<li><a href="javascript:changeFontFamily('Times New Roman, Times, serif');">Times</a><li>
-			  	<li><a href="javascript:changeFontFamily('Comic Sans MS, cursive, sans-serif');">Comic Sans MS</a></li>
-			  	<li><a href="javascript:changeFontFamily('Lucida Console, Monaco, monospace');">Lucida Console</a></li>
-			  	<li><a href="javascript:changeFontFamily('Courier New, Courier, monospace');">Courier New</a></li>
-				<li class="divider"></li>
-				<li><a href="http://markquery.com/docs/web-safe-font/" target="_blank"><small>Web Safe Font</small> <i class="icon-question-sign"></i></a></li>
-			</ul>
-		</div><!-- /.btn-group -->
-	</div><!-- /.btn-group -->
-	</div><!-- /.responsive-right2left -->
-</div><!-- /.col -->
-</div><!-- /.row -->
-</div><!-- /.container -->
-</header>
-	<div class="entry-content">
-	[##_notice_rep_desc_##]
-	</div>
-</s_notice_rep>
-
-<!-- Protected
-================================================== -->
-<s_article_protected>
-<header class="entry-header">
-<div class="container">
-<div class="row"> 
-<div class="col-sm-12">
-	<h1 class="entry-title"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h1>
-	<time class="published" datetime="[##_article_rep_date_##]">[##_article_rep_date_##]</time>
-</div><!-- /.col -->
-</div><!-- /.row -->
-</div><!-- /.container -->
-
-<div class="container">
-<div class="row"> 
-<div class="col-sm-9">
-	<p class="byline author vcard">Posted in <strong><a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></strong>  by <span class="fn">[##_blogger_##]</span></p>
-</div>
-
-<div class="col-sm-3">
-	<div class="responsive-right2left">
-	<div class="btn-group">
-		<button type="button" class="jfontsize-p btn btn-default btn-xs"><i class="icon-plus"></i></button>
-		<button type="button" class="jfontsize-m btn btn-default btn-xs"><i class="icon-minus"></i></button>
-		<div class="btn-group">
-			<button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown">FONT <span class="caret"></span></button>
-			<ul class="dropdown-menu">
-				<li><a href="javascript:changeFontFamily('맑은 고딕, Malgun Gothic, sans-serif');">맑은고딕</a></li>
-				<li><a href="javascript:changeFontFamily('나눔고딕, NanumGothic, sans-serif');">나눔고딕</a></li>
-				<li><a href="javascript:changeFontFamily('다음_Regular, daum_Regular, sans-serif');">다음</a></li>
-				<li><a href="javascript:changeFontFamily('굴림, Gulim, sans-serif');">굴림</a></li>
-				<li><a href="javascript:changeFontFamily('돋움, dotum, sans-serif');">돋움</a></li>
-				<li><a href="javascript:changeFontFamily('바탕, Batang, sans-serif');">바탕</a></li>
-			  	<li><a href="javascript:changeFontFamily('Arial, Helvetica, sans-serif');">Arial</a></li>
-			  	<li><a href="javascript:changeFontFamily('Georgia, serif');">Georgia</a></li>
-			  	<li><a href="javascript:changeFontFamily('Times New Roman, Times, serif');">Times</a><li>
-			  	<li><a href="javascript:changeFontFamily('Comic Sans MS, cursive, sans-serif');">Comic Sans MS</a></li>
-			  	<li><a href="javascript:changeFontFamily('Lucida Console, Monaco, monospace');">Lucida Console</a></li>
-			  	<li><a href="javascript:changeFontFamily('Courier New, Courier, monospace');">Courier New</a></li>
-				<li class="divider"></li>
-				<li><a href="http://markquery.com/docs/web-safe-font/" target="_blank"><small>Web Safe Font</small> <i class="icon-question-sign"></i></a></li>
-			</ul>
-		</div><!-- /.btn-group -->
-	</div><!-- /.btn-group -->
-	</div><!-- /.responsive-right2left -->
-</div><!-- /.col -->
-</div><!-- /.row -->
-</div><!-- /.container -->
-</header>
-
-	<div class="entry-content">
-	<p>보호되어 있는 글입니다. 내용을 보시려면 비밀번호를 입력하세요.</p>
-	<p><label for="[##_article_password_##]">비밀번호 ::</label>
-	<input type="password" maxlength="16" id="[##_article_password_##]" name="[##_article_password_##]" value="" onkeydown="if (event.keyCode == 13)[##_article_dissolve_##]">
-	<input type="button" class="btn" value="submit" onclick="[##_article_dissolve_##]" >
-	</p>
-	</div>
-</s_article_protected>
-
-<!-- Entry
-================================================== -->
-<s_article_rep>
-
-<!-- Entry : header
-================================================== -->      
-<header class="entry-header">
-<div class="container">
-<div class="row"> 
-<div class="col-sm-12">
-	<h1 class="entry-title"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h1>
-	<!-- <h2 class="entry-summary"> the_excerpt </h2> -->
-	<time class="published" datetime="[##_article_rep_date_##]">[##_article_rep_date_##]</time>
-</div><!-- /.col -->
-</div><!-- /.row -->
-</div><!-- /.container -->
-
-<div class="container">
-<div class="row"> 
-<div class="col-sm-9">
-	<p class="byline author vcard">Posted in <a href="[##_article_rep_category_link_##]"><strong>[##_article_rep_category_##]</strong></a> by <span class="fn">[##_blogger_##]</span></p>
-</div>
-
-<div class="col-sm-3">
-	<div class="responsive-right2left">
-	<div class="btn-group">
-		<button type="button" class="jfontsize-p btn btn-default btn-xs"><i class="icon-plus"></i></button>
-		<button type="button" class="jfontsize-m btn btn-default btn-xs"><i class="icon-minus"></i></button>
-		<div class="btn-group">
-			<button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown">FONT <span class="caret"></span></button>
-			<ul class="dropdown-menu">
-				<li><a href="javascript:changeFontFamily('맑은 고딕, Malgun Gothic, sans-serif');">맑은고딕</a></li>
-				<li><a href="javascript:changeFontFamily('나눔고딕, NanumGothic, sans-serif');">나눔고딕</a></li>
-				<li><a href="javascript:changeFontFamily('다음_Regular, daum_Regular, sans-serif');">다음</a></li>
-				<li><a href="javascript:changeFontFamily('굴림, Gulim, sans-serif');">굴림</a></li>
-				<li><a href="javascript:changeFontFamily('돋움, dotum, sans-serif');">돋움</a></li>
-				<li><a href="javascript:changeFontFamily('바탕, Batang, sans-serif');">바탕</a></li>
-			  	<li><a href="javascript:changeFontFamily('Arial, Helvetica, sans-serif');">Arial</a></li>
-			  	<li><a href="javascript:changeFontFamily('Georgia, serif');">Georgia</a></li>
-			  	<li><a href="javascript:changeFontFamily('Times New Roman, Times, serif');">Times</a><li>
-			  	<li><a href="javascript:changeFontFamily('Comic Sans MS, cursive, sans-serif');">Comic Sans MS</a></li>
-			  	<li><a href="javascript:changeFontFamily('Lucida Console, Monaco, monospace');">Lucida Console</a></li>
-			  	<li><a href="javascript:changeFontFamily('Courier New, Courier, monospace');">Courier New</a></li>
-				<li class="divider"></li>
-				<li><a href="http://markquery.com/docs/web-safe-font/" target="_blank"><small>Web Safe Font</small> <i class="icon-question-sign"></i></a></li> 
-			</ul>
-		</div><!-- /.btn-group -->
-	</div><!-- /.btn-group -->
-	</div><!-- /.responsive-right2left -->
-</div><!-- /.col -->
-</div><!-- /.row -->
-</div><!-- /.container -->
-</header>
-
-<!-- Entry : admin 
-================================================== -->
-<s_ad_div>
-<div class="container">
-<div class="row"> 
-<div class="col-sm-12">
-<div class="alert alert-info fade in">
-	<button type="button" class="close" data-dismiss="alert">&times;</button>
-	<a href="[##_s_ad_m_link_##]">수정</a> : <a href="#" onclick="[##_s_ad_m_onclick_##]">수정(창으로)</a> | ([##_s_ad_s1_label_##])→ <a href="#" onclick="[##_s_ad_s2_onclick_##]">[##_s_ad_s2_label_##]</a> | <a href="#" onclick="[##_s_ad_t_onclick_##]">관련글(트랙백)</a> | <a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a>
-</div>
-</div><!-- /.col -->
-</div><!-- /.row -->
-</div><!-- /.container -->
-</s_ad_div>
-
-<!-- Entry : body
-================================================== -->
-<div class="entry-content">
-[##_article_rep_desc_##]
-</div>
-
-<div class="container">
-<div class="row"> 
-<div class="col-sm-12">
-<section class="entry-tags">
-<s_tag_label>
-<i class="icon-tags"></i> [##_tag_label_rep_##]
-</s_tag_label>
-</section>        
-</div><!-- /.col -->
-</div><!-- /.row -->
-</div><!-- /.container -->
-
-
-<!-- Entry : footer -->
-<div class="entry-footer">
-<div class="container">
-<div class="row"> 
-<div class="col-sm-12">
-
-<!-- Entry : footer : actionTrail
-================================================== -->
-<section class="actionTrail">
-<div class="globe-hover-111-555">
-	<p><i class="icon-leaf"></i> <a href="#tb" onclick="[##_article_rep_tb_link_##]"> Trackback</a> <span class="cnt">[##_article_rep_tb_cnt_##]</span> : <i class="icon-comments"></i> <a href="#rp" onclick="[##_article_rep_rp_link_##]"> Comment</a> <span class="cnt"> [##_article_rep_rp_cnt_##]</span> 
-	</p>
-</div>
-</section>
-
-
-<!-- Entry : footer  : trackback
-================================================== -->
-<s_tb>
-<section class="trackback">
-	<p>[##_tb_address_##]</p>
-	<s_tb_container>
-	<ol>
-	<s_tb_rep>
-		<li id="[##_tb_rep_id_##]">
-		<h4><small>Subject:</small> <span class="name"><a href="[##_tb_rep_url_##]" onclick="window.open(this.href); return false" rel="external nofollow">[##_tb_rep_title_##]</a></span></h4>
-		<p>Tracked from <strong>[##_tb_rep_site_##]</strong>
-		<time class="published" datetime="[##_tb_rep_date_##]">[##_tb_rep_date_##]</time>
-		<a href="#void" onclick="[##_tb_rep_onclick_delete_##]; return false" >&nbsp;delete</a></p>
-		<p>[##_tb_rep_desc_##]</p>
-		</li>
-	</s_tb_rep>
-	</ol>
-	</s_tb_container>
-</section>
-</s_tb>
-
-<!-- Entry : footer  : comment
-================================================== -->
-<s_rp>   
-<section class="comment">
-	<s_rp_container>
-	<ol>
-	<s_rp_rep>
-		<li id="[##_rp_rep_id_##]">
-		<div class="[##_rp_rep_class_##]">
-		<h4><span class="name">[##_rp_rep_name_##]</span>
-		 <small><a href="[##_rp_rep_link_##]">address</a> <a href="#" onclick="[##_rp_rep_onclick_delete_##]">modify / delete</a> <a href="#" onclick="[##_rp_rep_onclick_reply_##]">reply</a></small></h4>
-		<time class="published" datetime="[##_rp_rep_date_##]">[##_rp_rep_date_##]</time>
-		<p class="comment-body">[##_rp_rep_desc_##]</p>
-		</div>
-			<div class="reply">
-			<s_rp2_container>
-			<ol>
-			<s_rp2_rep>
-			<li id="[##_rp_rep_id_##]">
-			<div class="[##_rp_rep_class_##]">
-				<h4><small>Reply:</small> <span class="name">[##_rp_rep_name_##]</span> <small><a href="[##_rp_rep_link_##]">address</a> <a href="#" onclick="[##_rp_rep_onclick_delete_##]">modify / delete</a> <a href="#" onclick="[##_rp_rep_onclick_reply_##]">reply</a></small></h4>
-				<time class="published" datetime="[##_rp_rep_date_##]">[##_rp_rep_date_##]</time>
-				<p class="comment-body">[##_rp_rep_desc_##]</p>
-			</div>
-			</li>
-			</s_rp2_rep>
-			</ol>
-			</s_rp2_container>
-			</div><!-- Entry : footer : comment : reply -->
-		</li>
-	</s_rp_rep>
-	</ol>
-	</s_rp_container>
-
-<!-- Entry : footer  : comment form
-================================================== -->  
-<s_rp_input_form>
-<s_rp_member>
-<s_rp_guest>
-	<form class="form-horizontal">
-	<div class="comment-form">
-	<div class="row">
-	<div class="col-sm-6">
-		<div class="form-group">
-		<label class="control-label" for="inputNAME">NAME</label>
-		<input type="text" class="form-control" id="inputNAME" name="[##_rp_input_name_##]" value="[##_guest_name_##]">
-		</div>
-	</div>
-	</div>
-
-	<div class="row">
-	<div class="col-sm-6">
-	<div class="form-group">
-		<label class="control-label" for="inputPW">PASSWORD</label>
-		<input type="password" class="form-control" maxlength="10" id="inputPW" name="[##_rp_input_password_##]" value="[##_rp_admin_check_##]">
-	</div>
-	</div>
-	</div>
-
-	<div class="row">
-	<div class="col-sm-6">
-	<div class="form-group">
-		<label class="control-label" for="inputURL">URL</label>
-		<input type="text" class="form-control" id="inputURL" name="[##_rp_input_homepage_##]" value="[##_guest_homepage_##]">
-		</div>
-	</div>
-	</div>
-	</div><!-- Entry : footer : comment-form -->
-  
-</s_rp_guest>
-
-	<div class="row">
-	<div class="col-sm-6">
-	<div class="checkbox">
-		<label class="checkbox" for="secret"><input type="checkbox" name="[##_rp_input_is_secret_##]"><strong>Secret</strong></label>
-	</div>
-	</div>
-	</div>
-
-</s_rp_member>
-	<div class="comment-form">
-	<div class="row">
-	<div class="col-sm-8">
-		<textarea name="[##_rp_input_comment_##]" class="form-control" rows="3"></textarea>
-		<button type="submit" class="btn btn-default btn-lg" value="댓글 달기" onclick="[##_rp_onclick_submit_##]" >Submit Comment</button>
-	</div>
-	</div>
-	</div><!-- Entry : footer : comment-form -->
-	</form><!-- Entry : footer : form-horizontal -->
-</s_rp_input_form>
-
-</section><!-- Entry : footer : comment -->
-</s_rp>
-		
-</div><!-- /.col -->
-</div><!-- /.row -->
-</div><!-- /.container -->
-</div><!-- Entry : footer -->
-
-</s_article_rep>
-
-<!-- Paging
-================================================== -->  
-<div class="container">
-<div class="row"> 
-<div class="col-sm-12">
-<section>
-<s_paging>
-	<ul class="pagination">
-	<li><a [##_prev_page_##] class="[##_no_more_prev_##]" id="prevPage">&laquo;</a></li>
-	<s_paging_rep>
-	<li><a [##_paging_rep_link_##]>[##_paging_rep_link_num_##]</a></li>
-	</s_paging_rep>
-	<li><a [##_next_page_##] class="[##_no_more_next_##]" id="nextPage">&raquo;</a></li>
-	</ul>
-</s_paging>
-</section>
-</div><!-- /.col -->
-</div><!-- /.row -->
-</div><!-- /.container -->
-
-	</div><!-- font utility -->
-</article>
-
-<div class="container"><!-- main layout : widget container -->
-<div class="row"><!-- main layout : widget row -->
-<div class="col-sm-12"><!-- main layout : widget column -->
-<aside role="complementary">
-<s_sidebar>
-
-	<div class="row">
-	<s_sidebar_element>
-	<!-- catetories -->
-	<div class="col-sm-4">
-	<section class="widget">
-	<div class="widget-inner">
-	<h3>Categories</h3>
-	[##_category_list_##]
-	</div>
-	</section>
-	</div>
-	</s_sidebar_element>
-
-
-	<s_sidebar_element>
-	<!-- Recent atricle -->
-	<div class="col-sm-4">
-	<section class="widget">
-	<div class="widget-feed-inner">
-	<h3>Recent Articles</h3>
-	<div class="widget-feed"></div>
-	</div>
-	</section>
-	</div>
-	</s_sidebar_element>
-
-	<s_sidebar_element>
-	<!-- Recent atricle(default) -->
-	<div class="col-sm-4">
-	<section class="widget">
-	<div class="widget-inner">
-	<h3>Recent Articles(default)</h3>
-	<ul>
-	<s_rctps_rep>
-	<li>
-	<a href="[##_rctps_rep_link_##]"> [##_rctps_rep_title_##]. <span class="cnt">[##_rctps_rep_rp_cnt_##]</span></a> 
-	</li>
-	</s_rctps_rep>
-	</ul>
-	</div>
-	</section>
-	</div>
-	</s_sidebar_element>
-
-	<s_sidebar_element>
-	<!-- Recent comment -->
-	<div class="col-sm-4">
-	<section class="widget">
-	<div class="widget-inner">
-	<h3>Recent Comments</h3>
-	<ul>
-	<s_rctrp_rep>
-	<li>
-	<a href="[##_rctrp_rep_link_##]">[##_rctrp_rep_desc_##]. <span class="cnt">by [##_rctrp_rep_name_##]</span></a>
-	</li>
-	</s_rctrp_rep>
-	</ul>                         
-	</div>
-	</section>
-	</div>
-	</s_sidebar_element>
-
-	<s_sidebar_element>
-	<!-- Recent Trackback -->
-	<div class="col-sm-4">
-	<section class="widget">
-	<div class="widget-inner">
-	<h3>Recent Trackbacks</h3>
-	<ul>
-	<s_rcttb_rep>
-	<li>
-	<a href="[##_rcttb_rep_link_##]">[##_rcttb_rep_desc_##]. 
-	<br>[##_rcttb_rep_name_##] <time datetime="[##_rcttb_rep_time_##]">[##_rcttb_rep_time_##]</time>
-	</a>
-	</li>
-	</s_rcttb_rep>
-	</ul>
-	</div>
-	</section>
-	</div>
-	</s_sidebar_element>
-
-	<s_sidebar_element>
-	<!-- Notice list -->
-	<s_rct_notice>
-	<div class="col-sm-4">
-	<section class="widget">
-	<div class="widget-inner">
-	<h3>Notice</h3>
-	<ul>
-	<s_rct_notice_rep>
-	<li><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a> </li>
-	</s_rct_notice_rep>
-	</ul>
-	</div>
-	</section>
-	</div>
-	</s_rct_notice>
-	</s_sidebar_element>
-
-	 <s_sidebar_element>
-	 <!-- Global tags -->
-	<div class="col-sm-4">
-	<section class="widget">
-	<div class="widget-inner">
-	<h3>Tag List</h3>
-	<ul>
-	<s_random_tags>
-	<li> <a href="[##_tag_link_##]" class="[##_tag_class_##]"><span class="label label-default"> [##_tag_name_##]</span></a></li>
-	</s_random_tags>
-	</ul>
-	</div>
-	</section>
-	</div>
-	</s_sidebar_element>
-
-	 <s_sidebar_element>
-	 <!-- Links -->
-	<div class="col-sm-4">
-	<section class="widget">
-	<div class="widget-inner">
-	<h3>Links</h3>
-	<ul>
-	<s_link_rep>
-	<li><a href="[##_link_url_##]">[##_link_site_##]</a></li>
-	</s_link_rep>
-	</ul>
-	</div>
-	</section>
-	</div>
-	</s_sidebar_element>
-
-	</div><!-- /.row -->
-</s_sidebar>
-</aside>
-</div><!-- main layout : widget /.column -->
-</div><!-- main layout : widget /.row -->
-
-</main>
-</div><!-- main layout : /.wrapper -->
-
-<div class="wrapper skeleton-footer">
-<div class="container">
-<footer role="contentinfo">
-	<div class="source-org vcard copyright">
-		<!-- Your Footer Here / http://microformats.org/profile/hcard-->
-		<div class="row">
-		<div class="col-xs-12">
-		<ul class="license-links">
-		<li>Copyright &copy; 2013 <a class="org fn url" href="#" target="_blank">your brand</a></li>
-		<li>company.</li>
-		<li>Terms Privacy</li>
-		<li>Security</li>
-		<li>Contact</li>		
-		<li>Total : [##_count_total_##]</li>
-		<li>Today : [##_count_today_##]</li>
-		<li>Yesterday : [##_count_yesterday_##]</li>
-		<li><a title="rss" href="[##_rss_url_##]">RSS</a></li>
-		<li><a title="local" href="[##_localog_link_##]">Localog</a></li>
-		<li><a title="tags" href="[##_taglog_link_##]">Tags</a></li>
-		<li><a title="admin" href="[##_owner_url_##]">Admin</a></li>
-		</ul>
-		</div>
-		</div>
-
-		<!-- MARKQUERY AND OPENSOURCES LICENSE -->
-		<div class="row">
-		<div class="col-xs-12">
-		<ul class="license-links">
-		<li>Customize Your Contents <a title="go to markquery" href="http://markquery.com/" target="_blank">마크쿼리</a> Project maintained  by <a title ="go to github project" href="https://github.com/markquery/">Ungki, H</a></li>
-		<li class="text-muted">&middot;</li>
-		<li>Hosted by <a title="go to daum" href="http://daum.net/" target="_blank">Daum</a></li>
-		<li class="text-muted">&middot;</li>
-		<li>Powered by <a title="go to tistory" href="http://tistory.com/" target="_blank">Tistory</a></li>
-		<li class="text-muted">&middot;</li>
-		<li>Based on <a title="go to bootstrap" href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
-		<li class="text-muted">&middot;</li>
-		<li><a title="go to less" href="http://lesscss.org/" target="_blank">Less</a></li>
-		<li class="text-muted">&middot;</li>
-		<li><a title="go to coffeescript" href="http://coffeescript.org/" target="_blank">CoffeeScript</a></li>
-		<li class="text-muted">&middot;</li>
-		<li>etc.</li>
-		<li class="text-muted">&middot;</li>
-		<li><a title="go to about" href="http://markquery.github.io/license/" target="_blank">About</a></li> 
-		</ul>
-		</div>
-		</div>
-	</div><!-- /.vcard microformats -->
-</footer>
-</div>
-</div>
-
-<a href="#" class="scrollup">Back to Top <i class="icon-arrow-up"></i></a>
-
-<!-- jQuery -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="./images/jquery-1.10.1.min.js"><\/script>')</script>
-<!-- javascripts -->
-<script src="./images/modernizr-2.6.2.min.js"></script>
-<script src="./images/bootstrap.js"></script>
-<script src="./images/script.js"></script>
-<script src="./images/rss.js"></script>
-<script src="./images/fontsize.js"></script>
-<!-- get recent article included thumbnail -->
-<script>
-   jQuery(function($) {
-        $(".widget-feed").rss("http://markquery.com/feed", {
-          limit: 5,
-          effect: 'slideFast',
-          layoutTemplate: '<ul class=\"media-list\">{entries}</ul>',
-            entryTemplate: '<li class=\"media\"><a class=\"pull-left\" href=\"{url}\"><img class=\"media-object media-thumbnail\" src=\"{teaserImageUrl}\"></a><div class=\"media-body\"><h4 class=\"media-heading\"><a href=\"{url}\">{title}</a></h4></div></li>'
-        })
-      })
-</script>
-<script language="JavaScript">function changeFontFamily(fontFam){document.getElementById("changeFontFamily").style.fontFamily=fontFam;}</script>
-</s_t3>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="[##_desc_##]">
+        <meta name="keywords" content="your, site, keyowrd, here">
+        <meta name="author" content="[##_blogger_##]">
+
+        <meta property="og:site_name" content="[##_title_##]">
+        <meta property="og:title" content="[##_page_title_##]">
+        <meta property="og:description" content="[##_desc_##]">
+        <meta property="og:image" content="[##_image_##]">
+
+        <title>[##_page_title_##] | [##_title_##]</title>
+
+        <link rel="author" href="./images/humans.txt">
+        <link rel="profile" href="http://microformats.org/profile/hcard">
+        <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]">
+
+        <link href="./images/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" media="screen" type="text/css" href="./style.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+
+        <link rel="shortcut icon" href="[##_blog_link_##]favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="./images/apple-touch-icon-57x57-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./images/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./images/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./images/apple-touch-icon-144x144-precomposed.png">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script async src="./images/html5shiv.js"></script>
+            <link href="./images/ie.css" rel="stylesheet">
+            <script>document.createElement('main');</script>
+        <![endif]-->
+
+        <!--[if IE 7]>
+          <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.min.css" rel="stylesheet">
+        <![endif]-->
+    </head>
+
+    <body>
+    <s_t3>
+        <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <a href="#content" class="sr-only">skip to content</a>
+
+        <header class="navbar navbar-fixed-top navbar-default" role="banner">
+            <div class="container skeleton-nav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="[##_blog_link_##]">HOME</a>
+                </div>
+                <nav class="collapse navbar-collapse" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li typeof="sioc:Page" about="[##_blog_link_##]category/"><a property="dc:title" href="[##_blog_link_##]category/">category 1</a></li>
+                        <li typeof="sioc:Page" about="[##_blog_link_##]category/"><a property="dc:title" href="[##_blog_link_##]category/">category 2</a></li>
+                        <li typeof="sioc:Page" about="[##_guestbook_link_##]"><a property="dc:title" href="[##_guestbook_link_##]">GuestBook</a></li>
+                        <li>
+                        <s_sidebar_element>
+                            <s_search>
+                                <!-- Search -->
+                                <form class="navbar-form">
+                                    <input role="search" type="text" class="form-control" placeholder="Search" name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }">
+                                </form>
+                            </s_search>
+                        </s_sidebar_element>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="wrapper skeleton-header"><!-- header layout : wrapper -->
+            <div class="container"><!-- header layout : container -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <hgroup>
+                            <h1><a title="home" href="[##_blog_link_##]">[##_title_##]</a></h1>
+                            <h2>[##_desc_##]</h2>
+                        </hgroup>
+                    </div>
+                </div>
+            </div><!-- /.container -->
+        </div><!-- /.wrapper -->
+
+        <div class="wrapper"><!-- main layout : wrapper -->
+            <main role="main"  id="content">
+                <article role="article" class="hentry">
+                    <div id="changeFontFamily" class="font-resize"><!-- font utility javascript-->
+
+                        <!-- Search
+                        ================================================== -->
+                        <s_list>
+                            <div class="container">
+                                <section class="search-list">
+                                    <p>'[##_list_conform_##]'에 해당되는 글 [##_list_count_##]건</p>
+                                    <ol>
+                                        <s_list_rep>
+                                            <li>
+                                                <time class="published" datetime="[##_list_rep_regdate_##]">[##_list_rep_regdate_##]</time>
+                                                <a href="[##_list_rep_link_##]">[##_list_rep_title_##]</a>
+                                                <span class="cnt">[##_list_rep_rp_cnt_##]</span>
+                                            </li>
+                                        </s_list_rep>
+                                    </ol>
+                                </section>
+                            </div><!-- /.container -->
+                        </s_list>
+
+                        <s_rplist>
+                            <section class="search-list">
+                                <p>'[##_rplist_conform_##]'에 해당되는 댓글 [##_rplist_count_##]건</p>
+                                <ol>
+                                    <s_rplist_rep>
+                                        <li>
+                                            <time class="published" datetime="[##_rplist_rep_regdate_##]">[##_rplist_rep_regdate_##]</time>
+                                            <a href="[##_rplist_rep_link_##]">[##_rplist_rep_body_##]</a>
+                                            <span class="cnt">[##_rplist_rep_rp_cnt_##]</span>
+                                            <span class="name">[##_rplist_rep_name_##]</span>
+                                        </li>
+                                    </s_rplist_rep>
+                                </ol>
+                            </section>
+                        </s_rplist>
+
+                        <!-- Local
+                        ================================================== -->
+                        <s_local>
+                            <div class="container">
+                                <div class="locallog">
+                                    <h3>Locallog</h3>
+                                    <s_local_spot_rep>
+                                        <div class="spot" style="margin-left: [##_local_spot_depth_##]px">[##_local_spot_##]</div>
+                                    </s_local_spot_rep>
+                                    <s_local_info_rep>
+                                        <div class="info" style="margin-left: [##_local_info_depth_##]px"><a href="[##_local_info_link_##]">[##_local_info_title_##]</a></div>
+                                    </s_local_info_rep>
+                                </div>
+                            </div><!-- /.container -->
+                        </s_local>
+
+                        <!-- Tag
+                        ================================================== -->
+                        <s_tag>
+                            <div class="container">
+                                <div class="taglog">
+                                    <h3>Tags</h3>
+                                    <ul class="inline">
+                                        <s_tag_rep>
+                                            <li><a href="[##_tag_link_##]" class="[##_tag_class_##]">[##_tag_name_##]</a></li>
+                                        </s_tag_rep>
+                                    </ul>
+                                </div>
+                            </div><!-- /.container -->
+                        </s_tag>
+
+                        <!-- Media
+                        ================================================== -->
+                        <s_media>
+                            <div class="container">
+                                <div class="medialog">
+                                    <h3>Medialog</h3>
+                                    [##_media_content_##]
+                                </div>
+                            </div><!-- /.container -->
+                        </s_media>
+
+                        <!-- Guestbook
+                        ================================================== -->
+                        <s_guest>
+                            <div class="container">
+                                <div class="guestbook">
+                                    <h3>Guestbook</h3>
+                                    <s_guest_input_form>
+                                        <s_guest_member>
+                                            <s_guest_form>
+                                                <form class="form-horizontal">
+                                                    <div class="guestbook-form">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label class="control-label" for="inputNAME">NAME</label>
+                                                                    <input type="text" class="form-control" id="inputNAME" name="[##_guest_input_name_##]" value="[##_guest_name_##]">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label class="control-label" for="inputPW">PASSWORD</label>
+                                                                    <input type="password" class="form-control" maxlength="10" id="inputPW" name="[##_guest_input_password_##]" value="[##_guest_password_##]">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label class="control-label" for="inputURL">URL</label>
+                                                                    <input type="text" class="form-control" id="inputURL" name="[##_guest_input_homepage_##]" value="[##_guest_homepage_##]">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- Guestbook : guestbook-form -->
+
+                                            </s_guest_form>
+                                        </s_guest_member>
+
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="checkbox">
+                                                    <label class="checkbox" for="secret"><input type="checkbox" id="secret" name="secret"><strong>Secret</strong></label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="guestbook-form">
+                                            <div class="row">
+                                                <div class="col-sm-8">
+                                                    <textarea name="[##_guest_textarea_body_##]" class="form-control" rows="3"></textarea>
+                                                    <button type="submit" class="btn btn-default btn-lg" value="댓글 달기" onclick="[##_guest_onclick_submit_##]">Submit Comment</button>
+                                                </div>
+                                            </div>
+
+                                        </div><!-- Guestbook : guestbook-form -->
+                                        </form><!-- Guestbook : form-horizontal -->
+                                    </s_guest_input_form>
+
+                                    <s_guest_container>
+                                        <hr />
+                                        <ol>
+                                            <s_guest_rep>
+                                                <li id='[##_guest_rep_id_##]'>
+                                                    <div class="[##_guest_rep_class_##]">
+                                                        <h4><span class="name">[##_guest_rep_name_##]</span> <small><a href="#" onclick="[##_guest_rep_onclick_delete_##]">modify / delete</a> <a href="#" onclick="[##_guest_rep_onclick_reply_##]">reply</a></small></h4>
+                                                        <time class="published" datetime="[##_guest_rep_date_##]">[##_guest_rep_date_##]</time>
+                                                        <p class="comment-body">[##_guest_rep_desc_##]</p>
+                                                    </div><!-- Guestbook : rep_class -->
+
+                                                    <div class="reply">
+                                                        <s_guest_reply_container>
+                                                            <ol>
+                                                                <s_guest_reply_rep>
+                                                                    <li id='[##_guest_rep_id_##]'>
+                                                                        <div class="[##_guest_rep_class_##]">
+                                                                            <h4><small>Reply:</small> <span class="name">[##_guest_rep_name_##]</span> <small><a href="#" onclick="[##_guest_rep_onclick_delete_##]">modify / delete</a></small></h4>
+                                                                            <time class="published" datetime="[##_guest_rep_date_##]">[##_guest_rep_date_##]</time>
+                                                                            <p class="comment-body">[##_guest_rep_desc_##]</p>
+                                                                        </div><!-- Guestbook : rep_class -->
+                                                                    </li>
+                                                                </s_guest_reply_rep>
+                                                            </ol>
+                                                        </s_guest_reply_container>
+                                                    </div><!-- Guestbook : reply -->
+                                                </li>
+                                            </s_guest_rep>
+                                        </ol>
+                                    </s_guest_container>
+                                </div>
+                            </div><!-- /.container -->
+                        </s_guest>
+
+                        <!-- Notice
+                        ================================================== -->
+                        <s_notice_rep>
+                            <header class="entry-header">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h1 class="entry-title"><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></h1>
+                                            <time class="published" datetime="[##_article_rep_date_##]">[##_article_rep_date_##]</time>
+                                        </div><!-- /.col -->
+                                    </div><!-- /.row -->
+                                </div><!-- /.container -->
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-9">
+                                            <p class="byline author vcard">Posted in <strong><a href="[##_blog_link_##]notice">Notice</a></strong>  by <span class="fn">[##_blogger_##]</span></p>
+                                        </div>
+
+                                        <div class="col-sm-3">
+                                            <div class="responsive-right2left">
+                                                <div class="btn-group">
+                                                    <button type="button" class="jfontsize-p btn btn-default btn-xs"><i class="icon-plus"></i></button>
+                                                    <button type="button" class="jfontsize-m btn btn-default btn-xs"><i class="icon-minus"></i></button>
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown">FONT <span class="caret"></span></button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="javascript:changeFontFamily('맑은 고딕, Malgun Gothic, sans-serif');">맑은고딕</a></li>
+                                                            <li><a href="javascript:changeFontFamily('나눔고딕, NanumGothic, sans-serif');">나눔고딕</a></li>
+                                                            <li><a href="javascript:changeFontFamily('다음_Regular, daum_Regular, sans-serif');">다음</a></li>
+                                                            <li><a href="javascript:changeFontFamily('굴림, Gulim, sans-serif');">굴림</a></li>
+                                                            <li><a href="javascript:changeFontFamily('돋움, dotum, sans-serif');">돋움</a></li>
+                                                            <li><a href="javascript:changeFontFamily('바탕, Batang, sans-serif');">바탕</a></li>
+                                                            <li><a href="javascript:changeFontFamily('Arial, Helvetica, sans-serif');">Arial</a></li>
+                                                            <li><a href="javascript:changeFontFamily('Georgia, serif');">Georgia</a></li>
+                                                            <li><a href="javascript:changeFontFamily('Times New Roman, Times, serif');">Times</a><li>
+                                                            <li><a href="javascript:changeFontFamily('Comic Sans MS, cursive, sans-serif');">Comic Sans MS</a></li>
+                                                            <li><a href="javascript:changeFontFamily('Lucida Console, Monaco, monospace');">Lucida Console</a></li>
+                                                            <li><a href="javascript:changeFontFamily('Courier New, Courier, monospace');">Courier New</a></li>
+                                                            <li class="divider"></li>
+                                                            <li><a href="http://markquery.com/docs/web-safe-font/" target="_blank"><small>Web Safe Font</small> <i class="icon-question-sign"></i></a></li>
+                                                        </ul>
+                                                    </div><!-- /.btn-group -->
+                                                </div><!-- /.btn-group -->
+                                            </div><!-- /.responsive-right2left -->
+                                        </div><!-- /.col -->
+                                    </div><!-- /.row -->
+                                </div><!-- /.container -->
+                            </header>
+                            <div class="entry-content">
+                                [##_notice_rep_desc_##]
+                            </div>
+                        </s_notice_rep>
+
+                        <!-- Protected
+                        ================================================== -->
+                        <s_article_protected>
+                            <header class="entry-header">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h1 class="entry-title"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h1>
+                                            <time class="published" datetime="[##_article_rep_date_##]">[##_article_rep_date_##]</time>
+                                        </div><!-- /.col -->
+                                    </div><!-- /.row -->
+                                </div><!-- /.container -->
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-9">
+                                            <p class="byline author vcard">Posted in <strong><a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></strong>  by <span class="fn">[##_blogger_##]</span></p>
+                                        </div>
+
+                                        <div class="col-sm-3">
+                                            <div class="responsive-right2left">
+                                                <div class="btn-group">
+                                                    <button type="button" class="jfontsize-p btn btn-default btn-xs"><i class="icon-plus"></i></button>
+                                                    <button type="button" class="jfontsize-m btn btn-default btn-xs"><i class="icon-minus"></i></button>
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown">FONT <span class="caret"></span></button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="javascript:changeFontFamily('맑은 고딕, Malgun Gothic, sans-serif');">맑은고딕</a></li>
+                                                            <li><a href="javascript:changeFontFamily('나눔고딕, NanumGothic, sans-serif');">나눔고딕</a></li>
+                                                            <li><a href="javascript:changeFontFamily('다음_Regular, daum_Regular, sans-serif');">다음</a></li>
+                                                            <li><a href="javascript:changeFontFamily('굴림, Gulim, sans-serif');">굴림</a></li>
+                                                            <li><a href="javascript:changeFontFamily('돋움, dotum, sans-serif');">돋움</a></li>
+                                                            <li><a href="javascript:changeFontFamily('바탕, Batang, sans-serif');">바탕</a></li>
+                                                            <li><a href="javascript:changeFontFamily('Arial, Helvetica, sans-serif');">Arial</a></li>
+                                                            <li><a href="javascript:changeFontFamily('Georgia, serif');">Georgia</a></li>
+                                                            <li><a href="javascript:changeFontFamily('Times New Roman, Times, serif');">Times</a><li>
+                                                            <li><a href="javascript:changeFontFamily('Comic Sans MS, cursive, sans-serif');">Comic Sans MS</a></li>
+                                                            <li><a href="javascript:changeFontFamily('Lucida Console, Monaco, monospace');">Lucida Console</a></li>
+                                                            <li><a href="javascript:changeFontFamily('Courier New, Courier, monospace');">Courier New</a></li>
+                                                            <li class="divider"></li>
+                                                            <li><a href="http://markquery.com/docs/web-safe-font/" target="_blank"><small>Web Safe Font</small> <i class="icon-question-sign"></i></a></li>
+                                                        </ul>
+                                                    </div><!-- /.btn-group -->
+                                                </div><!-- /.btn-group -->
+                                            </div><!-- /.responsive-right2left -->
+                                        </div><!-- /.col -->
+                                    </div><!-- /.row -->
+                                </div><!-- /.container -->
+                            </header>
+
+                            <div class="entry-content">
+                                <p>보호되어 있는 글입니다. 내용을 보시려면 비밀번호를 입력하세요.</p>
+                                <p><label for="[##_article_password_##]">비밀번호 ::</label>
+                                    <input type="password" maxlength="16" id="[##_article_password_##]" name="[##_article_password_##]" value="" onkeydown="if (event.keyCode == 13)[##_article_dissolve_##]">
+                                    <input type="button" class="btn" value="submit" onclick="[##_article_dissolve_##]" >
+                                </p>
+                            </div>
+                        </s_article_protected>
+
+                        <!-- Entry
+                        ================================================== -->
+                        <s_article_rep>
+
+                            <!-- Entry : header
+                            ================================================== -->
+                            <header class="entry-header">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h1 class="entry-title"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h1>
+                                            <!-- <h2 class="entry-summary"> the_excerpt </h2> -->
+                                            <time class="published" datetime="[##_article_rep_date_##]">[##_article_rep_date_##]</time>
+                                        </div><!-- /.col -->
+                                    </div><!-- /.row -->
+                                </div><!-- /.container -->
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-9">
+                                            <p class="byline author vcard">Posted in <a href="[##_article_rep_category_link_##]"><strong>[##_article_rep_category_##]</strong></a> by <span class="fn">[##_blogger_##]</span></p>
+                                        </div>
+
+                                        <div class="col-sm-3">
+                                            <div class="responsive-right2left">
+                                                <div class="btn-group">
+                                                    <button type="button" class="jfontsize-p btn btn-default btn-xs"><i class="icon-plus"></i></button>
+                                                    <button type="button" class="jfontsize-m btn btn-default btn-xs"><i class="icon-minus"></i></button>
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown">FONT <span class="caret"></span></button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="javascript:changeFontFamily('맑은 고딕, Malgun Gothic, sans-serif');">맑은고딕</a></li>
+                                                            <li><a href="javascript:changeFontFamily('나눔고딕, NanumGothic, sans-serif');">나눔고딕</a></li>
+                                                            <li><a href="javascript:changeFontFamily('다음_Regular, daum_Regular, sans-serif');">다음</a></li>
+                                                            <li><a href="javascript:changeFontFamily('굴림, Gulim, sans-serif');">굴림</a></li>
+                                                            <li><a href="javascript:changeFontFamily('돋움, dotum, sans-serif');">돋움</a></li>
+                                                            <li><a href="javascript:changeFontFamily('바탕, Batang, sans-serif');">바탕</a></li>
+                                                            <li><a href="javascript:changeFontFamily('Arial, Helvetica, sans-serif');">Arial</a></li>
+                                                            <li><a href="javascript:changeFontFamily('Georgia, serif');">Georgia</a></li>
+                                                            <li><a href="javascript:changeFontFamily('Times New Roman, Times, serif');">Times</a><li>
+                                                            <li><a href="javascript:changeFontFamily('Comic Sans MS, cursive, sans-serif');">Comic Sans MS</a></li>
+                                                            <li><a href="javascript:changeFontFamily('Lucida Console, Monaco, monospace');">Lucida Console</a></li>
+                                                            <li><a href="javascript:changeFontFamily('Courier New, Courier, monospace');">Courier New</a></li>
+                                                            <li class="divider"></li>
+                                                            <li><a href="http://markquery.com/docs/web-safe-font/" target="_blank"><small>Web Safe Font</small> <i class="icon-question-sign"></i></a></li>
+                                                        </ul>
+                                                    </div><!-- /.btn-group -->
+                                                </div><!-- /.btn-group -->
+                                            </div><!-- /.responsive-right2left -->
+                                        </div><!-- /.col -->
+                                    </div><!-- /.row -->
+                                </div><!-- /.container -->
+                            </header>
+
+                            <!-- Entry : admin
+                            ================================================== -->
+                            <s_ad_div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="alert alert-info fade in">
+                                                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                                <a href="[##_s_ad_m_link_##]">수정</a> : <a href="#" onclick="[##_s_ad_m_onclick_##]">수정(창으로)</a> | ([##_s_ad_s1_label_##])→ <a href="#" onclick="[##_s_ad_s2_onclick_##]">[##_s_ad_s2_label_##]</a> | <a href="#" onclick="[##_s_ad_t_onclick_##]">관련글(트랙백)</a> | <a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a>
+                                            </div>
+                                        </div><!-- /.col -->
+                                    </div><!-- /.row -->
+                                </div><!-- /.container -->
+                            </s_ad_div>
+
+                            <!-- Entry : body
+                            ================================================== -->
+                            <div class="entry-content">
+                                [##_article_rep_desc_##]
+                            </div>
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <section class="entry-tags">
+                                            <s_tag_label>
+                                                <i class="icon-tags"></i> [##_tag_label_rep_##]
+                                            </s_tag_label>
+                                        </section>
+                                    </div><!-- /.col -->
+                                </div><!-- /.row -->
+                            </div><!-- /.container -->
+
+
+                            <!-- Entry : footer -->
+                            <div class="entry-footer">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+
+                                            <!-- Entry : footer : actionTrail
+                                            ================================================== -->
+                                            <section class="actionTrail">
+                                                <div class="globe-hover-111-555">
+                                                    <p><i class="icon-leaf"></i> <a href="#tb" onclick="[##_article_rep_tb_link_##]"> Trackback</a> <span class="cnt">[##_article_rep_tb_cnt_##]</span> : <i class="icon-comments"></i> <a href="#rp" onclick="[##_article_rep_rp_link_##]"> Comment</a> <span class="cnt"> [##_article_rep_rp_cnt_##]</span>
+                                                    </p>
+                                                </div>
+                                            </section>
+
+
+                                            <!-- Entry : footer  : trackback
+                                            ================================================== -->
+                                            <s_tb>
+                                                <section class="trackback">
+                                                    <p>[##_tb_address_##]</p>
+                                                    <s_tb_container>
+                                                        <ol>
+                                                            <s_tb_rep>
+                                                                <li id="[##_tb_rep_id_##]">
+                                                                    <h4><small>Subject:</small> <span class="name"><a href="[##_tb_rep_url_##]" onclick="window.open(this.href); return false" rel="external nofollow">[##_tb_rep_title_##]</a></span></h4>
+                                                                    <p>Tracked from <strong>[##_tb_rep_site_##]</strong>
+                                                                        <time class="published" datetime="[##_tb_rep_date_##]">[##_tb_rep_date_##]</time>
+                                                                        <a href="#void" onclick="[##_tb_rep_onclick_delete_##]; return false" >&nbsp;delete</a></p>
+                                                                    <p>[##_tb_rep_desc_##]</p>
+                                                                </li>
+                                                            </s_tb_rep>
+                                                        </ol>
+                                                    </s_tb_container>
+                                                </section>
+                                            </s_tb>
+
+                                            <!-- Entry : footer  : comment
+                                            ================================================== -->
+                                            <s_rp>
+                                                <section class="comment">
+                                                    <s_rp_container>
+                                                        <ol>
+                                                            <s_rp_rep>
+                                                                <li id="[##_rp_rep_id_##]">
+                                                                    <div class="[##_rp_rep_class_##]">
+                                                                        <h4><span class="name">[##_rp_rep_name_##]</span>
+                                                                            <small><a href="[##_rp_rep_link_##]">address</a> <a href="#" onclick="[##_rp_rep_onclick_delete_##]">modify / delete</a> <a href="#" onclick="[##_rp_rep_onclick_reply_##]">reply</a></small></h4>
+                                                                        <time class="published" datetime="[##_rp_rep_date_##]">[##_rp_rep_date_##]</time>
+                                                                        <p class="comment-body">[##_rp_rep_desc_##]</p>
+                                                                    </div>
+                                                                    <div class="reply">
+                                                                        <s_rp2_container>
+                                                                            <ol>
+                                                                                <s_rp2_rep>
+                                                                                    <li id="[##_rp_rep_id_##]">
+                                                                                        <div class="[##_rp_rep_class_##]">
+                                                                                            <h4><small>Reply:</small> <span class="name">[##_rp_rep_name_##]</span> <small><a href="[##_rp_rep_link_##]">address</a> <a href="#" onclick="[##_rp_rep_onclick_delete_##]">modify / delete</a> <a href="#" onclick="[##_rp_rep_onclick_reply_##]">reply</a></small></h4>
+                                                                                            <time class="published" datetime="[##_rp_rep_date_##]">[##_rp_rep_date_##]</time>
+                                                                                            <p class="comment-body">[##_rp_rep_desc_##]</p>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                </s_rp2_rep>
+                                                                            </ol>
+                                                                        </s_rp2_container>
+                                                                    </div><!-- Entry : footer : comment : reply -->
+                                                                </li>
+                                                            </s_rp_rep>
+                                                        </ol>
+                                                    </s_rp_container>
+
+                                                    <!-- Entry : footer  : comment form
+                                                    ================================================== -->
+                                                    <s_rp_input_form>
+                                                        <s_rp_member>
+                                                            <s_rp_guest>
+                                                                <form class="form-horizontal">
+                                                                    <div class="comment-form">
+                                                                        <div class="row">
+                                                                            <div class="col-sm-6">
+                                                                                <div class="form-group">
+                                                                                    <label class="control-label" for="inputNAME">NAME</label>
+                                                                                    <input type="text" class="form-control" id="inputNAME" name="[##_rp_input_name_##]" value="[##_guest_name_##]">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-sm-6">
+                                                                                <div class="form-group">
+                                                                                    <label class="control-label" for="inputPW">PASSWORD</label>
+                                                                                    <input type="password" class="form-control" maxlength="10" id="inputPW" name="[##_rp_input_password_##]" value="[##_rp_admin_check_##]">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row">
+                                                                            <div class="col-sm-6">
+                                                                                <div class="form-group">
+                                                                                    <label class="control-label" for="inputURL">URL</label>
+                                                                                    <input type="text" class="form-control" id="inputURL" name="[##_rp_input_homepage_##]" value="[##_guest_homepage_##]">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div><!-- Entry : footer : comment-form -->
+
+                                                            </s_rp_guest>
+
+                                                            <div class="row">
+                                                                <div class="col-sm-6">
+                                                                    <div class="checkbox">
+                                                                        <label class="checkbox" for="secret"><input type="checkbox" name="[##_rp_input_is_secret_##]"><strong>Secret</strong></label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </s_rp_member>
+                                                        <div class="comment-form">
+                                                            <div class="row">
+                                                                <div class="col-sm-8">
+                                                                    <textarea name="[##_rp_input_comment_##]" class="form-control" rows="3"></textarea>
+                                                                    <button type="submit" class="btn btn-default btn-lg" value="댓글 달기" onclick="[##_rp_onclick_submit_##]" >Submit Comment</button>
+                                                                </div>
+                                                            </div>
+                                                        </div><!-- Entry : footer : comment-form -->
+                                                        </form><!-- Entry : footer : form-horizontal -->
+                                                    </s_rp_input_form>
+
+                                                </section><!-- Entry : footer : comment -->
+                                            </s_rp>
+
+                                        </div><!-- /.col -->
+                                    </div><!-- /.row -->
+                                </div><!-- /.container -->
+                            </div><!-- Entry : footer -->
+
+                        </s_article_rep>
+
+                        <!-- Paging
+                        ================================================== -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <section>
+                                        <s_paging>
+                                            <ul class="pagination">
+                                                <li><a [##_prev_page_##] class="[##_no_more_prev_##]" id="prevPage">&laquo;</a></li>
+                                                <s_paging_rep>
+                                                    <li><a [##_paging_rep_link_##]>[##_paging_rep_link_num_##]</a></li>
+                                                </s_paging_rep>
+                                                <li><a [##_next_page_##] class="[##_no_more_next_##]" id="nextPage">&raquo;</a></li>
+                                            </ul>
+                                        </s_paging>
+                                    </section>
+                                </div><!-- /.col -->
+                            </div><!-- /.row -->
+                        </div><!-- /.container -->
+
+                    </div><!-- font utility -->
+                </article>
+
+                <div class="container"><!-- main layout : widget container -->
+                    <div class="row"><!-- main layout : widget row -->
+                        <div class="col-sm-12"><!-- main layout : widget column -->
+                            <aside role="complementary">
+                                <s_sidebar>
+
+                                    <div class="row">
+                                        <s_sidebar_element>
+                                            <!-- catetories -->
+                                            <div class="col-sm-4">
+                                                <section class="widget">
+                                                    <div class="widget-inner">
+                                                        <h3>Categories</h3>
+                                                        [##_category_list_##]
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </s_sidebar_element>
+
+
+                                        <s_sidebar_element>
+                                            <!-- Recent atricle -->
+                                            <div class="col-sm-4">
+                                                <section class="widget">
+                                                    <div class="widget-feed-inner">
+                                                        <h3>Recent Articles</h3>
+                                                        <div class="widget-feed"></div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </s_sidebar_element>
+
+                                        <s_sidebar_element>
+                                            <!-- Recent atricle(default) -->
+                                            <div class="col-sm-4">
+                                                <section class="widget">
+                                                    <div class="widget-inner">
+                                                        <h3>Recent Articles(default)</h3>
+                                                        <ul>
+                                                            <s_rctps_rep>
+                                                                <li>
+                                                                    <a href="[##_rctps_rep_link_##]"> [##_rctps_rep_title_##]. <span class="cnt">[##_rctps_rep_rp_cnt_##]</span></a>
+                                                                </li>
+                                                            </s_rctps_rep>
+                                                        </ul>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </s_sidebar_element>
+
+                                        <s_sidebar_element>
+                                            <!-- Recent comment -->
+                                            <div class="col-sm-4">
+                                                <section class="widget">
+                                                    <div class="widget-inner">
+                                                        <h3>Recent Comments</h3>
+                                                        <ul>
+                                                            <s_rctrp_rep>
+                                                                <li>
+                                                                    <a href="[##_rctrp_rep_link_##]">[##_rctrp_rep_desc_##]. <span class="cnt">by [##_rctrp_rep_name_##]</span></a>
+                                                                </li>
+                                                            </s_rctrp_rep>
+                                                        </ul>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </s_sidebar_element>
+
+                                        <s_sidebar_element>
+                                            <!-- Recent Trackback -->
+                                            <div class="col-sm-4">
+                                                <section class="widget">
+                                                    <div class="widget-inner">
+                                                        <h3>Recent Trackbacks</h3>
+                                                        <ul>
+                                                            <s_rcttb_rep>
+                                                                <li>
+                                                                    <a href="[##_rcttb_rep_link_##]">[##_rcttb_rep_desc_##].
+                                                                        <br>[##_rcttb_rep_name_##] <time datetime="[##_rcttb_rep_time_##]">[##_rcttb_rep_time_##]</time>
+                                                                    </a>
+                                                                </li>
+                                                            </s_rcttb_rep>
+                                                        </ul>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </s_sidebar_element>
+
+                                        <s_sidebar_element>
+                                            <!-- Notice list -->
+                                            <s_rct_notice>
+                                                <div class="col-sm-4">
+                                                    <section class="widget">
+                                                        <div class="widget-inner">
+                                                            <h3>Notice</h3>
+                                                            <ul>
+                                                                <s_rct_notice_rep>
+                                                                    <li><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a> </li>
+                                                                </s_rct_notice_rep>
+                                                            </ul>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </s_rct_notice>
+                                        </s_sidebar_element>
+
+                                        <s_sidebar_element>
+                                            <!-- Global tags -->
+                                            <div class="col-sm-4">
+                                                <section class="widget">
+                                                    <div class="widget-inner">
+                                                        <h3>Tag List</h3>
+                                                        <ul>
+                                                            <s_random_tags>
+                                                                <li> <a href="[##_tag_link_##]" class="[##_tag_class_##]"><span class="label label-default"> [##_tag_name_##]</span></a></li>
+                                                            </s_random_tags>
+                                                        </ul>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </s_sidebar_element>
+
+                                        <s_sidebar_element>
+                                            <!-- Links -->
+                                            <div class="col-sm-4">
+                                                <section class="widget">
+                                                    <div class="widget-inner">
+                                                        <h3>Links</h3>
+                                                        <ul>
+                                                            <s_link_rep>
+                                                                <li><a href="[##_link_url_##]">[##_link_site_##]</a></li>
+                                                            </s_link_rep>
+                                                        </ul>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </s_sidebar_element>
+
+                                    </div><!-- /.row -->
+                                </s_sidebar>
+                            </aside>
+                        </div><!-- main layout : widget /.column -->
+                    </div><!-- main layout : widget /.row -->
+
+            </main>
+        </div><!-- main layout : /.wrapper -->
+
+        <div class="wrapper skeleton-footer">
+            <div class="container">
+                <footer role="contentinfo">
+                    <div class="source-org vcard copyright">
+                        <!-- Your Footer Here / http://microformats.org/profile/hcard-->
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <ul class="license-links">
+                                    <li>Copyright &copy; 2013 <a class="org fn url" href="#" target="_blank">your brand</a></li>
+                                    <li>company.</li>
+                                    <li>Terms Privacy</li>
+                                    <li>Security</li>
+                                    <li>Contact</li>
+                                    <li>Total : [##_count_total_##]</li>
+                                    <li>Today : [##_count_today_##]</li>
+                                    <li>Yesterday : [##_count_yesterday_##]</li>
+                                    <li><a title="rss" href="[##_rss_url_##]">RSS</a></li>
+                                    <li><a title="local" href="[##_localog_link_##]">Localog</a></li>
+                                    <li><a title="tags" href="[##_taglog_link_##]">Tags</a></li>
+                                    <li><a title="admin" href="[##_owner_url_##]">Admin</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- MARKQUERY AND OPENSOURCES LICENSE -->
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <ul class="license-links">
+                                    <li>Customize Your Contents <a title="go to markquery" href="http://markquery.com/" target="_blank">마크쿼리</a> Project maintained  by <a title ="go to github project" href="https://github.com/markquery/">Ungki, H</a></li>
+                                    <li class="text-muted">&middot;</li>
+                                    <li>Hosted by <a title="go to daum" href="http://daum.net/" target="_blank">Daum</a></li>
+                                    <li class="text-muted">&middot;</li>
+                                    <li>Powered by <a title="go to tistory" href="http://tistory.com/" target="_blank">Tistory</a></li>
+                                    <li class="text-muted">&middot;</li>
+                                    <li>Based on <a title="go to bootstrap" href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                                    <li class="text-muted">&middot;</li>
+                                    <li><a title="go to less" href="http://lesscss.org/" target="_blank">Less</a></li>
+                                    <li class="text-muted">&middot;</li>
+                                    <li><a title="go to coffeescript" href="http://coffeescript.org/" target="_blank">CoffeeScript</a></li>
+                                    <li class="text-muted">&middot;</li>
+                                    <li>etc.</li>
+                                    <li class="text-muted">&middot;</li>
+                                    <li><a title="go to about" href="http://markquery.github.io/license/" target="_blank">About</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- /.vcard microformats -->
+                </footer>
+            </div>
+        </div>
+
+        <a href="#" class="scrollup">Back to Top <i class="icon-arrow-up"></i></a>
+
+        <!-- jQuery -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="./images/jquery-1.10.1.min.js"><\/script>')</script>
+        <!-- javascripts -->
+        <script src="./images/modernizr-2.6.2.min.js"></script>
+        <script src="./images/bootstrap.js"></script>
+        <script src="./images/script.js"></script>
+        <script src="./images/rss.js"></script>
+        <script src="./images/fontsize.js"></script>
+        <!-- get recent article included thumbnail -->
+        <script>
+                            jQuery(function($) {
+                            $(".widget-feed").rss("http://markquery.com/feed", {
+                            limit: 5,
+                                    effect: 'slideFast',
+                                    layoutTemplate: '<ul class=\"media-list\">{entries}</ul>',
+                                    entryTemplate: '<li class=\"media\"><a class=\"pull-left\" href=\"{url}\"><img class=\"media-object media-thumbnail\" src=\"{teaserImageUrl}\"></a><div class=\"media-body\"><h4 class=\"media-heading\"><a href=\"{url}\">{title}</a></h4></div></li>'
+                            })
+                            })
+        </script>
+        <script language="JavaScript">function changeFontFamily(fontFam){document.getElementById("changeFontFamily").style.fontFamily = fontFam; }</script>
+    </s_t3>
 </body>
 </html>
