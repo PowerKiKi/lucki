@@ -1,21 +1,17 @@
-# [Doo Be Doo](http://markquery.com) 
+# [LuCKi](http://www.lucki.kr)
 
-MARKQUERY Skeleton For Tistory with Bootstrap 3
+Skeleton For Tistory based on MARKQUERY's "Doo Be Doo"
 
-* Home page [http://markquery.com](http://markquery.com)
-* GitHub page: [http://markquery.github.io](http://markquery.github.io)
+* Home page: http://www.lucki.kr
+* GitHub page: https://github.com/PowerKiKi/tistory-doobedoo
 
 ## Getting Started
 
-- [download](https://github.com/markquery/tistory-doobedoo/archive/master.zip)  the zip file.
-   `https://github.com/markquery/tistory-doobedoo/archive/master.zip`
-
--  or Clone the git repo — git clone
-   `https://github.com/markquery/tistory-doobedoo.git`
-
-- Update latest [markquery](https://github.com/markquery/markquery) and check the changelog, reference [http://markquery.github.io](http://markquery.github.io)
-
-You can now download [Customized bootstrap 3](https://github.com/markquery/markquery/archive/master.zip) or [get original twitter bootstrap 3](http://getbootstrap.com/)
+1. Clone the repository: `git clone https://github.com/PowerKiKi/tistory-doobedoo.git`
+2. Install required package: `npm install`
+3. Watch changes with grunt: `grunt watch`
+4. Hack the main files `skin.html` and `src/styles/styles.less`
+5. Grunt will generate `style.css` and `images/bootstrap.js`
 
 ### Versioning
 
