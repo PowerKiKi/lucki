@@ -25,11 +25,6 @@
         scrollTop: 0
       }, 600, false);
     });
-    $(".font-resize").jfontsize({
-      btnMinusClasseId: ".jfontsize-m",
-      btnDefaultClasseId: ".jfontsize-d",
-      btnPlusClasseId: ".jfontsize-p"
-    });
   });
 
 }).call(this);
