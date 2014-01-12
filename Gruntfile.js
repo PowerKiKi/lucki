@@ -8,9 +8,7 @@ module.exports = function(grunt) {
             },
             all: [
                 'Gruntfile.js',
-                'src/scripts/*.js',
-                'src/scripts/bootstrap/*.js',
-                '!src/scripts/bootstrap.js'
+                'src/scripts/script.js'
             ]
         },
         recess: {
@@ -31,7 +29,9 @@ module.exports = function(grunt) {
         uglify: {
             dist: {
                 files: {
-                    'images/bootstrap.js': [
+                    'images/app.js': [
+                        'src/scripts/jquery-1.10.1.min.js',
+                        'src/scripts/modernizr-2.6.2.min.js',
                         'src/scripts/bootstrap/transition.js',
                         'src/scripts/bootstrap/alert.js',
                         'src/scripts/bootstrap/button.js',
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
                         'src/scripts/bootstrap/scrollspy.js',
                         'src/scripts/bootstrap/tab.js',
                         'src/scripts/bootstrap/affix.js',
-                        'src/scripts/*.js'
+                        'src/scripts/script.js'
                     ]
                 }
             }
@@ -71,14 +71,14 @@ module.exports = function(grunt) {
                 },
                 files: [
                     'style.css',
-                    'images/bootstrap.js'
+                    'images/app.js'
                 ]
             }
         },
         clean: {
             dist: [
                 'style.css',
-                'images/bootstrap.js'
+                'images/app.js'
             ]
         }
     });

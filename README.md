@@ -11,7 +11,7 @@ Skeleton For Tistory based on MARKQUERY's "Doo Be Doo"
 2. Install required package: `npm install`
 3. Watch changes with grunt: `grunt watch`
 4. Hack the main files `skin.html` and `src/styles/styles.less`
-5. Grunt will generate `style.css` and `images/bootstrap.js`
+5. Grunt will generate `style.css` and `images/app.js`
 
 ### Versioning
 
