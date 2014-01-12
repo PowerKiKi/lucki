@@ -85,7 +85,6 @@
                     <div class="col-sm-12">
                         <hgroup>
                             <h1><a title="home" href="[##_blog_link_##]">[##_title_##]</a></h1>
-                            <h2>[##_desc_##]</h2>
                         </hgroup>
                     </div>
                 </div>
@@ -335,37 +334,21 @@
                         <header class="entry-header">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-sm-12">
-                                        <h1 class="entry-title"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h1>
-                                        <!-- <h2 class="entry-summary"> the_excerpt </h2> -->
-                                        <time class="published" datetime="[##_article_rep_date_##]">[##_article_rep_date_##]</time>
+                                    <div class="col-sm-2 datetime-container">
+                                        <span class="icon-stack icon-4x">
+                                            <i class="icon-circle icon-stack-base"></i>
+                                            <time class="icon-noticon published" datetime="[##_article_rep_date_##]" title="[##_article_rep_date_##]">[##_article_rep_date_##]</time>
+                                        </span>
                                     </div><!-- /.col -->
-                                </div><!-- /.row -->
-                            </div><!-- /.container -->
-
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-sm-9">
-                                        <p class="byline author vcard">Posted in <a href="[##_article_rep_category_link_##]"><strong>[##_article_rep_category_##]</strong></a> by <span class="fn">[##_blogger_##]</span></p>
-                                    </div>
+                                    <div class="col-sm-10 title-container">
+                                        <h1 class="entry-title"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h1>
+                                        <s_ad_div>
+                                            <a href="[##_s_ad_m_link_##]">수정</a> : <a href="#" onclick="[##_s_ad_m_onclick_##]">수정(창으로)</a> | ([##_s_ad_s1_label_##])→ <a href="#" onclick="[##_s_ad_s2_onclick_##]">[##_s_ad_s2_label_##]</a> | <a href="#" onclick="[##_s_ad_t_onclick_##]">관련글(트랙백)</a> | <a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a>
+                                        </s_ad_div>
+                                    </div><!-- /.col -->
                                 </div><!-- /.row -->
                             </div><!-- /.container -->
                         </header>
-
-                        <!-- Entry : admin
-                        ================================================== -->
-                        <s_ad_div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="alert alert-info fade in">
-                                            <button type="button" class="close" data-dismiss="alert">&times;</button>
-                                            <a href="[##_s_ad_m_link_##]">수정</a> : <a href="#" onclick="[##_s_ad_m_onclick_##]">수정(창으로)</a> | ([##_s_ad_s1_label_##])→ <a href="#" onclick="[##_s_ad_s2_onclick_##]">[##_s_ad_s2_label_##]</a> | <a href="#" onclick="[##_s_ad_t_onclick_##]">관련글(트랙백)</a> | <a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a>
-                                        </div>
-                                    </div><!-- /.col -->
-                                </div><!-- /.row -->
-                            </div><!-- /.container -->
-                        </s_ad_div>
 
                         <!-- Entry : body
                         ================================================== -->
@@ -378,7 +361,10 @@
                                 <div class="col-sm-12">
                                     <section class="entry-tags">
                                         <s_tag_label>
-                                            <i class="icon-tags"></i> [##_tag_label_rep_##]
+                                            <span class="icon-stack icon-3x">
+                                                <i class="icon-circle icon-stack-base"></i>
+                                                <a class="icon-noticon" title="tags" href="[##_taglog_link_##]">Tag</a>
+                                            </span> [##_tag_label_rep_##]
                                         </s_tag_label>
                                     </section>
                                 </div><!-- /.col -->
@@ -396,7 +382,9 @@
                                         ================================================== -->
                                         <section class="actionTrail">
                                             <div class="globe-hover-111-555">
-                                                <p><i class="icon-leaf"></i> <a href="#tb" onclick="[##_article_rep_tb_link_##]"> Trackback</a> <span class="cnt">[##_article_rep_tb_cnt_##]</span> : <i class="icon-comments"></i> <a href="#rp" onclick="[##_article_rep_rp_link_##]"> Comment</a> <span class="cnt"> [##_article_rep_rp_cnt_##]</span>
+                                                <p>
+                                                    <a href="#rp" onclick="[##_article_rep_rp_link_##]">댓글</a> <span class="cnt">[##_article_rep_rp_cnt_##]개</span>
+                                                    <a href="#tb" onclick="[##_article_rep_tb_link_##]">트랙백</a> <span class="cnt">[##_article_rep_tb_cnt_##]개</span>
                                                 </p>
                                             </div>
                                         </section>
@@ -545,139 +533,178 @@
                     </div><!-- /.container -->
                 </article>
 
-                <div class="container"><!-- main layout : widget container -->
-                    <div class="row"><!-- main layout : widget row -->
-                        <div class="col-sm-12"><!-- main layout : widget column -->
-                            <aside role="complementary">
-                                <s_sidebar>
-
-                                    <div class="row">
-                                        <s_sidebar_element>
-                                            <!-- catetories -->
-                                            <div class="col-sm-4">
-                                                <section class="widget">
-                                                    <div class="widget-inner">
-                                                        <h3>Categories</h3>
-                                                        [##_category_list_##]
-                                                    </div>
-                                                </section>
-                                            </div>
-                                        </s_sidebar_element>
-
-                                        <s_sidebar_element>
-                                            <!-- Recent atricle(default) -->
-                                            <div class="col-sm-4">
-                                                <section class="widget">
-                                                    <div class="widget-inner">
-                                                        <h3>Recent Articles(default)</h3>
-                                                        <ul>
-                                                            <s_rctps_rep>
-                                                                <li>
-                                                                    <a href="[##_rctps_rep_link_##]"> [##_rctps_rep_title_##]. <span class="cnt">[##_rctps_rep_rp_cnt_##]</span></a>
-                                                                </li>
-                                                            </s_rctps_rep>
-                                                        </ul>
-                                                    </div>
-                                                </section>
-                                            </div>
-                                        </s_sidebar_element>
-
-                                        <s_sidebar_element>
-                                            <!-- Recent comment -->
-                                            <div class="col-sm-4">
-                                                <section class="widget">
-                                                    <div class="widget-inner">
-                                                        <h3>Recent Comments</h3>
-                                                        <ul>
-                                                            <s_rctrp_rep>
-                                                                <li>
-                                                                    <a href="[##_rctrp_rep_link_##]">[##_rctrp_rep_desc_##]. <span class="cnt">by [##_rctrp_rep_name_##]</span></a>
-                                                                </li>
-                                                            </s_rctrp_rep>
-                                                        </ul>
-                                                    </div>
-                                                </section>
-                                            </div>
-                                        </s_sidebar_element>
-
-                                        <s_sidebar_element>
-                                            <!-- Recent Trackback -->
-                                            <div class="col-sm-4">
-                                                <section class="widget">
-                                                    <div class="widget-inner">
-                                                        <h3>Recent Trackbacks</h3>
-                                                        <ul>
-                                                            <s_rcttb_rep>
-                                                                <li>
-                                                                    <a href="[##_rcttb_rep_link_##]">[##_rcttb_rep_desc_##].
-                                                                        <br>[##_rcttb_rep_name_##] <time datetime="[##_rcttb_rep_time_##]">[##_rcttb_rep_time_##]</time>
-                                                                    </a>
-                                                                </li>
-                                                            </s_rcttb_rep>
-                                                        </ul>
-                                                    </div>
-                                                </section>
-                                            </div>
-                                        </s_sidebar_element>
-
-                                        <s_sidebar_element>
-                                            <!-- Notice list -->
-                                            <s_rct_notice>
-                                                <div class="col-sm-4">
-                                                    <section class="widget">
-                                                        <div class="widget-inner">
-                                                            <h3>Notice</h3>
-                                                            <ul>
-                                                                <s_rct_notice_rep>
-                                                                    <li><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a> </li>
-                                                                </s_rct_notice_rep>
-                                                            </ul>
-                                                        </div>
-                                                    </section>
-                                                </div>
-                                            </s_rct_notice>
-                                        </s_sidebar_element>
-
-                                        <s_sidebar_element>
-                                            <!-- Global tags -->
-                                            <div class="col-sm-4">
-                                                <section class="widget">
-                                                    <div class="widget-inner">
-                                                        <h3>Tag List</h3>
-                                                        <ul>
-                                                            <s_random_tags>
-                                                                <li> <a href="[##_tag_link_##]" class="[##_tag_class_##]"><span class="label label-default"> [##_tag_name_##]</span></a></li>
-                                                            </s_random_tags>
-                                                        </ul>
-                                                    </div>
-                                                </section>
-                                            </div>
-                                        </s_sidebar_element>
-
-                                        <s_sidebar_element>
-                                            <!-- Links -->
-                                            <div class="col-sm-4">
-                                                <section class="widget">
-                                                    <div class="widget-inner">
-                                                        <h3>Links</h3>
-                                                        <ul>
-                                                            <s_link_rep>
-                                                                <li><a href="[##_link_url_##]">[##_link_site_##]</a></li>
-                                                            </s_link_rep>
-                                                        </ul>
-                                                    </div>
-                                                </section>
-                                            </div>
-                                        </s_sidebar_element>
-
-                                    </div><!-- /.row -->
-                                </s_sidebar>
-                            </aside>
-                        </div><!-- main layout : widget /.column -->
-                    </div><!-- main layout : widget /.row -->
-
             </main>
         </div><!-- main layout : /.wrapper -->
+
+        <div class="container sidebar-container"><!-- main layout : widget container -->
+            <div class="row"><!-- main layout : widget row -->
+                <div><!-- main layout : widget column -->
+                    <aside role="complementary">
+                        <s_sidebar>
+
+                            <div class="row">
+                                <s_sidebar_element>
+                                    <!-- Categories -->
+                                    <div class="col-sm-6">
+                                        <section class="widget">
+                                            <div class="widget-inner widget-categories">
+                                                <div class="circle-title">
+                                                    <span class="icon-stack icon-3x">
+                                                        <i class="icon-circle icon-stack-base"></i>
+                                                        <i class="icon-noticon">Category</i>
+                                                    </span>
+                                                </div>
+                                                [##_category_list_##]
+                                            </div>
+                                        </section>
+                                    </div>
+                                </s_sidebar_element>
+
+                                <s_sidebar_element>
+                                    <!-- Recent article (default) -->
+                                    <div class="col-sm-6">
+                                        <section class="widget">
+                                            <div class="widget-inner">
+                                                <h3>Recent Articles(default)</h3>
+                                                <ul>
+                                                    <s_rctps_rep>
+                                                        <li>
+                                                            <a href="[##_rctps_rep_link_##]"> [##_rctps_rep_title_##]. <span class="cnt">[##_rctps_rep_rp_cnt_##]</span></a>
+                                                        </li>
+                                                    </s_rctps_rep>
+                                                </ul>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </s_sidebar_element>
+
+                                <s_sidebar_element>
+                                    <!-- Recent comment -->
+                                    <div class="col-sm-6">
+                                        <section class="widget">
+                                            <div class="widget-inner">
+                                                <h3>Recent Comments</h3>
+                                                <ul>
+                                                    <s_rctrp_rep>
+                                                        <li>
+                                                            <a href="[##_rctrp_rep_link_##]">[##_rctrp_rep_desc_##]. <span class="cnt">by [##_rctrp_rep_name_##]</span></a>
+                                                        </li>
+                                                    </s_rctrp_rep>
+                                                </ul>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </s_sidebar_element>
+
+                                <s_sidebar_element>
+                                    <!-- Recent Trackback -->
+                                    <div class="col-sm-6">
+                                        <section class="widget">
+                                            <div class="widget-inner">
+                                                <h3>Recent Trackbacks</h3>
+                                                <ul>
+                                                    <s_rcttb_rep>
+                                                        <li>
+                                                            <a href="[##_rcttb_rep_link_##]">[##_rcttb_rep_desc_##].
+                                                                <br>[##_rcttb_rep_name_##] <time datetime="[##_rcttb_rep_time_##]">[##_rcttb_rep_time_##]</time>
+                                                            </a>
+                                                        </li>
+                                                    </s_rcttb_rep>
+                                                </ul>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </s_sidebar_element>
+
+                                <s_sidebar_element>
+                                    <!-- Notice list -->
+                                    <s_rct_notice>
+                                        <div class="col-sm-6">
+                                            <section class="widget">
+                                                <div class="widget-inner">
+                                                    <h3>Notice</h3>
+                                                    <ul>
+                                                        <s_rct_notice_rep>
+                                                            <li><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a> </li>
+                                                        </s_rct_notice_rep>
+                                                    </ul>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </s_rct_notice>
+                                </s_sidebar_element>
+
+                                <s_sidebar_element>
+                                    <!-- Global tags -->
+                                    <div class="col-sm-6">
+                                        <section class="widget">
+                                            <div class="widget-inner">
+                                                <h3>Tag List</h3>
+                                                <ul>
+                                                    <s_random_tags>
+                                                        <li> <a href="[##_tag_link_##]" class="[##_tag_class_##]"><span class="label label-default"> [##_tag_name_##]</span></a></li>
+                                                    </s_random_tags>
+                                                </ul>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </s_sidebar_element>
+
+                                <s_sidebar_element>
+                                    <!-- Links -->
+                                    <div class="col-sm-6">
+                                        <section class="widget">
+                                            <div class="widget-inner">
+                                                <h3>Links</h3>
+                                                <ul>
+                                                    <s_link_rep>
+                                                        <li><a href="[##_link_url_##]">[##_link_site_##]</a></li>
+                                                    </s_link_rep>
+                                                </ul>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </s_sidebar_element>
+
+                                <s_sidebar_element>
+                                    <!-- Counter -->
+                                    <div class="col-sm-6">
+                                        <section class="widget">
+                                            <div class="widget-inner widget-counter">
+                                                <ul class="counter">
+                                                    <li>Total [##_count_total_##]</li>
+                                                    <li>Today [##_count_today_##]</li>
+                                                    <li>Yesterday [##_count_yesterday_##]</li>
+                                                </ul>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </s_sidebar_element>
+
+                                <s_sidebar_element>
+                                    <!-- Who -->
+                                    <div class="col-sm-6">
+                                        <section class="widget">
+                                            <div class="widget-inner widget-who">
+                                                <div class="circle-title">
+                                                    <span class="icon-stack icon-3x">
+                                                        <i class="icon-circle icon-stack-base"></i>
+                                                        <i class="icon-noticon">Who</i>
+                                                    </span>
+                                                </div>
+                                                <img class="who-image" src="[##_image_##]" alt="블로그 이미지" />
+                                                <p class="who-description">[##_desc_##]</p>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </s_sidebar_element>
+
+                            </div><!-- /.row -->
+                        </s_sidebar>
+                    </aside>
+                </div><!-- main layout : widget /.column -->
+            </div><!-- main layout : widget /.row -->
+        </div>
 
         <div class="wrapper skeleton-footer">
             <div class="container">
@@ -686,43 +713,8 @@
                         <!-- Your Footer Here / http://microformats.org/profile/hcard-->
                         <div class="row">
                             <div class="col-xs-12">
-                                <ul class="license-links">
-                                    <li>Copyright &copy; 2013 <a class="org fn url" href="#" target="_blank">your brand</a></li>
-                                    <li>company.</li>
-                                    <li>Terms Privacy</li>
-                                    <li>Security</li>
-                                    <li>Contact</li>
-                                    <li>Total : [##_count_total_##]</li>
-                                    <li>Today : [##_count_today_##]</li>
-                                    <li>Yesterday : [##_count_yesterday_##]</li>
-                                    <li><a title="rss" href="[##_rss_url_##]">RSS</a></li>
-                                    <li><a title="local" href="[##_localog_link_##]">Localog</a></li>
-                                    <li><a title="tags" href="[##_taglog_link_##]">Tags</a></li>
-                                    <li><a title="admin" href="[##_owner_url_##]">Admin</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- MARKQUERY AND OPENSOURCES LICENSE -->
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <ul class="license-links">
-                                    <li>Customize Your Contents <a title="go to markquery" href="http://markquery.com/" target="_blank">마크쿼리</a> Project maintained  by <a title ="go to github project" href="https://github.com/markquery/">Ungki, H</a></li>
-                                    <li class="text-muted">&middot;</li>
-                                    <li>Hosted by <a title="go to daum" href="http://daum.net/" target="_blank">Daum</a></li>
-                                    <li class="text-muted">&middot;</li>
-                                    <li>Powered by <a title="go to tistory" href="http://tistory.com/" target="_blank">Tistory</a></li>
-                                    <li class="text-muted">&middot;</li>
-                                    <li>Based on <a title="go to bootstrap" href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
-                                    <li class="text-muted">&middot;</li>
-                                    <li><a title="go to less" href="http://lesscss.org/" target="_blank">Less</a></li>
-                                    <li class="text-muted">&middot;</li>
-                                    <li><a title="go to coffeescript" href="http://coffeescript.org/" target="_blank">CoffeeScript</a></li>
-                                    <li class="text-muted">&middot;</li>
-                                    <li>etc.</li>
-                                    <li class="text-muted">&middot;</li>
-                                    <li><a title="go to about" href="http://markquery.github.io/license/" target="_blank">About</a></li>
-                                </ul>
+                                <p>모든 글의 저작권은 토종감자에게 있습니다. 토종감자 reserved all rights of this blog.</p>
+                                <p>토종감자's Blog is powered by <a href="http://www.tistory.com/">Tistory</a> / designed by 토종감자 / realised by <a href="https://github.com/PowerKiKi/tistory-doobedoo">PowerKiKi</a> / based on <a href="https://github.com/markquery">Ungki, H</a>'s work</p>
                             </div>
                         </div>
                     </div><!-- /.vcard microformats -->

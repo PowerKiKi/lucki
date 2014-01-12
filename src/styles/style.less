@@ -23,12 +23,16 @@ body {
     padding-top: 50px;  /*Account for fixed navbar */
 }
 .skeleton-header {
-    margin: 0;
-    padding:80px 0 100px;
-    background-color: #f8f8f8;
+    margin: 0 auto;
+    width: 1080px;
+    padding-top: 100px;
+    padding-bottom: 140px;
+    background-color: white;
 }
 .skeleton-header h1 {
     font-weight: bold;
+    font-size: 76px;
+    text-align: right;
 }
 .skeleton-header h1 a {
     color: #e2e2e2;
@@ -42,7 +46,6 @@ body {
 }
 .skeleton-footer {
     padding:20px;
-    background: url(./images/footer.png);
 }
 
 /* site footer
@@ -75,7 +78,6 @@ footer ul li {
 -------------------------------------------------- */
 main {
     margin-top: 40px;
-    border-top: 1px solid #ccc;
 }
 .hentry {
     padding-bottom:40px;
@@ -84,7 +86,6 @@ main {
 .entry-header {
     margin-bottom:20px;
     padding:10px 0;
-    border-bottom:1px solid #ccc;
 }
 .search-list{
     margin:20px 0;
@@ -95,7 +96,6 @@ main {
 .entry-summary {}
 .entry-content { padding-bottom:40px; }
 .byline {}
-.published {}
 .related{ border-top:1px solid #eee; }
 .entry-tags {
     margin-top:10px;
@@ -109,12 +109,11 @@ main {
     border-top: 3px solid #ddd;
 }
 .actionTrail {
-    text-align: left;
-    font-family: Georgia, verdana;
-    font-size: 24px;
+    font-size: 16px;
 }
 .actionTrail .cnt{
-    color: #6b8e23;
+    margin-left: 1em;
+    margin-right: 3em;
 }
 
 /* name link
@@ -247,6 +246,10 @@ ul.pagination .interword {
     margin-top:40px;
     padding:0;
     text-align: left;
+    color: white;
+    a {
+        color: white;
+    }
 }
 .widget-inner h3 {
     margin:10px 0;
@@ -255,20 +258,23 @@ ul.pagination .interword {
 }
 .widget-inner ul {
     margin:0;
+    margin-left: 20px;
     padding:0;
     list-style-type:none;
+}
+
+.widget-inner > ul > li > ul {
+    margin-left: 0px;
 }
 .widget-inner ul li a {
     display:block;
     padding: 10px 5px;
-    border-bottom: 1px solid #eee;
     font-size: 12px;
     text-decoration: none;
-    color:#333;
-    -webkit-transition: background-color 1s;
-    -moz-transition: background-color 1s;
-    -o-transition: background-color 1s;
-    transition: background-color 1s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color    0.5s;
+    -o-transition: background-color      0.5s;
+    transition: background-color         0.5s;
 }
 .widget-inner ul li a:hover {
     color:#fff;

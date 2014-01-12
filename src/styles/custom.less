@@ -1,0 +1,133 @@
+
+@color0: #2B2823; // background
+@color1: #BB1728; // red
+@color2: #FFB200; // yellow
+@color3: #B5AA21; // green
+@color4: #009A84; // turquoise
+@color5: #B45477; // violet
+@color6: #B45477; // saumon
+
+.sidebar-container,
+#content {
+    max-width: 1080px;
+    margin: auto;
+}
+#content {
+    background-color: white;
+}
+
+.sidebar-container {
+    background-color: @color0;
+}
+
+body {
+    background-color: @color0;
+}
+
+.entry-content {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.icon-noticon {
+    font-size: 0.4em !important;
+    color: white;
+}
+
+time.icon-noticon {
+    line-height: 1.0em !important;
+    padding-top: 34px;
+}
+
+.entry-title {
+    font-weight: bold;
+    color: black;
+    a {
+        color: black;
+    }
+}
+
+.month-01,
+.month-07 {
+    .icon-circle { color: @color1; }
+    .title-container { border-color: @color1;}
+}
+.month-02,
+.month-08 {
+    .icon-circle { color: @color2; }
+    .title-container { border-color: @color2;}
+}
+.month-03,
+.month-09 {
+    .icon-circle { color: @color3; }
+    .title-container { border-color: @color3;}
+}
+.month-04,
+.month-10 {
+    .icon-circle { color: @color4 }
+    .title-container { border-color: @color4;}
+}
+.month-05,
+.month-11 {
+    .icon-circle { color: @color5; }
+    .title-container { border-color: @color5;}
+}
+.month-06,
+.month-12 {
+    .icon-circle { color: @color6; }
+    .title-container { border-color: @color6;}
+}
+
+.title-container {
+    vertical-align: bottom;
+    border-bottom: 1px solid;
+    height: 7em;
+}
+.datetime-container {
+    text-align: right;
+}
+
+.entry-tags .icon-circle,
+.entry-tags a {
+    color: @color4;
+}
+.entry-tags a.icon-noticon {
+    color: white;
+}
+
+.widget-who {
+    background-color: @color4;
+
+    .icon-circle {
+        color: @color2;
+    }
+    img {
+        width: 100%;
+    }
+}
+.widget-categories {
+    background-color: @color5;
+
+    .icon-circle {
+        color: @color3;
+    }
+}
+.widget-counter {
+    background-color: @color2;
+
+}
+
+.widget .circle-title{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.who-description {
+    text-align: right;
+    padding: 1em;
+}
+
+
+.widget-inner ul li a:hover {
+    background-color: @color3;
+}

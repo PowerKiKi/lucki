@@ -27,6 +27,16 @@
                 scrollTop: 0
             }, 600, false);
         });
+
+        // Set month CSS class name on articles
+        $('article time').each(function() {
+            var time = $(this);
+            var datetime = time.attr('datetime');
+            var year = datetime.substring(0, 4);
+            var month = datetime.substring(5, 7);
+            time.parents('article').addClass('month-' + month);
+            time.html(year + '<br>' + month + '월');
+        });
     });
 
 }).call(this);
