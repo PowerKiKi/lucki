@@ -564,19 +564,6 @@
                                             </div>
                                         </s_sidebar_element>
 
-
-                                        <s_sidebar_element>
-                                            <!-- Recent atricle -->
-                                            <div class="col-sm-4">
-                                                <section class="widget">
-                                                    <div class="widget-feed-inner">
-                                                        <h3>Recent Articles</h3>
-                                                        <div class="widget-feed"></div>
-                                                    </div>
-                                                </section>
-                                            </div>
-                                        </s_sidebar_element>
-
                                         <s_sidebar_element>
                                             <!-- Recent atricle(default) -->
                                             <div class="col-sm-4">
@@ -752,18 +739,6 @@
         <script src="./images/modernizr-2.6.2.min.js"></script>
         <script src="./images/bootstrap.js"></script>
         <script src="./images/script.js"></script>
-        <script src="./images/rss.js"></script>
-        <!-- get recent article included thumbnail -->
-        <script>
-                                                                                jQuery(function($) {
-                                                                                $(".widget-feed").rss("http://markquery.com/feed", {
-                                                                                limit: 5,
-                                                                                        effect: 'slideFast',
-                                                                                        layoutTemplate: '<ul class=\"media-list\">{entries}</ul>',
-                                                                                        entryTemplate: '<li class=\"media\"><a class=\"pull-left\" href=\"{url}\"><img class=\"media-object media-thumbnail\" src=\"{teaserImageUrl}\"></a><div class=\"media-body\"><h4 class=\"media-heading\"><a href=\"{url}\">{title}</a></h4></div></li>'
-                                                                                })
-                                                                                })
-        </script>
     </s_t3>
 </body>
 </html>
