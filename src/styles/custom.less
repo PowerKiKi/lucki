@@ -1,4 +1,6 @@
 
+@import "/less/variables.less";
+
 @color0: #2B2823; // background
 @color1: #BB1728; // red
 @color2: #FFB200; // yellow
@@ -135,6 +137,7 @@ time.icon-noticon {
 hgroup h1 a {
     display: inline-block;
     width: 447px;
+    max-width: 447px;
     height: 121px;
     background-image: url('images/title.svg');
     background-repeat: no-repeat;
@@ -143,4 +146,13 @@ hgroup h1 a {
     text-indent: -9999em;
     overflow: hidden;
     text-align: left;
+}
+
+@media (max-width: @screen-sm) {
+
+    hgroup h1 a {
+        width: 80%;
+        background-size: 100%;
+        background-position-x: 100%;
+    }
 }
