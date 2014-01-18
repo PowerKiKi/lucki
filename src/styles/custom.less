@@ -7,9 +7,18 @@
 @color3: #B5AA21; // green
 @color4: #009A84; // turquoise
 @color5: #B45477; // violet
-@color6: #B45477; // saumon
+@color6: #F15947; // saumon
+
+// hvoer colors for menu
+@color1light: hsl(hue(@color1),saturation(@color1),lightness(@color1) + 15);
+@color2light: hsl(hue(@color2),saturation(@color2),lightness(@color2) + 15);
+@color3light: hsl(hue(@color3),saturation(@color3),lightness(@color3) + 15);
+@color4light: hsl(hue(@color4),saturation(@color4),lightness(@color4) + 15);
+@color5light: hsl(hue(@color5),saturation(@color5),lightness(@color5) + 15);
+
 
 .sidebar-container,
+.skeleton-nav,
 #content {
     max-width: 1080px;
     margin: auto;
@@ -39,21 +48,6 @@ body {
 time.icon-noticon {
     line-height: 1.0em !important;
     padding-top: 34px;
-
-
-
-}
-@media (max-width: @screen-sm) {
-
-    .datetime-container {
-
-        &.icon-4x {
-            font-size: 2.5em;
-        }
-        .icon-noticon {
-            padding-top: 21px;
-        }
-    }
 }
 
 .datetime-container {
@@ -150,6 +144,7 @@ time.icon-noticon {
 }
 
 hgroup h1 a {
+    margin-right: 20px;
     display: inline-block;
     width: 447px;
     max-width: 447px;
@@ -169,5 +164,93 @@ hgroup h1 a {
         width: 80%;
         background-size: 100%;
         background-position-x: 100%;
+    }
+}
+
+.menu-home .icon-circle {
+    color: @color1;
+}
+.menu-guestbook .icon-circle {
+    color: @color2;
+}
+.menu-naver .icon-circle {
+    color: @color3;
+}
+.menu-daum .icon-circle {
+    color: @color4;
+}
+.menu-rss .icon-circle {
+    color: @color5;
+}
+.menu-home:hover .icon-circle {
+    color: @color1light;
+}
+.menu-guestbook:hover .icon-circle {
+    color: @color2light;
+}
+.menu-naver:hover .icon-circle {
+    color: @color3light;
+}
+.menu-daum:hover .icon-circle {
+    color: @color4light;
+}
+.menu-rss:hover .icon-circle {
+    color: @color5light;
+}
+
+nav {
+    text-align: right;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    .icon-noticon {
+        font-weight: bold;
+        line-height: 1em !important;
+        padding-top: 55px;
+        font-size: 0.3em !important;
+    }
+    .icon-circle {
+        transition: color 0.5s;
+
+    }
+    a:hover,
+    a:active,
+    a:visited
+        {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: @screen-sm) {
+
+    nav {
+
+        .icon-4x {
+            font-size: 3em;
+        }
+        .icon-noticon {
+            padding-top: 37px;
+        }
+        .menu-guestbook .icon-noticon {
+            padding-top: 32px;
+        }
+    }
+}
+
+@media (max-width: @screen-xs) {
+
+    nav {
+        padding-right: 0;
+        .icon-4x {
+            font-size: 2em;
+        }
+        .icon-noticon {
+            padding-top: 24px;
+            font-size: 10px !important;
+        }
+        .menu-guestbook .icon-noticon {
+            padding-top: 20px;
+        }
     }
 }

@@ -56,35 +56,29 @@
 
         <a href="#content" class="sr-only">skip to content</a>
 
-        <header class="navbar navbar-fixed-top navbar-default" role="banner">
-            <div class="container skeleton-nav">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="[##_blog_link_##]">HOME</a>
-                </div>
-                <nav class="collapse navbar-collapse" role="navigation">
-                    <ul class="nav navbar-nav">
-                        <li typeof="sioc:Page" about="[##_blog_link_##]category/"><a property="dc:title" href="[##_blog_link_##]category/">category 1</a></li>
-                        <li typeof="sioc:Page" about="[##_blog_link_##]category/"><a property="dc:title" href="[##_blog_link_##]category/">category 2</a></li>
-                        <li typeof="sioc:Page" about="[##_guestbook_link_##]"><a property="dc:title" href="[##_guestbook_link_##]">GuestBook</a></li>
-                        <li>
-                        <s_sidebar_element>
-                            <s_search>
-                                <!-- Search -->
-                                <form class="navbar-form">
-                                    <input role="search" type="text" class="form-control" placeholder="Search" name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }">
-                                </form>
-                            </s_search>
-                        </s_sidebar_element>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+        <header role="banner" class="skeleton-nav">
+            <nav class="" role="navigation">
+                <span class="icon-stack icon-4x menu-home">
+                    <i class="icon-circle icon-stack-base"></i>
+                    <a class="icon-noticon" property="dc:title" href="[##_blog_link_##]">HOME</a>
+                </span>
+                <span class="icon-stack icon-4x menu-guestbook">
+                    <i class="icon-circle icon-stack-base"></i>
+                    <a class="icon-noticon" property="dc:title" href="[##_guestbook_link_##]">GUEST<br />BOOK</a>
+                </span>
+                <span class="icon-stack icon-4x menu-naver">
+                    <i class="icon-circle icon-stack-base"></i>
+                    <a class="icon-noticon" property="dc:title" href="http://section.blog.naver.com/connect/PopConnectBuddyAddForm.nhn?blogId=lunar7&widgetSeq=1234980&sender=code">네이버이웃</a>
+                </span>
+                <span class="icon-stack icon-4x menu-daum">
+                    <i class="icon-circle icon-stack-base"></i>
+                    <a class="icon-noticon" property="dc:title" href="http://v.daum.net/user/plus?blogurl=lucki.kr">다음View</a>
+                </span>
+                <span class="icon-stack icon-4x menu-rss">
+                    <i class="icon-circle icon-stack-base"></i>
+                    <a class="icon-noticon" property="dc:title" href="[##_rss_url_##]">RSS</a>
+                </span>
+            </nav>
         </header>
 
         <div class="wrapper skeleton-header"><!-- header layout : wrapper -->
@@ -559,6 +553,14 @@
                                                 <i class="icon-noticon">Category</i>
                                             </span>
                                         </div>
+
+                                        <s_search>
+                                            <!-- Search -->
+                                            <form class="navbar-form">
+                                                <input role="search" type="text" class="form-control" placeholder="Search" name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }">
+                                            </form>
+                                        </s_search>
+
                                         [##_category_list_##]
                                     </div>
                                 </section>
