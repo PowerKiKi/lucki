@@ -305,3 +305,39 @@ nav {
         color: white;
     }
 }
+
+
+
+.carousel-control .icon-next, .carousel-control .icon-chevron-right {
+    right: 50%;
+}
+.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .icon-chevron-left, .carousel-control .icon-chevron-right {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+}
+
+a.carousel-control.left,
+a.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-caption {
+    background-color: fade(@color0, 50%);
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    text-align: left;
+
+
+
+    @media (max-width: @screen-sm) {
+
+        & {
+            padding: 5px;
+        }
+    }
+}
