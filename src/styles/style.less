@@ -70,9 +70,6 @@ footer ul li {
     font-size:12px;
 }
 
-/* globe link style
--------------------------------------------------- */
-.globe-hover-111-555 a{color:#111;text-decoration:none;padding-bottom:2px}.globe-hover-111-555 a:hover,.globe-hover-111-555 a:focus{color:#555;text-decoration:none;border-bottom:1px solid #555;padding-bottom:2px}
 /* license links
 -------------------------------------------------- */
 .license-links { margin: 10px 0; }
@@ -107,13 +104,6 @@ main {
     margin-top:10px;
     margin-bottom:10px;
 }
-.entry-footer {
-    margin-top:10px;
-    padding-top:20px;
-    padding-bottom:20px;
-    border-bottom:1px solid #ddd;
-    border-top: 3px solid #ddd;
-}
 .actionTrail {
     font-size: 16px;
 }
@@ -122,25 +112,6 @@ main {
     margin-right: 3em;
 }
 
-/* name link
--------------------------------------------------- */
-.name {
-    color:#999;
-    font-size:12px;
-}
-.name a {
-    padding:3px;
-    background-color:#f1f1f1;
-}
-.name a:hover {
-    color:#fff;
-    background-color:#10a4ff;
-    text-decoration: none;
-    -webkit-transition: background-color 1s;
-    -moz-transition: background-color 1s;
-    -o-transition: background-color 1s;
-    transition: background-color 1s;
-}
 
 /* trackback
 -------------------------------------------------- */
@@ -161,17 +132,15 @@ main {
 }
 .trackback p {
     margin: 10px 0 0 0;
-    color:#999;
-    font-size:8pt;
-    line-height:1.5em;
-    text-align: justify;
 }
 
 /* comment, guestbook
 -------------------------------------------------- */
 .comment, .guestbook {
-    overflow: hidden;
     padding-top: 10px;
+    form {
+        padding-bottom: 20px;
+    }
 }
 .comment ol, .guestbook ol {
     margin: 0;
@@ -183,10 +152,8 @@ main {
     padding: 0;
 }
 .comment p.comment-body, .guestbook p.comment-body {
-    margin-top: 10px;
     padding-top: 10px;
-    font-size: 12px;
-    border-top:1px solid #ddd;
+    padding-right: 20px;
 }
 .comment ol li ol li, .guestbook ol li ol li {
     overflow: hidden;
@@ -196,10 +163,10 @@ main {
 }
 .comment .reply, .guestbook .reply {
     margin-top: 10px;
-    margin-left:20px;
     margin-bottom: 40px;
-    padding-left: 20px;
-    border-left: 1px solid #ddd;
+    padding-left: 5px;
+    position: relative;
+    left: 15px;
 }
 .comment img, .guestbook img {
     width: 32px;
@@ -219,11 +186,8 @@ main {
     -webkit-box-shadow: 0px 0px 7px #ceccb4;
     box-shadow: 0px 0px 7px #ceccb4;
 }
-.comment-form input, .guestbook-form input {   height: 50px; }
-.comment-form textarea, .guestbook-form textarea {   height: 150px; }
 .comment-form .btn, .guestbook-form .btn {
-    display: block;
-    margin-top: 20px;
+    margin-left: 20px;
 }
 
 /* pagination

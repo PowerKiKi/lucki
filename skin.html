@@ -35,6 +35,8 @@
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./images/apple-touch-icon-72x72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./images/apple-touch-icon-114x114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./images/apple-touch-icon-144x144-precomposed.png">
+        <link rel="stylesheet" href="images/ie.css" type="text/css"/>
+
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -380,12 +382,10 @@
                                         <!-- Entry : footer : actionTrail
                                         ================================================== -->
                                         <section class="actionTrail">
-                                            <div class="globe-hover-111-555">
-                                                <p>
-                                                    <a href="#rp" onclick="[##_article_rep_rp_link_##]">댓글</a> <span class="cnt">[##_article_rep_rp_cnt_##]개</span>
-                                                    <a href="#tb" onclick="[##_article_rep_tb_link_##]">트랙백</a> <span class="cnt">[##_article_rep_tb_cnt_##]개</span>
-                                                </p>
-                                            </div>
+                                            <p>
+                                                <a href="#rp" onclick="[##_article_rep_rp_link_##]">댓글</a> <span class="cnt">[##_article_rep_rp_cnt_##]개</span>
+                                                <a href="#tb" onclick="[##_article_rep_tb_link_##]">트랙백</a> <span class="cnt">[##_article_rep_tb_cnt_##]개</span>
+                                            </p>
                                         </section>
 
 
@@ -409,31 +409,101 @@
                                                 </s_tb_container>
                                             </section>
                                         </s_tb>
+                                    </div>
+                                </div>
+                                <!-- Entry : footer  : comment
+                                ================================================== -->
+                                <s_rp>
+                                    <section class="comment">
 
-                                        <!-- Entry : footer  : comment
-                                        ================================================== -->
-                                        <s_rp>
-                                            <section class="comment">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <!-- Entry : footer  : comment form
+                                                ================================================== -->
+                                                <s_rp_input_form>
+                                                    <form >
+                                                        <s_rp_member>
+                                                            <s_rp_guest>
+                                                                <div class="comment-form">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-6">
+                                                                            <div class="form-group">
+                                                                                <input placeholder="Name" type="text" class="form-control" id="inputNAME" name="[##_rp_input_name_##]" value="[##_guest_name_##]">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-sm-6">
+                                                                            <div class="form-group">
+                                                                                <input placeholder="Password" type="password" class="form-control" maxlength="10" id="inputPW" name="[##_rp_input_password_##]" vaslue="[##_rp_admin_check_##]">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="row">
+                                                                        <div class="col-sm-12">
+                                                                            <div class="form-group">
+                                                                                <input type="text" class="form-control" id="inputURL" name="[##_rp_input_homepage_##]" value="[##_guest_homepage_##]">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-sm-3">
+                                                                        </div>
+                                                                    </div>
+                                                                </div><!-- Entry : footer : comment-form -->
+
+                                                            </s_rp_guest>
+
+                                                            <div class="row">
+                                                            </div>
+
+                                                        </s_rp_member>
+                                                        <div class="comment-form">
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group">
+                                                                        <textarea name="[##_rp_input_comment_##]" class="form-control" rows="4"></textarea>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <div class="pull-right">
+                                                                        <label class="checkbox-inline" for="secret"><input type="checkbox" name="[##_rp_input_is_secret_##]"><strong>Secret</strong></label>
+                                                                        <button type="submit" class="btn btn-default" value="댓글 달기" onclick="[##_rp_onclick_submit_##]" >Comment</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </form><!-- Entry : footer : form -->
+                                                </s_rp_input_form>
+                                            </div>
+                                        </div>
+
+                                        <div class="row comments">
+                                            <div class="col-sm-12">
                                                 <s_rp_container>
                                                     <ol>
                                                         <s_rp_rep>
                                                             <li id="[##_rp_rep_id_##]">
                                                                 <div class="[##_rp_rep_class_##]">
-                                                                    <h4><span class="name">[##_rp_rep_name_##]</span>
-                                                                        <small><a href="[##_rp_rep_link_##]">address</a> <a href="#" onclick="[##_rp_rep_onclick_delete_##]">modify / delete</a> <a href="#" onclick="[##_rp_rep_onclick_reply_##]">reply</a></small></h4>
-                                                                    <time class="published" datetime="[##_rp_rep_date_##]">[##_rp_rep_date_##]</time>
+                                                                    <p>
+                                                                        <span class="name">[##_rp_rep_name_##]</span> <a href="#" onclick="[##_rp_rep_onclick_delete_##]">수정 / 삭제</a> / <a href="#" onclick="[##_rp_rep_onclick_reply_##]">댓글쓰기</a><br>
+                                                                        <a href="[##_rp_rep_link_##]"><time class="published" datetime="[##_rp_rep_date_##]">[##_rp_rep_date_##]</time></a>
+                                                                    </p>
                                                                     <p class="comment-body">[##_rp_rep_desc_##]</p>
                                                                 </div>
                                                                 <div class="reply">
                                                                     <s_rp2_container>
-                                                                        <ol>
+                                                                        <ol class="replies">
                                                                             <s_rp2_rep>
                                                                                 <li id="[##_rp_rep_id_##]">
-                                                                                    <div class="[##_rp_rep_class_##]">
-                                                                                        <h4><small>Reply:</small> <span class="name">[##_rp_rep_name_##]</span> <small><a href="[##_rp_rep_link_##]">address</a> <a href="#" onclick="[##_rp_rep_onclick_delete_##]">modify / delete</a> <a href="#" onclick="[##_rp_rep_onclick_reply_##]">reply</a></small></h4>
-                                                                                        <time class="published" datetime="[##_rp_rep_date_##]">[##_rp_rep_date_##]</time>
-                                                                                        <p class="comment-body">[##_rp_rep_desc_##]</p>
-                                                                                    </div>
+                                                                                    <p class="[##_rp_rep_class_##]">
+                                                                                        <span class="name">[##_rp_rep_name_##]</span> <a href="#" onclick="[##_rp_rep_onclick_delete_##]">수정 / 삭제</a> / <a href="#" onclick="[##_rp_rep_onclick_reply_##]">댓글쓰기</a><br>
+                                                                                        <a href="[##_rp_rep_link_##]"><time class="published" datetime="[##_rp_rep_date_##]">[##_rp_rep_date_##]</time></a>
+                                                                                    </p>
+                                                                                    <p class="comment-body">[##_rp_rep_desc_##]</p>
                                                                                 </li>
                                                                             </s_rp2_rep>
                                                                         </ol>
@@ -443,71 +513,13 @@
                                                         </s_rp_rep>
                                                     </ol>
                                                 </s_rp_container>
+                                            </div>
+                                        </div>
+                                    </section><!-- Entry : footer : comment -->
+                                </s_rp>
 
-                                                <!-- Entry : footer  : comment form
-                                                ================================================== -->
-                                                <s_rp_input_form>
-                                                    <s_rp_member>
-                                                        <s_rp_guest>
-                                                            <form class="form-horizontal">
-                                                                <div class="comment-form">
-                                                                    <div class="row">
-                                                                        <div class="col-sm-6">
-                                                                            <div class="form-group">
-                                                                                <label class="control-label" for="inputNAME">NAME</label>
-                                                                                <input type="text" class="form-control" id="inputNAME" name="[##_rp_input_name_##]" value="[##_guest_name_##]">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="row">
-                                                                        <div class="col-sm-6">
-                                                                            <div class="form-group">
-                                                                                <label class="control-label" for="inputPW">PASSWORD</label>
-                                                                                <input type="password" class="form-control" maxlength="10" id="inputPW" name="[##_rp_input_password_##]" value="[##_rp_admin_check_##]">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="row">
-                                                                        <div class="col-sm-6">
-                                                                            <div class="form-group">
-                                                                                <label class="control-label" for="inputURL">URL</label>
-                                                                                <input type="text" class="form-control" id="inputURL" name="[##_rp_input_homepage_##]" value="[##_guest_homepage_##]">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div><!-- Entry : footer : comment-form -->
-
-                                                        </s_rp_guest>
-
-                                                        <div class="row">
-                                                            <div class="col-sm-6">
-                                                                <div class="checkbox">
-                                                                    <label class="checkbox" for="secret"><input type="checkbox" name="[##_rp_input_is_secret_##]"><strong>Secret</strong></label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                    </s_rp_member>
-                                                    <div class="comment-form">
-                                                        <div class="row">
-                                                            <div class="col-sm-8">
-                                                                <textarea name="[##_rp_input_comment_##]" class="form-control" rows="3"></textarea>
-                                                                <button type="submit" class="btn btn-default btn-lg" value="댓글 달기" onclick="[##_rp_onclick_submit_##]" >Submit Comment</button>
-                                                            </div>
-                                                        </div>
-                                                    </div><!-- Entry : footer : comment-form -->
-                                                    </form><!-- Entry : footer : form-horizontal -->
-                                                </s_rp_input_form>
-
-                                            </section><!-- Entry : footer : comment -->
-                                        </s_rp>
-
-                                    </div><!-- /.col -->
-                                </div><!-- /.row -->
-                            </div><!-- /.container -->
-                        </div><!-- Entry : footer -->
+                            </div>
+                        </div>
 
                     </s_article_rep>
 

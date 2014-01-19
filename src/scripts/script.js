@@ -29,7 +29,7 @@
         });
 
         // Set month CSS class name on articles
-        $('article time').each(function() {
+        $('time.icon-noticon').each(function() {
             var time = $(this);
             var datetime = time.attr('datetime');
             var year = datetime.substring(0, 4);
