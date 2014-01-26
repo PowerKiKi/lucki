@@ -119,8 +119,10 @@ time.icon-noticon {
 .widget-who {
     background-color: @color4;
 
+    .circle-line,
     .icon-circle {
         color: @color2;
+        background-color: @color4;
     }
     img {
         width: 100%;
@@ -129,9 +131,12 @@ time.icon-noticon {
 .widget-categories {
     background-color: @color5;
 
+    .circle-line,
     .icon-circle {
         color: @color3;
+        background-color: @color5;
     }
+
 }
 .widget-counter {
     background-color: @color2;
@@ -141,6 +146,17 @@ time.icon-noticon {
 .widget .circle-title{
     text-align: center;
     padding: 10px 0;
+}
+
+.widget .circle-line {
+    position: absolute;
+    display: inline-block;
+    height: 3em;
+    overflow: hidden;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    left: 25px;
+    right: 25px;
 }
 
 .who-description {
@@ -395,22 +411,22 @@ a.carousel-control.right {
 
 /* Dynamic menu on the top right corner */
 #tistorytoolbarid {
-	transition-duration: 0.5s;
-	transition-delay: 3s;
-	-webkit-transition-duration: 0.5s;
-	-webkit-transition-delay: 3s;
-	-moz-transition-duration: 0.5s;
-	-moz-transition-delay: 3s;
-	width: 1em;
-	overflow: hidden;
+    transition-duration: 0.5s;
+    transition-delay: 3s;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-delay: 3s;
+    -moz-transition-duration: 0.5s;
+    -moz-transition-delay: 3s;
+    width: 1em;
+    overflow: hidden;
 }
 #tistorytoolbarid:hover {
-	transition-duration: 1s;
-	transition-delay: 0s;
-	-webkit-transition-duration: 1s;
-	-webkit-transition-delay: 0s;
-	-moz-transition-duration: 1s;
-	-moz-transition-delay: 0s;
-	width: 32em;
-	overflow: visible;
+    transition-duration: 1s;
+    transition-delay: 0s;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-delay: 0s;
+    -moz-transition-duration: 1s;
+    -moz-transition-delay: 0s;
+    width: 32em;
+    overflow: visible;
 }
