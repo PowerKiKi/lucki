@@ -430,3 +430,34 @@ a.carousel-control.right {
     width: 32em;
     overflow: visible;
 }
+
+// Push text on the right
+@media (min-width: @screen-sm   ) {
+    .entry-content {
+        @text-padding: 300px;
+
+        p {
+            padding-left: @text-padding;
+        }
+
+        img {
+            max-width: 150%;
+            margin-left: -@text-padding;
+        }
+    }
+}
+
+@media (min-width: @screen-md   ) {
+    .entry-content {
+        @text-padding: 400px;
+
+        p {
+            padding-left: @text-padding;
+        }
+
+        img {
+            max-width: none;
+            margin-left: -@text-padding;
+        }
+    }
+}
