@@ -53,6 +53,10 @@ time.icon-noticon {
 
 .datetime-container {
     float: left;
+    @media (min-width: @screen-sm) {
+        & {margin-left: 20px;
+        }
+    }
 }
 
 .entry-title {
@@ -62,6 +66,9 @@ time.icon-noticon {
         color: black;
     }
 }
+
+.icon-circle { color: @color1; }
+.title-container { border-color: @color1;}
 
 .month-01,
 .month-07 {
@@ -96,7 +103,8 @@ time.icon-noticon {
 
 .title-container {
     vertical-align: bottom;
-    border-bottom: 1px solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
     min-height: 7em;
 }
 
@@ -338,6 +346,34 @@ a.carousel-control.right {
 
         & {
             padding: 5px;
+        }
+    }
+}
+
+.search-list
+{
+    .search-list-thumbnail {
+        padding-top: 20px;
+    }
+
+    .caption {
+        background-color: fade(@color0, 50%);
+        right: 15px;
+        left: 15px;
+        bottom: 0px;
+        padding-left: 5px;
+        text-align: left;
+
+        position: absolute;
+        z-index: 10;
+        color: #fff;
+
+
+        @media (max-width: @screen-sm) {
+
+            & {
+                padding: 5px;
+            }
         }
     }
 }
