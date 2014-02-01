@@ -529,6 +529,12 @@ a.carousel-control.right {
     overflow: visible;
 }
 
+@media (min-width: @screen-xs ) {
+
+    .entry-content p {
+        line-height: 2.0em;
+    }
+}
 // Push text on the right
 @media (min-width: @screen-sm   ) {
     .entry-content {
@@ -536,6 +542,7 @@ a.carousel-control.right {
 
         p {
             padding-left: @text-padding;
+            line-height: 2.2em;
         }
 
         img {
@@ -566,4 +573,8 @@ div#ttCanvas .tt-item a.carousel-control:hover {
 #ttCanvas span[class*=" icon-"]
 {
     font-family: FontAwesome;
+}
+
+.pagination-container {
+    text-align: center;
 }
