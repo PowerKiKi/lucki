@@ -28,6 +28,7 @@
 }
 
 .sidebar-container {
+    margin-top: @grid-gutter-width;
     background-color: @color0;
 }
 
@@ -36,8 +37,8 @@ body {
 }
 
 .entry-content {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: @grid-gutter-width;
+    margin-right: @grid-gutter-width;
 }
 
 .icon-noticon {
@@ -54,7 +55,8 @@ time.icon-noticon {
 .datetime-container {
     float: left;
     @media (min-width: @screen-sm) {
-        & {margin-left: 20px;
+        & {
+            margin-left: @grid-gutter-width;
         }
     }
 }
@@ -69,6 +71,9 @@ time.icon-noticon {
 
 .icon-circle { color: @color1; }
 .title-container { border-color: @color1;}
+
+.guestbook-header .icon-circle { color: @color5; }
+.guestbook-header .title-container { border-color: @color5;}
 
 .month-01,
 .month-07 {
@@ -139,9 +144,9 @@ time.icon-noticon {
 
 }
 .widget-counter {
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    padding-top: @grid-gutter-width;
+    padding-right: @grid-gutter-width;
+    padding-bottom: @grid-gutter-width;
     background-color: @color2;
 }
 
@@ -150,7 +155,7 @@ time.icon-noticon {
     background-color: @color3;
     a,
     .tt-mapsidebar-module {
-        margin: 20px;
+        margin: @grid-gutter-width;
         display: inline-block;
     }
 }
@@ -182,7 +187,7 @@ time.icon-noticon {
 }
 
 hgroup h1 a {
-    margin-right: 20px;
+    margin-right: @grid-gutter-width;
     display: inline-block;
     width: 447px;
     max-width: 447px;
@@ -259,8 +264,8 @@ nav .icon-noticon i {
 
 nav {
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: @grid-gutter-width;
+    padding-bottom: @grid-gutter-width;
     .icon-noticon {
         line-height: 1em !important;
         span {
@@ -340,9 +345,9 @@ nav {
 
 .entry-footer {
     margin-top: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 20px;
+    padding-left: @grid-gutter-width / 2;
+    padding-right: @grid-gutter-width / 2;
+    padding-top: @grid-gutter-width;
     background-color: @color4;
     color: white;
 
@@ -373,7 +378,7 @@ nav {
 }
 
 .comments .replies {
-    padding-left: 20px;
+    padding-left: @grid-gutter-width;
     background-color: @color4;
     color: white;
     .name,
@@ -386,11 +391,15 @@ nav {
 }
 
 .guestbook {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: @grid-gutter-width / 2;
+    padding-right: @grid-gutter-width / 2;
+    form {
+        padding-left: @grid-gutter-width / 2;
+        padding-right: @grid-gutter-width / 2;
+    }
 
     .comments {
-        padding-top: 20px;
+        padding-top: @grid-gutter-width;
         background-color: @color4;
         color: white;
         .name,
@@ -436,8 +445,8 @@ a.carousel-control.right {
     right: 0px;
     left: 0px;
     bottom: 0px;
-    padding-bottom: 20px;
-    padding-left: 20px;
+    padding-bottom: @grid-gutter-width;
+    padding-left: @grid-gutter-width;
     text-align: left;
 
 
@@ -452,14 +461,16 @@ a.carousel-control.right {
 
 .search-list
 {
+    padding-left:  @grid-gutter-width / 2;
+    padding-right:  @grid-gutter-width / 2;
     .search-list-thumbnail {
-        padding-top: 20px;
+        padding-top: @grid-gutter-width;
     }
 
     .caption {
         background-color: fade(@color0, 50%);
-        right: 15px;
-        left: 15px;
+        right: @grid-gutter-width / 2;
+        left: @grid-gutter-width / 2;
         bottom: 0px;
         padding-left: 5px;
         text-align: left;
@@ -488,7 +499,7 @@ a.carousel-control.right {
     }
     .col-sm-2,
     .col-sm-4 {
-        margin-bottom: 20px;
+        margin-bottom: @grid-gutter-width;
     }
 }
 
