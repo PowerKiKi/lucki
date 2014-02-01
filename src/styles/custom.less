@@ -430,35 +430,35 @@ nav {
 
 
 .carousel-control .icon-next, .carousel-control .icon-chevron-right {
-    right: 50%;
+    right: 50% !important;
 }
 .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .icon-chevron-left, .carousel-control .icon-chevron-right {
-    position: absolute;
-    top: 50%;
-    z-index: 5;
-    display: inline-block;
+    position: absolute !important;
+    top: 50% !important;
+    z-index: 5 !important;
+    display: inline-block !important;
 }
 
 a.carousel-control.left,
 a.carousel-control.right {
-    background-image: none;
+    background-image: none !important;
 }
 
 .carousel-caption {
-    background-color: fade(@color0, 50%);
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
-    padding-bottom: @grid-gutter-width;
-    padding-left: @grid-gutter-width;
-    text-align: left;
-
-
+    background-color: fade(@color0, 50%) !important;
+    right: 0px !important;
+    left: 0px !important;
+    bottom: 0px !important;
+    padding-top: @grid-gutter-width !important;
+    padding-bottom: @grid-gutter-width !important;
+    padding-left: @grid-gutter-width !important;
+    text-align: left !important;
+    font-size: 18px !important;
 
     @media (max-width: @screen-sm) {
 
         & {
-            padding: 5px;
+            padding: 5px !important;
         }
     }
 }
