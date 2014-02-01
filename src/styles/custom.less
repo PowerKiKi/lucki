@@ -46,9 +46,11 @@ time.icon-noticon {
     }
 }
 
-.entry-title {
+h1.entry-title {
     color: black;
-    padding-top: 22px;
+    font-size: 20px;
+    padding-top: 29px;
+    margin-bottom: 0px;
     a {
         color: black;
     }
@@ -57,8 +59,8 @@ time.icon-noticon {
 .icon-circle { color: @color1; }
 .title-container { border-color: @color1;}
 
-.guestbook-header .icon-circle { color: @color5; }
-.guestbook-header .title-container { border-color: @color5;}
+.guestbook-header .icon-circle { color: @color2; }
+.guestbook-header .title-container { border-color: @color2;}
 
 .month-01,
 .month-07 {
@@ -96,6 +98,13 @@ time.icon-noticon {
     border-bottom-width: 1px;
     border-bottom-style: solid;
     min-height: 7em;
+
+    .category {
+        font-size: 13px;
+        a {
+            color: lighten(@color0, 35%);
+        }
+    }
 }
 
 .entry-tags .icon-circle,
@@ -129,9 +138,7 @@ time.icon-noticon {
 
 }
 .widget-counter {
-    padding-top: @grid-gutter-width;
-    padding-right: @grid-gutter-width;
-    padding-bottom: @grid-gutter-width;
+    padding: @grid-gutter-width;
     background-color: @color2;
 }
 
