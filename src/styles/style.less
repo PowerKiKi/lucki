@@ -210,7 +210,6 @@ ul.pagination .interword {
     margin-bottom: @grid-gutter-width;
 }
 .widget-inner {
-    margins-top: @grid-gutter-width;
     padding:0;
     text-align: left;
     color: white;
@@ -232,16 +231,22 @@ ul.pagination .interword {
 
 .widget-inner > ul > li > ul {
     margin-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .widget-inner ul li a {
     display:block;
     padding: 10px 5px;
-    font-size: 12px;
     text-decoration: none;
     -webkit-transition: background-color 0.5s;
     -moz-transition: background-color    0.5s;
     -o-transition: background-color      0.5s;
     transition: background-color         0.5s;
+}
+.widget-inner ul li ul li ul li a
+{
+
+    padding: 2px 5px;
 }
 .widget-inner ul li a:hover {
     color:#fff;
@@ -249,7 +254,6 @@ ul.pagination .interword {
     background-color: #10a4ff;
 }
 .widget-inner ul ul ul {text-indent:10px;}
-.widget-inner li li li a:before {  content:"›"; padding-right:10px;}
 .widget-inner .cnt {
     color: #999;
     font-size:12px;
