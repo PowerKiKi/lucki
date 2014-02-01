@@ -317,7 +317,7 @@ nav {
     }
 }
 
-.comments .replies{
+.comments .replies {
     padding-left: 20px;
     background-color: @color4;
     color: white;
@@ -330,6 +330,35 @@ nav {
     }
 }
 
+.guestbook {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .comments {
+        padding-top: 20px;
+        background-color: @color4;
+        color: white;
+        .name,
+        .name a {
+            color: @color2;
+        }
+        a {
+            color: white;
+        }
+    }
+
+    .comments .replies {
+        background-color: white;
+        color: @color0;
+        .name,
+        .name a {
+            color: @color4;
+        }
+        a {
+            color: @color0;
+        }
+    }
+}
 
 
 .carousel-control .icon-next, .carousel-control .icon-chevron-right {

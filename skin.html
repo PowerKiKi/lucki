@@ -189,97 +189,109 @@
                     <!-- Guestbook
                     ================================================== -->
                     <s_guest>
-                        <div class="container">
+                        <div class="">
                             <div class="guestbook">
-                                <h3>Guestbook</h3>
-                                <s_guest_input_form>
-                                    <s_guest_member>
-                                        <s_guest_form>
-                                            <form class="form-horizontal">
-                                                <div class="guestbook-form">
+                                <h1>Guestbook</h1>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <s_guest_input_form>
+                                            <form>
+                                                <s_guest_member>
+                                                    <s_guest_form>
+
+                                                        <div class="comment-form">
+                                                            <div class="row">
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <input placeholder="Name" type="text" class="form-control" id="inputNAME" name="[##_guest_input_name_##]" value="[##_guest_name_##]">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <input placeholder="Password" type="password" class="form-control" maxlength="10" id="inputPW" name="[##_guest_input_password_##]" vaslue="[##__guest_password_##]">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group">
+                                                                        <input type="text" class="form-control" id="inputURL" name="[##_guest_input_homepage_##]" value="[##_guest_homepage_##]">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-sm-3">
+                                                                </div>
+                                                            </div>
+                                                        </div><!-- Entry : footer : comment-form -->
+
+                                                    </s_guest_form>
+
                                                     <div class="row">
-                                                        <div class="col-sm-6">
+                                                    </div>
+
+                                                </s_guest_member>
+                                                <div class="comment-form">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
                                                             <div class="form-group">
-                                                                <label class="control-label" for="inputNAME">NAME</label>
-                                                                <input type="text" class="form-control" id="inputNAME" name="[##_guest_input_name_##]" value="[##_guest_name_##]">
+                                                                <textarea name="[##_guest_textarea_body_##]" class="form-control" rows="4"></textarea>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <div class="pull-right">
+                                                                <label class="checkbox-inline" for="secret"><input type="checkbox" name="[##_guest_input_is_secret_##]"><strong>Secret</strong></label>
+                                                                <button type="submit" class="btn btn-default" value="댓글 달기" onclick="[##_guest_onclick_submit_##]" >Comment</button>
                                                             </div>
                                                         </div>
                                                     </div>
+                                                </div>
 
-                                                    <div class="row">
-                                                        <div class="col-sm-6">
-                                                            <div class="form-group">
-                                                                <label class="control-label" for="inputPW">PASSWORD</label>
-                                                                <input type="password" class="form-control" maxlength="10" id="inputPW" name="[##_guest_input_password_##]" value="[##_guest_password_##]">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row">
-                                                        <div class="col-sm-6">
-                                                            <div class="form-group">
-                                                                <label class="control-label" for="inputURL">URL</label>
-                                                                <input type="text" class="form-control" id="inputURL" name="[##_guest_input_homepage_##]" value="[##_guest_homepage_##]">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div><!-- Guestbook : guestbook-form -->
-
-                                        </s_guest_form>
-                                    </s_guest_member>
-
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="checkbox">
-                                                <label class="checkbox" for="secret"><input type="checkbox" id="secret" name="secret"><strong>Secret</strong></label>
-                                            </div>
-                                        </div>
+                                            </form>
+                                        </s_guest_input_form>
                                     </div>
+                                </div>
 
-                                    <div class="guestbook-form">
-                                        <div class="row">
-                                            <div class="col-sm-8">
-                                                <textarea name="[##_guest_textarea_body_##]" class="form-control" rows="3"></textarea>
-                                                <button type="submit" class="btn btn-default btn-lg" value="댓글 달기" onclick="[##_guest_onclick_submit_##]">Submit Comment</button>
-                                            </div>
-                                        </div>
-
-                                    </div><!-- Guestbook : guestbook-form -->
-                                    </form><!-- Guestbook : form-horizontal -->
-                                </s_guest_input_form>
-
-                                <s_guest_container>
-                                    <hr />
-                                    <ol>
-                                        <s_guest_rep>
-                                            <li id='[##_guest_rep_id_##]'>
-                                                <div class="[##_guest_rep_class_##]">
-                                                    <h4><span class="name">[##_guest_rep_name_##]</span> <small><a href="#" onclick="[##_guest_rep_onclick_delete_##]">modify / delete</a> <a href="#" onclick="[##_guest_rep_onclick_reply_##]">reply</a></small></h4>
-                                                    <time class="published" datetime="[##_guest_rep_date_##]">[##_guest_rep_date_##]</time>
-                                                    <p class="comment-body">[##_guest_rep_desc_##]</p>
-                                                </div><!-- Guestbook : rep_class -->
-
-                                                <div class="reply">
-                                                    <s_guest_reply_container>
-                                                        <ol>
-                                                            <s_guest_reply_rep>
-                                                                <li id='[##_guest_rep_id_##]'>
-                                                                    <div class="[##_guest_rep_class_##]">
-                                                                        <h4><small>Reply:</small> <span class="name">[##_guest_rep_name_##]</span> <small><a href="#" onclick="[##_guest_rep_onclick_delete_##]">modify / delete</a></small></h4>
-                                                                        <time class="published" datetime="[##_guest_rep_date_##]">[##_guest_rep_date_##]</time>
-                                                                        <p class="comment-body">[##_guest_rep_desc_##]</p>
-                                                                    </div><!-- Guestbook : rep_class -->
-                                                                </li>
-                                                            </s_guest_reply_rep>
-                                                        </ol>
-                                                    </s_guest_reply_container>
-                                                </div><!-- Guestbook : reply -->
-                                            </li>
-                                        </s_guest_rep>
-                                    </ol>
-                                </s_guest_container>
+                                <div class="row comments">
+                                    <div class="col-sm-12">
+                                        <s_guest_container>
+                                            <ol>
+                                                <s_guest_rep>
+                                                    <li id="[##_guest_rep_id_##]">
+                                                        <div class="[##_guest_rep_class_##]">
+                                                            <p>
+                                                                <span class="name">[##_guest_rep_name_##]</span> <a href="#" onclick="[##_guest_rep_onclick_delete_##]">수정 / 삭제</a> / <a href="#" onclick="[##_guest_rep_onclick_reply_##]">댓글쓰기</a><br>
+                                                                <a href="[##_guest_rep_link_##]"><time class="published" datetime="[##_guest_rep_date_##]">[##_guest_rep_date_##]</time></a>
+                                                            </p>
+                                                            <p class="comment-body">[##_guest_rep_desc_##]</p>
+                                                        </div>
+                                                        <div class="reply">
+                                                            <s_guest_reply_container>
+                                                                <ol class="replies">
+                                                                    <s_guest_reply_rep>
+                                                                        <li id="[##_guest_rep_id_##]">
+                                                                            <p class="[##_guest_rep_class_##]">
+                                                                                <span class="name">[##_guest_rep_name_##]</span> <a href="#" onclick="[##_guest_rep_onclick_delete_##]">수정 / 삭제</a> / <a href="#" onclick="[##_rp_rep_onclick_reply_##]">댓글쓰기</a><br>
+                                                                                <a href="[##_guest_rep_link_##]"><time class="published" datetime="[##_guest_rep_date_##]">[##_guest_rep_date_##]</time></a>
+                                                                            </p>
+                                                                            <p class="comment-body">[##_guest_rep_desc_##]</p>
+                                                                        </li>
+                                                                    </s_guest_reply_rep>
+                                                                </ol>
+                                                            </s_guest_reply_container>
+                                                        </div>
+                                                    </li>
+                                                </s_guest_rep>
+                                            </ol>
+                                        </s_guest_container>
+                                    </div>
+                                </div>
                             </div>
-                        </div><!-- /.container -->
+                        </div>
                     </s_guest>
 
                     <!-- Notice
@@ -445,7 +457,7 @@
 
                                                                     <div class="col-sm-6">
                                                                         <div class="form-group">
-                                                                            <input placeholder="Password" type="password" class="form-control" maxlength="10" id="inputPW" name="[##_rp_input_password_##]" vaslue="[##_rp_admin_check_##]">
+                                                                            <input placeholder="Password" type="password" class="form-control" maxlength="10" id="inputPW" name="[##_rp_input_password_##]" value="[##_rp_admin_check_##]">
                                                                         </div>
                                                                     </div>
                                                                 </div>
