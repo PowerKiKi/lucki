@@ -909,3 +909,21 @@ hgroup h1 a {
 .skeleton-footer {
     background-image: url('logo.png');
 }
+
+.icon-daum {
+    background-image: url("images/icon-daum.png") !important;
+}
+
+.icon-naver {
+    background-image: url("images/icon-naver.png") !important;
+}
+
+@media (max-width: 768px) {
+    .icon-daum {
+        background-image: url("images/icon-daum-small.png") !important;
+    }
+
+    .icon-naver {
+        background-image: url("images/icon-naver-small.png") !important;
+    }
+}

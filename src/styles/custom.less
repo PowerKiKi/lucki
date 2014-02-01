@@ -236,13 +236,37 @@ hgroup h1 a {
     color: @color5light;
 }
 
+nav .icon-noticon i {
+    top: 30px;
+    font-size: 32px !important;
+}
+
+.icon-daum {
+    background-image: url("images/icon-daum.svg") !important;
+    top: 17px !important;
+}
+.icon-naver {
+    background-image: url("images/icon-naver.svg") !important;
+    top: 22px !important;
+}
+.icon-daum,
+.icon-naver {
+
+    background-repeat: no-repeat !important;
+    background-position-x: 50% !important;
+    background-position-y: 0px !important;
+}
+
 nav {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
     .icon-noticon {
         line-height: 1em !important;
-        padding-top: 55px;
+        span {
+            padding-top: 55px;
+            display: inline-block;
+        }
         font-size: 0.3em !important;
     }
     .icon-circle {
@@ -269,11 +293,24 @@ nav {
             font-size: 3em;
         }
         .icon-noticon {
-            padding-top: 37px;
+            span {
+                padding-top: 40px;
+            }
+            i {
+                top: 24px;
+                font-size: 18px !important;
+            }
         }
-        .menu-guestbook .icon-noticon {
-            padding-top: 32px;
+
+        .icon-daum {
+            background-image: url("images/icon-daum-small.svg") !important;
+            top: 17px !important;
         }
+        .icon-naver {
+            background-image: url("images/icon-naver-small.svg") !important;
+            top: 22px !important;
+        }
+
     }
 }
 
@@ -285,10 +322,16 @@ nav {
             font-size: 2em;
         }
         .icon-noticon {
-            padding-top: 24px;
+            span {
+                padding-top: 24px;
+            }
+
+            i {
+                display: none !important;
+            }
             font-size: 10px !important;
         }
-        .menu-guestbook .icon-noticon {
+        .menu-guestbook .icon-noticon span {
             padding-top: 20px;
         }
     }
