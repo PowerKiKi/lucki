@@ -1,3 +1,19 @@
+@color0: #2B2823; // background
+@color1: #BB1728; // red
+@color2: #FFB200; // yellow
+@color3: #B5AA21; // green
+@color4: #009A84; // turquoise
+@color5: #B45477; // violet
+@color6: #F15947; // saumon
+
+// hvoer colors for menu
+@color1light: hsl(hue(@color1),saturation(@color1),lightness(@color1) + 15);
+@color2light: hsl(hue(@color2),saturation(@color2),lightness(@color2) + 15);
+@color3light: hsl(hue(@color3),saturation(@color3),lightness(@color3) + 15);
+@color4light: hsl(hue(@color4),saturation(@color4),lightness(@color4) + 15);
+@color5light: hsl(hue(@color5),saturation(@color5),lightness(@color5) + 15);
+
+
 //
 // Variables
 // --------------------------------------------------
@@ -18,7 +34,7 @@
 // Brand colors
 // -------------------------
 
-@brand-primary:         #428bca;
+@brand-primary:         @color4;
 @brand-success:         #5cb85c;
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
@@ -34,7 +50,7 @@
 // -------------------------
 
 @link-color:            @brand-primary;
-@link-hover-color:      darken(@link-color, 15%);
+@link-hover-color:      darken(@link-color, 10%);
 
 // Typography
 // -------------------------
@@ -144,7 +160,7 @@
 @input-color:                    @gray;
 @input-border:                   #ccc;
 @input-border-radius:            @border-radius-base;
-@input-border-focus:             #66afe9;
+@input-border-focus:             @color0;
 
 @input-color-placeholder:        @gray-light;
 
