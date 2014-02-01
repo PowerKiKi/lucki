@@ -352,6 +352,8 @@ nav {
     color: white;
 
     .actionTrail {
+        padding-left: @grid-gutter-width / 2;
+        padding-right: @grid-gutter-width / 2;
         color: @color2;
         a {
             color: @color2;
@@ -375,6 +377,9 @@ nav {
     a {
         color: @color0;
     }
+    .col-sm-12 {
+        padding-right: 0px;
+    }
 }
 
 .comments .replies {
@@ -390,9 +395,7 @@ nav {
     }
 }
 
-.guestbook {
-    padding-left: @grid-gutter-width / 2;
-    padding-right: @grid-gutter-width / 2;
+.comment, .guestbook {
     form {
         padding-left: @grid-gutter-width / 2;
         padding-right: @grid-gutter-width / 2;
@@ -400,6 +403,14 @@ nav {
 
     .comments {
         padding-top: @grid-gutter-width;
+    }
+}
+
+.guestbook {
+    padding-left: @grid-gutter-width / 2;
+    padding-right: @grid-gutter-width / 2;
+
+    .comments {
         background-color: @color4;
         color: white;
         .name,
