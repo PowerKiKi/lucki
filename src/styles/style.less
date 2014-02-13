@@ -282,14 +282,19 @@ figcaption {
     margin: 0 auto;
 }
 .scrollup {
+    color: @color2;
     position: fixed;
     display: none;
     width: 100px;
     height: 20px;
-    bottom: 150px;
-    right: 50px;
+    bottom: 70px;
+    right: 0px;
     opacity: 0.7;
-    font-size:10px;
+    &:hover, &:active {
+        text-decoration: none;
+        color: darken(@color2, 10%);
+    }
+    text-align: center;
 }
 .text-justify {
     text-align: justify;
@@ -435,9 +440,6 @@ body.tistory_grid_1050 div#ttCanvas { max-width: 100% !important; }
     footer ul li, footer p {
         font-size:10px;
     }
-    .scrollup {
-        display:none !important;
-    }
     .responsive-right2left {
         float:left;
     }
@@ -445,12 +447,3 @@ body.tistory_grid_1050 div#ttCanvas { max-width: 100% !important; }
         float:right;
     }
 }
-
-@media screen and (max-width: 992px) {
-    /* utility */
-    .scrollup {
-        display:none !important;
-    }
-}
-
-@media (min-width: 1200px) { }
