@@ -1,7 +1,7 @@
 
 @import "/less/variables.less";
 
-
+.index-container,
 .sidebar-container,
 .skeleton-nav,
 #content {
@@ -490,6 +490,9 @@ a.carousel-control.right {
         padding-top: @grid-gutter-width;
     }
 
+}
+.index-container,
+.search-list {
     .caption {
         background-color: fade(@color0, 50%);
         right: @grid-gutter-width / 2;
@@ -507,6 +510,84 @@ a.carousel-control.right {
 
             & {
                 padding: 5px;
+            }
+        }
+    }
+}
+
+.index-container {
+    background: white;
+    padding-left: @grid-gutter-width;
+    padding-right: @grid-gutter-width;
+    padding-bottom: @grid-gutter-width;
+    .row >div {
+        margin-bottom: @grid-gutter-width;
+    }
+    .icon-stack {
+        position: absolute;
+        bottom: -20px;
+        z-index: 999;
+
+    }
+    .caption {
+
+        padding-left: 85px;
+        max-width: 320px;
+    }
+    .icon-noticon {
+
+        padding-top: 10px;
+        line-height: 30px !important;
+        .location {
+            font-family: 'ScriptinaRegular' !important;
+            font-size: 25px !important;
+        }
+    }
+    .icon-circle {
+        &.red {
+            color: @color1;
+        }
+        &.yellow {
+            color: @color2;
+        }
+        &.green {
+            color: @color3;
+        }
+        &.turquoise {
+            color: @color4;
+        }
+        &.violet {
+            color: @color5;
+        }
+        &.saumon {
+            color: @color6;
+        }
+    }
+}
+
+
+@media (max-width: @screen-xs) {
+    .index-container {
+        .caption {
+            padding-left: 5px;
+        }
+        .icon-stack {
+            font-size: 29px;
+            bottom: inherit;
+            top: -9px;
+        }
+
+        .icon-noticon {
+            .year {
+                position: relative;
+                font-size: 10px !important;
+
+                top: -43px;
+            }
+            .location {
+                position: relative;
+                font-size: 20px !important;
+                top: 6px;
             }
         }
     }
@@ -597,6 +678,7 @@ div#ttCanvas .tt-item a.carousel-control:hover {
 #ttCanvas span[class*=" icon-"]
 {
     font-family: FontAwesome;
+    font-size: 3em;
 }
 
 .pagination-container {
@@ -611,4 +693,17 @@ div#ttCanvas .tt-item a.carousel-control:hover {
     img {
         margin-left: auto;
     }
+}
+
+@font-face {
+    font-family: 'ScriptinaRegular';
+    src: url('images/scriptina-sodoll1.eot');
+    src: url('images/scriptina-sodoll1.eot') format('embedded-opentype'),
+        url('images/scriptina-sodoll1.woff') format('woff'),
+        url('images/scriptina-sodoll1.ttf') format('truetype'),
+        url('images/scriptina-sodoll1.svg#ScriptinaRegular') format('svg');
+}
+
+.module module_plugin {
+    background: yellow;
 }
