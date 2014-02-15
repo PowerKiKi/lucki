@@ -1,3 +1,20 @@
+@color0: #2B2823; // background
+@color1: #BB1728; // red
+@color2: #FFB200; // yellow
+@color3: #B5AA21; // green
+@color4: #009A84; // turquoise
+@color5: #B45477; // violet
+@color6: #F15947; // saumon
+
+// hvoer colors for menu
+@color1light: hsl(hue(@color1),saturation(@color1),lightness(@color1) + 15);
+@color2light: hsl(hue(@color2),saturation(@color2),lightness(@color2) + 15);
+@color3light: hsl(hue(@color3),saturation(@color3),lightness(@color3) + 15);
+@color4light: hsl(hue(@color4),saturation(@color4),lightness(@color4) + 15);
+@color5light: hsl(hue(@color5),saturation(@color5),lightness(@color5) + 15);
+
+@font-family-korean: "Open Sans", "Verdana", "AppleGothic", "sans-serif", "맑은 고딕", "Malgun Gothic", "나눔고딕", NanumGothic, "돋움", dotum, "Georgia Pro", Arial;
+
 //
 // Variables
 // --------------------------------------------------
@@ -13,7 +30,7 @@
 @gray-light:             lighten(#000, 60%);   // #999
 @gray-lighter:           lighten(#000, 93.5%); // #eee
 
-@brand-primary:         #428bca;
+@brand-primary:         @color4;
 @brand-success:         #5cb85c;
 @brand-info:            #5bc0de;
 @brand-warning:         #f0ad4e;
@@ -32,7 +49,7 @@
 //** Global textual link color.
 @link-color:            @brand-primary;
 //** Link hover color set via `darken()` function.
-@link-hover-color:      darken(@link-color, 15%);
+@link-hover-color:      darken(@link-color, 10%);
 
 
 //== Typography
@@ -43,7 +60,7 @@
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
-@font-family-base:        @font-family-sans-serif;
+@font-family-base:        @font-family-korean;
 
 @font-size-base:          14px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
@@ -95,9 +112,9 @@
 @line-height-large:         1.33;
 @line-height-small:         1.5;
 
-@border-radius-base:        4px;
-@border-radius-large:       6px;
-@border-radius-small:       3px;
+@border-radius-base:        0px;
+@border-radius-large:       0px;
+@border-radius-small:       0px;
 
 //** Global color for active items (e.g., navs or dropdowns).
 @component-active-color:    #fff;
@@ -180,7 +197,7 @@
 //** `<input>` border radius
 @input-border-radius:            @border-radius-base;
 //** Border color for inputs on focus
-@input-border-focus:             #66afe9;
+@input-border-focus:             @color0;
 
 //** Placeholder text color
 @input-color-placeholder:        @gray-light;
@@ -293,7 +310,7 @@
 //** Number of columns in the grid.
 @grid-columns:              12;
 //** Padding between columns. Gets divided in half for the left and right.
-@grid-gutter-width:         30px;
+@grid-gutter-width:         20px;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
 @grid-float-breakpoint:     @screen-sm-min;
