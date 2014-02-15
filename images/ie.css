@@ -41,3 +41,7 @@ hgroup h1 a {
 .skeleton-footer {
     max-width: 970px;
 }
+
+.location {
+    padding-right: 50px;
+}
