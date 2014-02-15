@@ -11,7 +11,7 @@ module.exports = function(grunt) {
                 'src/scripts/script.js'
             ]
         },
-        recess: {
+        less: {
             dist: {
                 options: {
                     compile: true,
@@ -53,9 +53,9 @@ module.exports = function(grunt) {
             less: {
                 files: [
                     'src/styles/*.less',
-                    'src/styles/less/*.less'
+                    'src/styles/bootstrap/*.less'
                 ],
-                tasks: ['recess']
+                tasks: ['less']
             },
             js: {
                 files: [
@@ -86,7 +86,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-recess');
-    grunt.registerTask('default', ['clean', 'recess', 'uglify']);
+    grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.registerTask('default', ['clean', 'less', 'uglify']);
     grunt.registerTask('dev', ['watch']);
 };
