@@ -33,3 +33,11 @@ hgroup h1 a {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F2B2823,endColorstr=#7F2B2823);   /* IE6 & 7 */
     zoom: 1;
 }
+
+
+.index-container {
+    max-width: 1020px;
+}
+.skeleton-footer {
+    max-width: 970px;
+}
