@@ -31,7 +31,6 @@ module.exports = function(grunt) {
                 files: {
                     'images/app.js': [
                         'src/scripts/jquery-1.11.0.min.js',
-                        'src/scripts/modernizr-2.6.2.min.js',
                         'src/scripts/bootstrap/transition.js',
                         'src/scripts/bootstrap/alert.js',
                         'src/scripts/bootstrap/button.js',
