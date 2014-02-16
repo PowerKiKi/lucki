@@ -32,17 +32,17 @@ module.exports = function(grunt) {
                     'images/app.js': [
                         'src/scripts/jquery-1.11.0.min.js',
                         'src/scripts/bootstrap/transition.js',
-                        'src/scripts/bootstrap/alert.js',
-                        'src/scripts/bootstrap/button.js',
+//                        'src/scripts/bootstrap/alert.js',
+//                        'src/scripts/bootstrap/button.js',
                         'src/scripts/bootstrap/carousel.js',
-                        'src/scripts/bootstrap/collapse.js',
-                        'src/scripts/bootstrap/dropdown.js',
-                        'src/scripts/bootstrap/modal.js',
-                        'src/scripts/bootstrap/tooltip.js',
-                        'src/scripts/bootstrap/popover.js',
-                        'src/scripts/bootstrap/scrollspy.js',
-                        'src/scripts/bootstrap/tab.js',
-                        'src/scripts/bootstrap/affix.js',
+//                        'src/scripts/bootstrap/collapse.js',
+//                        'src/scripts/bootstrap/dropdown.js',
+//                        'src/scripts/bootstrap/modal.js',
+//                        'src/scripts/bootstrap/tooltip.js',
+//                        'src/scripts/bootstrap/popover.js',
+//                        'src/scripts/bootstrap/scrollspy.js',
+//                        'src/scripts/bootstrap/tab.js',
+//                        'src/scripts/bootstrap/affix.js',
                         'src/scripts/script.js'
                     ]
                 }
