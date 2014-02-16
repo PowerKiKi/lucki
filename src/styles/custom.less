@@ -591,24 +591,35 @@ a.carousel-control.right {
     }
 }
 
-#ttCanvas .tt-post {
-    .tt-post-title {
-        font-weight: bold;
+#ttCanvas {
+
+    .tt-component {
+        padding-left: @grid-gutter-width;
+        padding-right: @grid-gutter-width;
     }
-    .col-sm-4 {
-        padding-left: 1em;
-        padding-right: 2em;
+    .tt-component:first-child {
+        padding-left: 0px;
+        padding-right: 0px;
     }
-    .col-sm-2,
-    .col-sm-4 {
-        margin-bottom: @grid-gutter-width;
-    }
-    a.tt-wrap-thumb-link {
-        margin-right: 15px !important;
-        border: none !important;
+
+    .tt-post {
+        .tt-post-title {
+            font-weight: bold;
+        }
+        .col-sm-4 {
+            padding-left: 1em;
+            padding-right: 2em;
+        }
+        .col-sm-2,
+        .col-sm-4 {
+            margin-bottom: @grid-gutter-width;
+        }
+        a.tt-wrap-thumb-link {
+            margin-right: 15px !important;
+            border: none !important;
+        }
     }
 }
-
 
 /* Dynamic menu on the top right corner */
 #tistorytoolbarid {
@@ -697,9 +708,9 @@ div#ttCanvas .tt-item a.carousel-control:hover {
     font-family: 'scriptinaregular';
     src: url('images/scriptina-sodoll1-webfont.eot');
     src: url('images/scriptina-sodoll1-webfont.eot?#iefix') format('embedded-opentype'),
-         url('images/scriptina-sodoll1-webfont.woff') format('woff'),
-         url('images/scriptina-sodoll1-webfont.ttf') format('truetype'),
-         url('images/scriptina-sodoll1-webfont.svg#scriptinaregular') format('svg');
+        url('images/scriptina-sodoll1-webfont.woff') format('woff'),
+        url('images/scriptina-sodoll1-webfont.ttf') format('truetype'),
+        url('images/scriptina-sodoll1-webfont.svg#scriptinaregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
