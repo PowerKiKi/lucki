@@ -4,16 +4,6 @@
             return e.preventDefault();
         });
 
-        $("a[data-toggle=popover]").popover().click(function(e) {
-            return e.preventDefault();
-        });
-
-        $("a[data-toggle=tooltip]").tooltip();
-        $(".carousel").carousel({
-            interval: 5000,
-            pause: "hover"
-        });
-
         $(window).scroll(function() {
             if ($(this).scrollTop() > 100) {
                 return $(".scrollup").fadeIn('slow');
