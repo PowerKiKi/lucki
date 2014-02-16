@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <skin>
     <information>
-        <name>markquery skeleton - Doo Be Doo</name>
+        <name>Doo Be Doo - LuCKi</name>
         <version>1.2.1</version>
         <description>
-			<![CDATA[마크쿼리 skeleton - Doo Be Doo입니다]]>
+			<![CDATA[Doo Be Doo - LuCKi, based on 마크쿼리 skeleton]]>
         </description>
         <license>
-			<![CDATA[http://markquery.github.io/license]]>
+			<![CDATA[https://github.com/PowerKiKi/tistory-doobedoo/blob/master/LICENSE.md]]>
         </license>
         <tags>
             <tag>콘텐츠 편집디자인</tag>
@@ -17,9 +17,9 @@
         </tags>
     </information>
     <author>
-        <name>Ungki, H</name>
-        <homepage>http://markquery.com</homepage>
-        <email>ungki.h@gmail.com</email>
+        <name>PowerKiKi</name>
+        <homepage>https://github.com/PowerKiKi/tistory-doobedoo</homepage>
+        <email>adrien.crivelli@gmail.com</email>
     </author>
     <default>
         <recentEntries>5</recentEntries>
@@ -29,7 +29,7 @@
         <tagsInCloud>10</tagsInCloud>
         <sortInCloud>3</sortInCloud>
         <expandComment>1</expandComment>
-        <expandTrackback>1</expandTrackback>
+        <expandTrackback>0</expandTrackback>
         <lengthOfRecentNotice>25</lengthOfRecentNotice>
         <lengthOfRecentEntry>27</lengthOfRecentEntry>
         <lengthOfRecentComment>30</lengthOfRecentComment>
@@ -53,6 +53,6 @@
             <labelLength>27</labelLength>
             <showValue>1</showValue>
         </tree>
-        <contentWidth>1170</contentWidth>
+        <contentWidth>1000</contentWidth>
     </default>
 </skin>

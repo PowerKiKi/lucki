@@ -1,14 +1,17 @@
 {
-    "name": "tistory-doobedoo-grunt",
-    "version": "1.0.3",
-    "author": "Ungki.H <ungki.h@gmail.com>",
-    "homepage": "http://markquery.com",
+    "name": "tistory-doobedoo-lucki",
+    "version": "1.0.0",
+    "author": "PowerKiKi <adrien.crivelli@gmail.com>",
+    "contributors": [
+        "Ungki.H <ungki.h@gmail.com>"
+    ],
+    "homepage": "http://www.lucki.kr",
     "repository": {
         "type": "git",
-        "url": "https://github.com/markquery/tistory-doobedoo.git"
+        "url": "https://github.com/PowerKiKi/tistory-doobedoo.git"
     },
     "bugs": {
-        "url": "http://markquery.com"
+        "url": "https://github.com/PowerKiKi/tistory-doobedoo/issues"
     },
     "licenses": [{
             "type": "MIT",
