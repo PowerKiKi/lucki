@@ -20,8 +20,10 @@ module.exports = function(grunt) {
                 files: {
                     'style.css': [
                         'src/styles/style.less',
-                        'src/styles/*.less',
-                        'src/styles/*.css'
+                        'src/styles/custom.less'
+                    ],
+                    'images/ie.css': [
+                        'src/styles/ie.less'
                     ]
                 }
             }
@@ -44,6 +46,11 @@ module.exports = function(grunt) {
 //                        'src/scripts/bootstrap/tab.js',
 //                        'src/scripts/bootstrap/affix.js',
                         'src/scripts/script.js'
+                    ],
+                    'images/ie.js': [
+                        'src/scripts/html5shiv.js',
+                        'src/scripts/respond.src.js',
+                        'src/scripts/respond.proxy.js'
                     ]
                 }
             }

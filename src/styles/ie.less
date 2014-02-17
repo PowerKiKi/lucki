@@ -1,0 +1,47 @@
+@import "/bootstrap/variables.less";
+
+hgroup h1 a {
+    background-image: url('title.png');
+}
+
+.skeleton-footer {
+    background-image: url('logo.png');
+}
+
+.icon-daum {
+    background-image: url("icon-daum.png") !important;
+}
+
+.icon-naver {
+    background-image: url("icon-naver.png") !important;
+}
+
+@media (max-width: @screen-sm) {
+    .icon-daum {
+        background-image: url("icon-daum-small.png") !important;
+    }
+
+    .icon-naver {
+        background-image: url("icon-naver-small.png") !important;
+    }
+}
+
+.index-container .caption,
+.search-list .caption {
+    background: transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F2B2823,endColorstr=#7F2B2823)"; /* IE8 */
+    filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F2B2823,endColorstr=#7F2B2823)";   /* IE6 & 7 */
+    zoom: 1;
+}
+
+
+.index-container {
+    max-width: 1020px;
+}
+.skeleton-footer {
+    max-width: 970px;
+}
+
+.location {
+    padding-right: 50px;
+}
