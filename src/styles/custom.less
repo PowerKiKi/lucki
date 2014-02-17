@@ -132,74 +132,29 @@ h1.entry-title {
     a.icon-noticon {
         color: white;
     }
+    p {
+        font-size: 0.9em;
+        padding-top: 10px;
+    }
+    a[rel='tag'] {
+
+        position: relative;
+        display: inline-block;
+
+        padding: 0 10px 0 10px;
+        background: transparent;
+        text-decoration: none;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        border-radius: 15px;
+
+        &:hover {
+            background-color: @color4;
+            color: white;
+        }
+    }
 }
 
-a[rel='tag'] {
-
-    height: 24px;
-    line-height: 24px;
-    position: relative;
-    display: inline-block;
-
-    margin-top: 10px;
-    margin-left: 20px;
-    padding: 0 10px 0 12px;
-    background: @color4;
-    color: white;
-    text-decoration: none;
-    -moz-border-radius-bottomright: 4px;
-    -webkit-border-bottom-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    -moz-border-radius-topright: 4px;
-    -webkit-border-top-right-radius: 4px;
-    border-top-right-radius: 4px;
-
-    &:before{
-        content: "";
-        float: left;
-        position: absolute;
-        top: 0;
-        left: -12px;
-        width: 0;
-        height: 0;
-        border-color: transparent @color4 transparent transparent;
-        border-style: solid;
-        border-width: 12px 12px 12px 0;
-        .transition(border-color 0.5s);
-    }
-
-    &:after{
-        content: "";
-        position: absolute;
-        top: 10px;
-        left: 0;
-        float: left;
-        width: 4px;
-        height: 4px;
-        -moz-border-radius: 2px;
-        -webkit-border-radius: 2px;
-        border-radius: 2px;
-        background: white;
-        -moz-box-shadow: -1px -1px 2px @color4;
-        -webkit-box-shadow: -1px -1px 2px @color4;
-        box-shadow: -1px -1px 2px @color4;
-        .transition(box-shadow 0.5s);
-    }
-
-    &:hover {
-        background-color: @color4light;
-    }
-    &:hover:before {
-        border-color: transparent @color4light transparent transparent;
-    }
-    &:hover:after {
-        -moz-box-shadow: -1px -1px 2px @color4light;
-        -webkit-box-shadow: -1px -1px 2px @color4light;
-        box-shadow: -1px -1px 2px @color4light;
-    }
-
-    .transition(background-color 0.5s);
-}
 
 .widget-who {
     background-color: @color4;
