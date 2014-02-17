@@ -563,15 +563,43 @@ a.carousel-control.right {
     padding-right:  @grid-gutter-width / 2;
     .search-list-thumbnail {
         padding-top: @grid-gutter-width;
-    }
 
+        a {
+            display: block;
+            position: relative;
+            width: 100%;		/* desired width */
+            &:before{
+                content: "";
+                display: block;
+                padding-top: 66.666666%; 	/* initial ratio of 1:1*/
+            }
+            & > span{
+                background: #E9E9E9;
+                position:  absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+
+                & > i {
+                    font-size: 40px;
+                    color: lighten(@color0, 65%);
+                    display: block;
+                    text-align: center;
+                    padding-top: 20%;
+                }
+            }
+
+        }
+    }
 }
+
 .index-container,
 .search-list {
     .caption {
         background-color: fade(@color0, 50%);
-        right: @grid-gutter-width / 2;
-        left: @grid-gutter-width / 2;
+        right: 0;
+        left: 0;
         bottom: 0px;
         padding-left: 5px;
         text-align: left;
@@ -605,7 +633,8 @@ a.carousel-control.right {
 
     }
     .caption {
-
+        right: @grid-gutter-width / 2;
+        left: @grid-gutter-width / 2;
         padding-left: 85px;
         max-width: 320px;
     }
@@ -793,9 +822,9 @@ div#ttCanvas .tt-item a.carousel-control:hover {
 }
 
 .shareButtons, .shareButtons * {
-	vertical-align: bottom !important;
+    vertical-align: bottom !important;
 }
 
 .st_plusone_large > div {
-	position: static !important;
+    position: static !important;
 }
