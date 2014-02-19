@@ -33,7 +33,7 @@
             var img = $(this);
             var url = $(this).attr('data-img-src');
 
-            $.get(url, function(data) {
+            $.get(encodeURI(url), function(data) {
                 var imgUrl = $(data).filter('meta[property="og:image"]').attr('content');
                 if (imgUrl) {
                     img.html($('<img class="img-responsive">').attr('src', imgUrl));
