@@ -48,9 +48,7 @@ module.exports = function(grunt) {
                         'src/scripts/script.js'
                     ],
                     'images/ie.js': [
-                        'src/scripts/html5shiv.js',
-                        'src/scripts/respond.src.js',
-                        'src/scripts/respond.proxy.js'
+                        'src/scripts/html5shiv.js'
                     ]
                 }
             }
