@@ -579,6 +579,11 @@ a.carousel-control.right {
     padding-left: @grid-gutter-width / 2;
     padding-right: @grid-gutter-width / 2;
     padding-bottom: @grid-gutter-width;
+    .container-fluid .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
     .row >div {
         margin-bottom: @grid-gutter-width;
     }
@@ -592,8 +597,17 @@ a.carousel-control.right {
         right: @grid-gutter-width / 2;
         left: @grid-gutter-width / 2;
         padding-left: 85px;
+
+    }
+
+    .col-md-4 .caption {
         max-width: 320px;
     }
+
+    .col-md-3 .caption  {
+        max-width: 235px;
+    }
+
     .icon-noticon {
 
         padding-top: 20px;
@@ -638,8 +652,8 @@ a.carousel-control.right {
         }
 
         .icon-noticon {
-        padding-top: 14px;
-        line-height: 17px !important;
+            padding-top: 14px;
+            line-height: 17px !important;
             .year {
                 //position: relative;
                 font-size: 10px !important;
