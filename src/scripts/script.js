@@ -24,14 +24,16 @@
             var datetime = time.attr('datetime');
             var year = datetime.substring(0, 4);
             var month = datetime.substring(5, 7);
-            time.parents('article').addClass('month-' + month);
+
             time.html(year + '<br>' + month + '월');
+            time.parents('article').addClass('month-' + month);
+            time.show();
         });
 
         // Load article image preview, this require Facebook plugin to be active in Tistory plugins settings
         $('[data-img-src]').each(function() {
             var img = $(this);
-            var url = $(this).attr('data-img-src');
+            var url = img.attr('data-img-src');
 
             $.get(encodeURI(url), function(data) {
                 var imgUrl = $(data).filter('meta[property="og:image"]').attr('content');
