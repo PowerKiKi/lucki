@@ -15,6 +15,10 @@
 .sidebar-container {
     margin-top: @grid-gutter-width;
     background-color: @color0;
+    .col-sm-6 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 
 body {
@@ -155,6 +159,26 @@ h1.entry-title {
     }
 }
 
+.widget-categories {
+    margin-right: 10px;
+}
+.widget-counter,
+.widget-facebook,
+.widget-medals,
+.widget-who {
+    margin-left: 10px;
+}
+
+@media (max-width: @screen-sm) {
+    .widget-categories,
+    .widget-counter,
+    .widget-facebook,
+    .widget-medals,
+    .widget-who {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
 
 .widget-who {
     background-color: @color4;
