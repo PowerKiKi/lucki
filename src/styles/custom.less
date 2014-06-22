@@ -214,10 +214,14 @@ h1.entry-title {
     background-color: @color6;
 }
 .widget-facebook {
-    padding-top: @grid-gutter-width;
-    padding-left: @grid-gutter-width;
-    padding-right: @grid-gutter-width;
+    padding: @grid-gutter-width;
     background-color: @color3;
+}
+
+// Facebook and Naver injected iframes should have a white background
+iframe[src*="likebox.php"],
+iframe[src*="WidgetView.nhn"] {
+     background: white;
 }
 
 .widget-medals {
