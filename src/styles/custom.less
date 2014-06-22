@@ -214,14 +214,25 @@ h1.entry-title {
     background-color: @color6;
 }
 .widget-facebook {
-    padding: @grid-gutter-width;
+    text-align: center;
+    padding-left: @grid-gutter-width;
+    padding-right: @grid-gutter-width;
+    padding-top: @grid-gutter-width;
     background-color: @color3;
+}
+
+iframe[src*="likebox.php"] {
+    margin-right: 5px;
 }
 
 // Facebook and Naver injected iframes should have a white background
 iframe[src*="likebox.php"],
 iframe[src*="WidgetView.nhn"] {
-     background: white;
+    background: white;
+    vertical-align: top;
+    width: 234px !important;
+    height: 258px !important;
+    margin-bottom: @grid-gutter-width;
 }
 
 .widget-medals {
