@@ -1,17 +1,17 @@
-@color0: #2B2823; // background
-@color1: #BB1728; // red
-@color2: #FFB200; // yellow
-@color3: #B5AA21; // green
-@color4: #009A84; // turquoise
-@color5: #B45477; // violet
-@color6: #F15947; // saumon
+@color-black: #2B2823; // background
+@color-red: #BB1728; // red
+@color-yellow: #FFB200; // yellow
+@color-green: #B5AA21; // green
+@color-turquoise: #009A84; // turquoise
+@color-violet: #B45477; // violet
+@color-saumon: #F15947; // saumon
 
-// hvoer colors for menu
-@color1light: hsl(hue(@color1),saturation(@color1),lightness(@color1) + 15);
-@color2light: hsl(hue(@color2),saturation(@color2),lightness(@color2) + 15);
-@color3light: hsl(hue(@color3),saturation(@color3),lightness(@color3) + 15);
-@color4light: hsl(hue(@color4),saturation(@color4),lightness(@color4) + 15);
-@color5light: hsl(hue(@color5),saturation(@color5),lightness(@color5) + 15);
+// hover colors for menu
+@color-red-light: hsl(hue(@color-red),saturation(@color-red),lightness(@color-red) + 15);
+@color-yellow-light: hsl(hue(@color-yellow),saturation(@color-yellow),lightness(@color-yellow) + 15);
+@color-green-light: hsl(hue(@color-green),saturation(@color-green),lightness(@color-green) + 15);
+@color-turquoise-light: hsl(hue(@color-turquoise),saturation(@color-turquoise),lightness(@color-turquoise) + 15);
+@color-violet-light: hsl(hue(@color-violet),saturation(@color-violet),lightness(@color-violet) + 15);
 
 @font-family-korean: "Open Sans", "Verdana", "AppleGothic", "sans-serif", "맑은 고딕", "Malgun Gothic", "나눔고딕", NanumGothic, "돋움", dotum, "Georgia Pro", Arial;
 
@@ -30,7 +30,7 @@
 @gray-light:             lighten(#000, 60%);   // #999
 @gray-lighter:           lighten(#000, 93.5%); // #eee
 
-@brand-primary:         @color4;
+@brand-primary:         @color-turquoise;
 @brand-success:         #5cb85c;
 @brand-info:            #5bc0de;
 @brand-warning:         #f0ad4e;
@@ -197,7 +197,7 @@
 //** `<input>` border radius
 @input-border-radius:            @border-radius-base;
 //** Border color for inputs on focus
-@input-border-focus:             @color0;
+@input-border-focus:             @color-black;
 
 //** Placeholder text color
 @input-color-placeholder:        @gray-light;

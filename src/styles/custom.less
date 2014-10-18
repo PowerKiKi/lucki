@@ -14,7 +14,7 @@
 
 .sidebar-container {
     margin-top: @grid-gutter-width;
-    background-color: @color0;
+    background-color: @color-black;
 }
 
 // Cancel padding of columns
@@ -28,7 +28,7 @@
 }
 
 body {
-    background-color: @color0;
+    background-color: @color-black;
 }
 
 .entry-content {
@@ -57,20 +57,20 @@ time.icon-noticon {
 }
 
 h1.entry-title {
-    color: @color0;
+    color: @color-black;
     font-size: 20px;
     padding-top: 29px;
     margin-bottom: 0px;
     a {
-        color: @color0;
+        color: @color-black;
     }
 }
 
-.icon-circle { color: @color1; }
-.title-container { border-color: @color1;}
+.icon-circle { color: @color-red; }
+.title-container { border-color: @color-red;}
 
-.guestbook-header .icon-circle { color: @color2; }
-.guestbook-header .title-container { border-color: @color2;}
+.guestbook-header .icon-circle { color: @color-yellow; }
+.guestbook-header .title-container { border-color: @color-yellow;}
 
 .entry-tags a.icon-tag:hover {
     text-decoration: none;
@@ -85,33 +85,33 @@ h1.entry-title {
 
 .month-07,
 .month-12 {
-    .icon-circle { color: @color1; }
-    .title-container { border-color: @color1;}
+    .icon-circle { color: @color-red; }
+    .title-container { border-color: @color-red;}
 }
 .month-05,
 .month-09 {
-    .icon-circle { color: @color2; }
-    .title-container { border-color: @color2;}
+    .icon-circle { color: @color-yellow; }
+    .title-container { border-color: @color-yellow;}
 }
 .month-03,
 .month-06 {
-    .icon-circle { color: @color3; }
-    .title-container { border-color: @color3;}
+    .icon-circle { color: @color-green; }
+    .title-container { border-color: @color-green;}
 }
 .month-08,
 .month-01 {
-    .icon-circle { color: @color4 }
-    .title-container { border-color: @color4;}
+    .icon-circle { color: @color-turquoise }
+    .title-container { border-color: @color-turquoise;}
 }
 .month-04,
 .month-11 {
-    .icon-circle { color: @color5; }
-    .title-container { border-color: @color5;}
+    .icon-circle { color: @color-violet; }
+    .title-container { border-color: @color-violet;}
 }
 .month-02,
 .month-10 {
-    .icon-circle { color: @color6; }
-    .title-container { border-color: @color6;}
+    .icon-circle { color: @color-saumon; }
+    .title-container { border-color: @color-saumon;}
 }
 
 .title-container {
@@ -123,7 +123,7 @@ h1.entry-title {
     .category {
         font-size: 13px;
         a {
-            color: lighten(@color0, 35%);
+            color: lighten(@color-black, 35%);
         }
     }
 }
@@ -131,13 +131,13 @@ h1.entry-title {
     color: transparent; // Hide comma
     .icon-circle,
     a {
-        color: @color4;
+        color: @color-turquoise;
     }
     .icon-stack {
         float: left;
     }
     .icon-stack:hover .icon-circle {
-        color: @color4light;
+        color: @color-turquoise-light;
     }
     a.icon-noticon {
         color: white;
@@ -159,7 +159,7 @@ h1.entry-title {
         border-radius: 15px;
 
         &:hover {
-            background-color: @color4;
+            background-color: @color-turquoise;
             color: white;
         }
     }
@@ -187,38 +187,38 @@ h1.entry-title {
 }
 
 .widget-who {
-    background-color: @color4;
+    background-color: @color-turquoise;
 
     .circle-line,
     .icon-circle {
-        color: @color2;
-        background-color: @color4;
+        color: @color-yellow;
+        background-color: @color-turquoise;
     }
     img {
         width: 100%;
     }
 }
 .widget-categories {
-    background-color: @color5;
+    background-color: @color-violet;
 
     .circle-line,
     .icon-circle {
-        color: @color3;
-        background-color: @color5;
+        color: @color-green;
+        background-color: @color-violet;
     }
     padding-bottom: @grid-gutter-width;
 
 }
 .widget-counter {
     padding: @grid-gutter-width;
-    background-color: @color6;
+    background-color: @color-saumon;
 }
 .widget-facebook {
     text-align: center;
     padding-left: @grid-gutter-width;
     padding-right: @grid-gutter-width;
     padding-top: @grid-gutter-width;
-    background-color: @color3;
+    background-color: @color-green;
 }
 
 iframe[src*="likebox.php"] {
@@ -236,13 +236,13 @@ iframe[src*="WidgetView.nhn"] {
 
 .widget-medals {
     text-align: center;
-    background-color: @color2;
+    background-color: @color-yellow;
     padding: @grid-gutter-width;
 
     .circle-line,
     .icon-circle {
-        color: @color5;
-        background-color: @color2;
+        color: @color-violet;
+        background-color: @color-yellow;
     }
     a,
     .tt-mapsidebar-module {
@@ -276,7 +276,7 @@ iframe[src*="WidgetView.nhn"] {
 
 
 .widget-inner ul li a:hover {
-    background-color: @color3;
+    background-color: @color-green;
 }
 
 hgroup h1 a {
@@ -304,34 +304,34 @@ hgroup h1 a {
 }
 
 .menu-home .icon-circle {
-    color: @color1;
+    color: @color-red;
 }
 .menu-guestbook .icon-circle {
-    color: @color2;
+    color: @color-yellow;
 }
 .menu-naver .icon-circle {
-    color: @color3;
+    color: @color-green;
 }
 .menu-daum .icon-circle {
-    color: @color4;
+    color: @color-turquoise;
 }
 .menu-rss .icon-circle {
-    color: @color5;
+    color: @color-violet;
 }
 .menu-home:hover .icon-circle {
-    color: @color1light;
+    color: @color-red-light;
 }
 .menu-guestbook:hover .icon-circle {
-    color: @color2light;
+    color: @color-yellow-light;
 }
 .menu-naver:hover .icon-circle {
-    color: @color3light;
+    color: @color-green-light;
 }
 .menu-daum:hover .icon-circle {
-    color: @color4light;
+    color: @color-turquoise-light;
 }
 .menu-rss:hover .icon-circle {
-    color: @color5light;
+    color: @color-violet-light;
 }
 
 nav .icon-noticon i {
@@ -436,15 +436,15 @@ nav {
     padding-left: @grid-gutter-width / 2;
     padding-right: @grid-gutter-width / 2;
     padding-top: @grid-gutter-width;
-    background-color: @color4;
+    background-color: @color-turquoise;
     color: white;
 
     .actionTrail {
         padding-left: @grid-gutter-width / 2;
         padding-right: @grid-gutter-width / 2;
-        color: @color2;
+        color: @color-yellow;
         a {
-            color: @color2;
+            color: @color-yellow;
         }
     }
     a {
@@ -457,13 +457,13 @@ nav {
 
 .comments {
     background-color: white;
-    color: @color0;
+    color: @color-black;
     .name,
     .name a {
-        color: @color4;
+        color: @color-turquoise;
     }
     a {
-        color: @color0;
+        color: @color-black;
     }
     .col-sm-12 {
         padding-right: 0px;
@@ -472,11 +472,11 @@ nav {
 
 .comments .replies {
     padding-left: @grid-gutter-width;
-    background-color: @color4;
+    background-color: @color-turquoise;
     color: white;
     .name,
     .name a {
-        color: @color2;
+        color: @color-yellow;
     }
     a {
         color: white;
@@ -499,11 +499,11 @@ nav {
     padding-right: @grid-gutter-width / 2;
 
     .comments {
-        background-color: @color4;
+        background-color: @color-turquoise;
         color: white;
         .name,
         .name a {
-            color: @color2;
+            color: @color-yellow;
         }
         a {
             color: white;
@@ -512,13 +512,13 @@ nav {
 
     .comments .replies {
         background-color: white;
-        color: @color0;
+        color: @color-black;
         .name,
         .name a {
-            color: @color4;
+            color: @color-turquoise;
         }
         a {
-            color: @color0;
+            color: @color-black;
         }
     }
 }
@@ -540,7 +540,7 @@ a.carousel-control.right {
 }
 
 .carousel-caption {
-    background-color: fade(@color0, 50%) !important;
+    background-color: fade(@color-black, 50%) !important;
     right: 0px !important;
     left: 0px !important;
     bottom: 0px !important;
@@ -585,7 +585,7 @@ a.carousel-control.right {
 
                 & > i {
                     font-size: 40px;
-                    color: lighten(@color0, 65%);
+                    color: lighten(@color-black, 65%);
                     display: block;
                     text-align: center;
                     padding-top: 20%;
@@ -599,7 +599,7 @@ a.carousel-control.right {
 .index-container,
 .search-list {
     .caption {
-        background-color: fade(@color0, 50%);
+        background-color: fade(@color-black, 50%);
         right: 0;
         left: 0;
         bottom: 0px;
@@ -665,22 +665,22 @@ a.carousel-control.right {
     }
     .icon-circle {
         &.red {
-            color: @color1;
+            color: @color-red;
         }
         &.yellow {
-            color: @color2;
+            color: @color-yellow;
         }
         &.green {
-            color: @color3;
+            color: @color-green;
         }
         &.turquoise {
-            color: @color4;
+            color: @color-turquoise;
         }
         &.violet {
-            color: @color5;
+            color: @color-violet;
         }
         &.saumon {
-            color: @color6;
+            color: @color-saumon;
         }
     }
 }
