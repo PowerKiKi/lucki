@@ -303,35 +303,62 @@ hgroup h1 a {
     }
 }
 
-.menu-home .icon-circle {
-    color: @color-red;
+.menu-home {
+    .icon-circle {
+        color: @color-red;
+    }
+    &:hover .icon-circle {
+        color: @color-red-light;
+    }
 }
-.menu-guestbook .icon-circle {
-    color: @color-yellow;
+.menu-guestbook {
+    .icon-circle {
+        color: @color-saumon;
+    }
+    &:hover .icon-circle {
+        color: @color-saumon-light;
+    }
 }
-.menu-naver .icon-circle {
-    color: @color-green;
+.menu-kakao  {
+    .icon-circle {
+        color: @color-yellow;
+    }
+    &:hover .icon-circle {
+        color: @color-yellow-light;
+    }
 }
-.menu-daum .icon-circle {
-    color: @color-turquoise;
+.menu-naver {
+    .icon-circle {
+        color: @color-green;
+    }
+    &:hover .icon-circle {
+        color: @color-green-light;
+    }
 }
-.menu-rss .icon-circle {
-    color: @color-violet;
+.menu-facebook  {
+    .icon-circle {
+        color: @color-turquoise;
+    }
+    &:hover .icon-circle {
+        color: @color-turquoise-light;
+    }
+    iframe {
+        position: relative; // Otherwise not clickable
+    }
+    .icon-facebook:before {
+        font-size: 27px;
+    }
 }
-.menu-home:hover .icon-circle {
-    color: @color-red-light;
-}
-.menu-guestbook:hover .icon-circle {
-    color: @color-yellow-light;
-}
-.menu-naver:hover .icon-circle {
-    color: @color-green-light;
-}
-.menu-daum:hover .icon-circle {
-    color: @color-turquoise-light;
-}
-.menu-rss:hover .icon-circle {
-    color: @color-violet-light;
+.menu-email  {
+    .icon-circle {
+        color: @color-violet;
+    }
+    &:hover .icon-circle {
+        color: @color-violet-light;
+    }
+    .icon-envelope:before {
+        font-size: 25px;
+    }
 }
 
 nav .icon-noticon i {
@@ -339,15 +366,15 @@ nav .icon-noticon i {
     font-size: 32px !important;
 }
 
-.icon-daum[class^="icon-"] {
-    background-image: url("images/icon-daum.svg");
-    top: 17px;
+.icon-kakao[class^="icon-"] {
+    background-image: url("images/icon-kakao.svg");
+    top: 22px;
 }
 .icon-naver[class^="icon-"] {
     background-image: url("images/icon-naver.svg");
     top: 22px;
 }
-.icon-daum,
+.icon-kakao,
 .icon-naver {
 
     background-repeat: no-repeat !important;
@@ -380,6 +407,11 @@ nav {
 
 @media (max-width: @screen-sm) {
 
+    .menu-facebook .icon-facebook:before,
+    .menu-email .icon-envelope:before {
+        font-size:  initial;
+    }
+
     nav {
 
         .icon-4x {
@@ -395,15 +427,14 @@ nav {
             }
         }
 
-        .icon-daum[class^="icon-"] {
-            background-image: url("images/icon-daum-small.svg");
-            top: 17px !important;
+        .icon-kakao[class^="icon-"] {
+            background-image: url("images/icon-kakao-small.svg");
+            top: 22px;
         }
         .icon-naver[class^="icon-"] {
             background-image: url("images/icon-naver-small.svg");
             top: 22px;
         }
-
     }
 }
 
@@ -424,8 +455,14 @@ nav {
             }
             font-size: 10px !important;
         }
-        .menu-guestbook .icon-noticon span {
+        .menu-guestbook .icon-noticon span,
+        .menu-kakao .icon-noticon span,
+        .menu-naver .icon-noticon span,
+        .menu-email .icon-noticon span {
             padding-top: 20px;
+        }
+        .menu-facebook iframe {
+            top: -7px;
         }
     }
 }
