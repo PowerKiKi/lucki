@@ -42,14 +42,5 @@
                 }
             });
         });
-
-        function adLocate() {
-            if ($("#adhere").length) {
-                $("#adhere").append($("#movead"));
-            } else {
-                $("#movead").remove();
-            }
-        }
-        $('document').ready(adLocate());
     });
 }).call(this);

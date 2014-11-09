@@ -871,5 +871,18 @@
             <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         </div>
     </div>
+
+    <!-- 본문으로 광고 옮기기 -->
+    <script type="text/javascript">
+        function adLocate() {
+            if ($("#adhere").length == "1") {
+                $("#adhere").append($("#movead"));
+            } else {
+                $("#movead").remove();
+            }
+        }
+
+        $('document').ready(adLocate());
+    </script>
 </body>
 </html>
