@@ -238,6 +238,7 @@ iframe[src*="WidgetView.nhn"] {
     text-align: center;
     background-color: @color-yellow;
     padding: @grid-gutter-width;
+    padding-bottom: 0px;
 
     .circle-line,
     .icon-circle {
@@ -251,6 +252,7 @@ iframe[src*="WidgetView.nhn"] {
         vertical-align: top;
         margin-left: 1em;
         margin-right: 1em;
+        margin-bottom: @grid-gutter-width;
     }
 }
 
@@ -300,6 +302,7 @@ hgroup h1 a {
         width: 80%;
         background-size: 100%;
         background-position: 100% 0%;
+         margin-right: @grid-gutter-width / 2;
     }
 }
 
@@ -350,6 +353,14 @@ hgroup h1 a {
     }
     .icon-envelope:before {
         font-size: 25px;
+    }
+}
+a.badge {
+    position: absolute;
+    left: 20px;
+    &.mobile {
+        left: 10px;
+        top: -10px;
     }
 }
 
