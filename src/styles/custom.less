@@ -302,7 +302,7 @@ hgroup h1 a {
         width: 80%;
         background-size: 100%;
         background-position: 100% 0%;
-         margin-right: @grid-gutter-width / 2;
+        margin-right: @grid-gutter-width / 2;
     }
 }
 
@@ -355,11 +355,17 @@ hgroup h1 a {
         font-size: 25px;
     }
 }
+
+nav {
+    position: relative; // To be able to position the badge on big screen
+}
 a.badge {
     position: absolute;
-    left: 20px;
+    right: 20px;
+    top: 54px;
     &.mobile {
         left: 10px;
+        right: initial;
         top: -10px;
     }
 }
