@@ -38,7 +38,8 @@
             $.get(encodeURI(url), function(data) {
                 var imgUrl = $(data).filter('meta[property="og:image"]').attr('content');
                 if (imgUrl) {
-                    img.html($('<img class="img-responsive">').attr('src', imgUrl));
+                    var thumbUrl = imgUrl.replace(/image|original/gi, 'R320x0');
+                    img.html($('<img class="img-responsive">').attr('src', thumbUrl));
                 }
             });
         });
