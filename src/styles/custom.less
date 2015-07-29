@@ -127,11 +127,42 @@ h1.entry-title {
         }
     }
 }
-.entry-tags {
-    color: transparent; // Hide comma
+.entry-copyright {
     .icon-circle,
     a {
+        color: @color-red;
+    }
+    .icon-stack {
+        float: left;
+    }
+    .icon-stack:hover .icon-circle {
+        color: @color-red-light;
+    }
+    a.icon-copyright {
+        color: white;
+        font-family: @font-family-korean;
+        font-size: 0.8em;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .highlight {
+        color: @color-red;
+    }
+    p {
+        padding-top: 10px;
+        padding-left: 94px;
+        padding-right: @grid-gutter-width;
+    }
+}
+
+.entry-tags {
+    color: transparent; // Hide comma
+    .icon-circle {
         color: @color-turquoise;
+    }
+    a {
+        color: @color-black;
     }
     .icon-stack {
         float: left;
@@ -143,7 +174,6 @@ h1.entry-title {
         color: white;
     }
     p {
-        font-size: 0.9em;
         padding-top: 10px;
     }
     a[rel='tag'] {
