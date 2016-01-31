@@ -32,8 +32,8 @@ body {
 }
 
 .entry-content {
-    margin-left: @grid-gutter-width;
-    margin-right: @grid-gutter-width;
+    margin-left: @grid-gutter-width / 2;
+    margin-right: @grid-gutter-width / 2;
 }
 
 .icon-noticon {
@@ -114,6 +114,18 @@ h1.entry-title {
     .title-container { border-color: @color-saumon;}
 }
 
+// Everything has a margin within the main page content
+.article_rep-container {
+    margin-left: @grid-gutter-width / 2;
+    margin-right: @grid-gutter-width / 2;
+}
+
+// ... except the article's title
+.article_rep-container .title-container {
+    margin-left: -@grid-gutter-width / 2;
+    margin-right: -@grid-gutter-width / 2;
+}
+
 .title-container {
     vertical-align: bottom;
     border-bottom-width: 1px;
@@ -128,6 +140,8 @@ h1.entry-title {
     }
 }
 .entry-copyright {
+    margin-left: -@grid-gutter-width / 2;
+    margin-right: -@grid-gutter-width / 2;
     .icon-circle,
     a {
         color: @color-red;
@@ -157,6 +171,8 @@ h1.entry-title {
 }
 
 .entry-tags {
+    margin-left: -@grid-gutter-width / 2;
+    margin-right: -@grid-gutter-width / 2;
     color: transparent; // Hide comma
     .icon-circle {
         color: @color-turquoise;
@@ -514,6 +530,8 @@ nav {
 
 .entry-footer {
     margin-top: 10px;
+    margin-left: -@grid-gutter-width / 2;
+    margin-right: -@grid-gutter-width / 2;
     padding-left: @grid-gutter-width / 2;
     padding-right: @grid-gutter-width / 2;
     padding-top: @grid-gutter-width;
@@ -639,46 +657,38 @@ a.carousel-control.right {
     }
 }
 
-.search-list
-{
-    padding-left:  @grid-gutter-width / 2;
-    padding-right:  @grid-gutter-width / 2;
-    .search-list-thumbnail {
-        padding-top: @grid-gutter-width;
-
-        a {
-            display: block;
-            position: relative;
-            width: 100%;		/* desired width */
-            &:before{
-                content: "";
-                display: block;
-                padding-top: 66.666666%; 	/* initial ratio of 1:1*/
-            }
-            & > span{
-                background: #E9E9E9;
-                position:  absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                overflow: hidden;
-
-                & > i {
-                    font-size: 40px;
-                    color: lighten(@color-black, 65%);
-                    display: block;
-                    text-align: center;
-                    padding-top: 20%;
-                }
-            }
-
-        }
-    }
-}
-
-.index-container,
 .search-list-thumbnail {
+    padding-top: @grid-gutter-width;
+
+    a {
+        display: block;
+        position: relative;
+        width: 100%;		/* desired width */
+        &:before{
+            content: "";
+            display: block;
+            padding-top: 66.666666%; 	/* initial ratio of 1:1*/
+        }
+        & > span{
+            background: #E9E9E9;
+            position:  absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            overflow: hidden;
+
+            & > i {
+                font-size: 40px;
+                color: lighten(@color-black, 65%);
+                display: block;
+                text-align: center;
+                padding-top: 20%;
+            }
+        }
+
+    }
+
     .caption {
         background-color: fade(@color-black, 50%);
         right: 0;
@@ -795,8 +805,14 @@ a.carousel-control.right {
         }
     }
 }
+body.tistory_grid_1050 div#ttCanvas {
+    max-width: 1040px !important;
 
-#ttCanvas {
+}
+div#ttCanvas {
+
+    margin-left: -@grid-gutter-width / 2 !important;
+    margin-right: -@grid-gutter-width / 2 !important;
 
     .tt-component {
         padding-left: @grid-gutter-width;
