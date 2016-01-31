@@ -389,15 +389,20 @@ hgroup h1 a {
 nav {
     position: relative; // To be able to position the badge on big screen
 }
-a.badge {
+span.badge {
     position: absolute;
-    right: 20px;
+    right: 0px;
     top: 54px;
-    &.mobile {
-        left: 10px;
-        right: initial;
-        top: -10px;
+    a {
+        margin-left: @grid-gutter-width;
     }
+}
+
+a.badge.mobile {
+    position: absolute;
+    left: 10px;
+    right: initial;
+    top: -10px;
 }
 
 nav .icon-noticon i {
