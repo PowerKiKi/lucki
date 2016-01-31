@@ -29,19 +29,5 @@
             time.parents('article').addClass('month-' + month);
             time.show();
         });
-
-        // Load article image preview, this require Facebook plugin to be active in Tistory plugins settings
-        $('[data-img-src]').each(function() {
-            var img = $(this);
-            var url = img.attr('data-img-src');
-
-            $.get(encodeURI(url), function(data) {
-                var matches = data.match(/property="og:image" content="([^"]*)"/);
-                if (matches) {
-                    var thumbUrl = matches[1].replace(/image|original/gi, 'R320x0');
-                    img.html($('<img class="img-responsive">').attr('src', thumbUrl));
-                }
-            });
-        });
     });
 }).call(this);
