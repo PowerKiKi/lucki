@@ -5,7 +5,7 @@
   "contributors": [
     "Ungki.H <ungki.h@gmail.com>"
   ],
-  "homepage": "http://www.lucki.kr",
+  "homepage": "https://www.lucki.kr",
   "repository": {
     "type": "git",
     "url": "https://github.com/PowerKiKi/tistory-doobedoo.git"
@@ -16,7 +16,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://opensource.org/licenses/MIT"
+      "url": "https://opensource.org/licenses/MIT"
     }
   ],
   "engines": {
