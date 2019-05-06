@@ -1,6 +1,6 @@
 # [LuCKi](https://www.lucki.kr)
 
-Skin for Tistory based on MARKQUERY's "Doo Be Doo"
+Skin for Tistory
 
 * Home page: https://www.lucki.kr
 * GitHub page: https://github.com/PowerKiKi/tistory-doobedoo
