@@ -546,6 +546,7 @@ html {
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     z-index: 21;
     transition: top 0.2s ease-in-out;
+    display: flex;
 }
 
 .box_header button {
@@ -554,22 +555,23 @@ html {
 
 .box_header .link_logo {
     display: block;
-    max-width: 300px;
+    /* max-width: 300px; */
     color: #333;
     text-decoration: none;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     line-height: 1.25;
+    text-align: center;
 }
 
 .box_header .link_logo img {
-    max-height: 48px;
+    /* max-height: 48px; */
 }
 
 .box_header .title_logo {
-    position: absolute;
-    top: 50%;
+    /* position: absolute; */
+    /* top: 50%; */
     display: flex;
     -ms-display: flexbox;
     /* IE 10 */
@@ -577,11 +579,13 @@ html {
     /* Safari */
     flex-direction: column;
     justify-content: center;
-    width: 200px;
-    height: 48px;
-    margin: -24px 0 0 80px;
+    /* width: 200px; */
+    /* height: 48px; */
+    /* margin: -24px 0 0 80px; */
     font-size: 24px;
     font-weight: 900;
+    /* background: pink; */
+    flex: 1;
 }
 
 .box_header .btn_menu, .box_header .btn_search {
@@ -649,7 +653,7 @@ html {
     }
 
     .box_header .title_logo {
-        margin: -24px 0 0 24px;
+        /* margin: -24px 0 0 24px; */
         font-size: 20px;
         padding-top: 4px;
     }
@@ -670,7 +674,7 @@ html {
 
 @media screen and (max-width: 1023px) {
     .white .box_header .title_logo {
-        margin: -25px 0 0 24px;
+        /* margin: -25px 0 0 24px; */
     }
 }
 
@@ -3367,4 +3371,9 @@ aside .tag_board {
     .area_view .absent_post {
         margin: 200px 0 90px 0;
     }
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
 }
