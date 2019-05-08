@@ -540,7 +540,7 @@ html {
 
 /* box_header */
 .box_header {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 148px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
@@ -625,23 +625,13 @@ html {
 .white .box_header .link_logo,
 .white .box_header .btn_menu,
 .white .box_header .btn_search {
-    color: #fff;
     transition: opacity .2s ease-out;
 }
 
 .white .box_header .link_logo:hover,
 .white .box_header .btn_menu:hover,
 .white .box_header .btn_search:hover {
-    color: #fff;
     opacity: .6;
-}
-
-.white .box_header .btn_menu {
-    background-image: url(./images/ico_menu.svg);
-}
-
-.white .box_header .btn_search {
-    background-image: url(./images/ico_search.svg);
 }
 
 .white .area_cover {
