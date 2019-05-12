@@ -2274,17 +2274,6 @@ aside .tag_board {
 }
 
 
-.list_post .item_post:hover .link_post:before,
-.category_type_post .item_category:hover .link_category:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.65);
-}
-
 .list_post .info .date,
 .category_type_post .date {
     display: none;
@@ -2294,23 +2283,19 @@ aside .tag_board {
     line-height: 1.31;
 }
 
-.list_post .link_post:hover .info,
-.category_type_post .link_category:hover .info {
-    display: flex;
-}
-
 .list_post .link_post .info,
 .category_type_post .link_category .info {
     position: absolute;
-    display: none;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: end;
+    justify-content: flex-end;
     top: 0;
     width: 100%;
     height: 100%;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .list_post .link_post .info .name,
@@ -2319,7 +2304,7 @@ aside .tag_board {
     width: calc(100% - 80px);
     max-height: 65px;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.33;
     text-overflow: ellipsis;
