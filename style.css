@@ -543,7 +543,7 @@ html {
 .box_header {
     position: relative;
     width: 100%;
-    height: 132px;
+    height: 122px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     z-index: 21;
     transition: top 0.2s ease-in-out;
@@ -567,7 +567,7 @@ html {
 }
 
 .box_header .link_logo img {
-    max-height: 38px;
+    max-height: 36px;
 }
 
 .box_header .title_logo {
@@ -587,20 +587,22 @@ html {
     font-weight: 900;
     /* background: pink; */
     flex: 1;
+    margin-bottom: 5px;
 }
 
 .box_header .btn_menu, .box_header .btn_search {
     position: absolute;
     top: 50%;
     margin-top: -24px;
-    width: 48px;
-    height: 48px;
+    width: 22px;
+    height: 22px;
     border: none;
     background-repeat: no-repeat;
     background-position: center;
     color: #666;
     transition: color .2s ease-out;
     cursor: pointer;
+    background-size: contain;
 }
 
 .box_header .btn_menu {
@@ -3385,6 +3387,6 @@ aside .tag_board {
 }
 
 .buttons img {
-    width: 50px;
+    width: 40px;
     margin: 4px 5px 0 4px;
 }
