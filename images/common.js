@@ -162,4 +162,29 @@ function display_control() {
     $('.btn-for-user [data-action="logout"]').click(function () {
         document.location.href = 'https://www.tistory.com/auth/logout?redirectUrl=' + encodeURIComponent(window.TistoryBlog.url);
     });
+
+    // Transform date format into human format
+    $('.article_header.type_article_header_cover .date').each(function () {
+        const text = this.textContent;
+        const m = text.match(/(\d{4})\.(\d{2})\.(\d{2})/);
+        if (m) {
+            const mapping = {
+                '01': 'January',
+                '02': 'February',
+                '03': 'March',
+                '04': 'April',
+                '05': 'May',
+                '06': 'June',
+                '07': 'July',
+                '08': 'August',
+                '09': 'September',
+                '10': 'October',
+                '11': 'November',
+                '12': 'December',
+            }
+
+            const newDate = m[1] + ' ' + mapping[m[2]] + ' ' + m[3];
+            this.textContent = newDate;
+        }
+    });
 }
