@@ -2615,6 +2615,7 @@ aside .tag_board {
     }
 }
 
+
 /* // type_card3 */
 /* type_card3 - 섬네일 커버*/
 .type_card3 {
@@ -2649,6 +2650,8 @@ aside .tag_board {
     color: #333;
     line-height: 1.33;
     transition: all .2s ease-out;
+    min-height: 300px;
+    text-align: center;
 }
 
 .list_type_card3 .link_card3:hover {
@@ -2670,7 +2673,7 @@ aside .tag_board {
 .list_type_card3 .link_card3 .thumnail {
     display: block;
     width: 100%;
-    padding-top: 50%;
+    padding-top: 100%;
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -2685,6 +2688,13 @@ aside .tag_board {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+}
+
+.list_type_card3 .link_card3 .item_card3_text {
+    padding: 0 15px;
+    border: 1px solid #bdbebf;
+    min-height: 170px;
+    border-top-color: transparent;
 }
 
 /* media query - mobile */
