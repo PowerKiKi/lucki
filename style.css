@@ -2,8 +2,8 @@
 
 @font-face {
     font-family: 'white_oleanderregular';
-    src: url('./images/whiteoleander-webfont.woff2') format('woff2'),
-    url('./images/whiteoleander-webfont.woff') format('woff');
+    src: url(./images/whiteoleander-webfont.woff2) format('woff2'),
+    url(./images/whiteoleander-webfont.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 
