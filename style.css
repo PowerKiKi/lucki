@@ -375,12 +375,7 @@ body {
 }
 
 .theme_green .thema_apply .btn_register {
-    background: #11998e;
-    color: #fff;
-}
-
-.theme_green .thema_apply .btn_register {
-    background: #11998e;
+    background: #7195af;
     color: #fff;
 }
 
@@ -500,7 +495,7 @@ html, body {
     position: relative;
     height: 100%;
     -webkit-text-size-adjust: 100%;
-    color: #333;
+    color: #4d4d4d;
     background-color: #f4f4f4;
 }
 
@@ -1348,7 +1343,7 @@ aside .tag_board {
     font-size: 13px;
     font-weight: 600;
     line-height: 31px;
-    color: #000;
+    color: #4d4d4d;
 }
 
 .area_paging .link_num:hover span {
@@ -1358,7 +1353,7 @@ aside .tag_board {
 .area_paging .selected {
     display: block;
     border-radius: 999em;
-    background: #000;
+    background: #7195AF;
     color: #fff !important;
     font-size: 13px;
     line-height: 32px;
@@ -1527,6 +1522,8 @@ aside .tag_board {
     padding: 40px 0;
     border-bottom: 1px solid #eee;
     border-top: 1px solid #eee;
+    display: flex;
+    align-items: center;
 }
 
 .area_tag:after {
@@ -1541,7 +1538,7 @@ aside .tag_board {
     padding: 0 40px 0 0;
     font-size: 16px;
     font-weight: 900;
-    color: #333;
+    color: #7195af;
     text-align: center;
     padding-top: 6px;
 }
@@ -1585,6 +1582,7 @@ aside .tag_board {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 .area_copyright:after {
@@ -1599,8 +1597,7 @@ aside .tag_board {
     padding: 0 40px 0 0;
     font-size: 16px;
     font-weight: 900;
-    color: #333;
-    text-align: center;
+    color: #7195af;
     padding-top: 6px;
 }
 
@@ -1657,6 +1654,7 @@ aside .tag_board {
     margin: 40px 0 20px 0;
     font-size: 16px;
     font-weight: 900;
+    color: #7195af;
 }
 
 .area_related .list_related {
@@ -1766,7 +1764,7 @@ aside .tag_board {
     margin: 0;
     font-size: 16px;
     font-weight: 900;
-    color: #333;
+    color: #7195af;
 }
 
 .area_reply .btn_more {
@@ -1823,6 +1821,7 @@ aside .tag_board {
     display: inline-block;
     padding-top: 10px;
     padding-left: 3px;
+    color: #bdbebf;
 }
 
 .area_reply .item_reply .date a {
