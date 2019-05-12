@@ -1034,7 +1034,7 @@ s
 }
 
 .area_popup .search_content {
-    max-width: 1180px;
+    max-width: 1000px;
     margin: 60px auto;
     padding: 0 40px;
     font-size: 0;
@@ -1264,7 +1264,7 @@ aside .tag_board {
 }
 
 #footer .inner_footer {
-    max-width: 1180px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
     text-align: center;
@@ -1923,7 +1923,7 @@ aside .tag_board {
 /* // area_reply */
 /* area_common - 티스토리 사이드바 공통 영역 */
 .area_common {
-    max-width: 1180px;
+    max-width: 1000px;
     min-height: 200px;
     margin: 200px auto 0 auto;
     padding: 0 20px;
@@ -1939,7 +1939,7 @@ aside .tag_board {
 
 /* 미디어 로그 티스토리 스타일 수정 */
 #mediaLogNest {
-    max-width: 1180px;
+    max-width: 1000px;
     height: auto !important;
     margin: 200px auto 0 auto;
     padding: 0 20px;
@@ -2022,7 +2022,7 @@ aside .tag_board {
     position: absolute;
     left: 0;
     right: 0;
-    max-width: 1180px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 80px;
     text-align: center;
@@ -2103,7 +2103,7 @@ aside .tag_board {
     /* Safari */
     flex-direction: column;
     justify-content: center;
-    max-width: 1180px;
+    max-width: 1000px;
     height: 100%;
     margin: 0 auto;
     padding: 0 76px;
@@ -2238,7 +2238,7 @@ aside .tag_board {
 
 /* type_post - 갤러리 커버 */
 .type_post {
-    max-width: 1180px;
+    max-width: 1000px;
     margin: 120px auto -20px auto;
     overflow: hidden;
 }
@@ -2394,7 +2394,7 @@ aside .tag_board {
 /* // type_post */
 /* type_card - 섬네일 커버*/
 .type_card {
-    max-width: 1180px;
+    max-width: 1000px;
     margin: 120px auto -60px auto;
     overflow: hidden;
 }
@@ -2501,7 +2501,7 @@ aside .tag_board {
 /* // type_card */
 /* type_banner - 와이드패널 커버 */
 .type_banner {
-    max-width: 1180px;
+    max-width: 1000px;
     margin: 120px auto 0 auto;
 }
 
@@ -2621,7 +2621,7 @@ aside .tag_board {
 /* // type_banner */
 /* type_notice - 리스트 커버 */
 .type_notice {
-    max-width: 1180px;
+    max-width: 1000px;
     margin: 120px auto 0 auto;
 }
 
@@ -2779,7 +2779,7 @@ aside .tag_board {
 
 /* area_category */
 .area_category {
-    max-width: 1180px;
+    max-width: 1000px;
     margin: 148px auto 0 auto;
     padding: 120px 24px 0 24px;
 }
@@ -2931,7 +2931,7 @@ aside .tag_board {
 /* // area_category */
 /* // category_type_post - list_category */
 .area_view {
-    max-width: 1180px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 24px;
 }
