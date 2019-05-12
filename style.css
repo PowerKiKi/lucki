@@ -1248,6 +1248,7 @@ aside .tag_board {
     font-weight: normal;
     color: #f4f4f4;
     background: #4d4d4d;
+    font-family: 'Nanum Gothic';
 }
 
 #footer .inner_footer {
@@ -1466,6 +1467,7 @@ aside .tag_board {
     z-index: 10;
     text-align: center;
     font-size: 12px;
+    font-family: 'Nanum Gothic';
 }
 
 .type_article_header_common .info_text {
@@ -1515,18 +1517,20 @@ aside .tag_board {
 }
 
 .area_tag .title_tag {
-    float: left;
+    /* float: left; */
     margin: 0;
-    padding: 0 40px 0 0;
+    /* padding: 0 40px 0 0; */
     font-size: 16px;
     font-weight: 900;
     color: #7195af;
-    text-align: center;
     padding-top: 6px;
+    font-family: 'Noto Sans Regular';
+    width: 130px;
 }
 
 .area_tag .tag_content {
     overflow: hidden;
+    font-family: 'Nanum Gothic';
 }
 
 .area_tag .tag_content a {
@@ -1574,23 +1578,27 @@ aside .tag_board {
 }
 
 .area_copyright .title_copyright {
-    float: left;
+    /* float: left; */
     margin: 0;
     padding: 0 40px 0 0;
     font-size: 16px;
     font-weight: 900;
     color: #7195af;
     padding-top: 6px;
+    font-family: 'Noto Sans Regular';
+    width: 130px;
 }
 
 .area_copyright .copyright_content {
     overflow: hidden;
+    font-family: 'Nanum Gothic';
+    line-height: 1.8em;
+    font-size: 0.9em;
 }
 
 .area_copyright .copyright_content a {
-    color: #333;
+    color: #7195AF;
     text-decoration: none;
-    margin-left: 5px;
     line-height: normal;
 }
 
@@ -1637,6 +1645,7 @@ aside .tag_board {
     font-size: 16px;
     font-weight: 900;
     color: #7195af;
+    font-family: 'Nanum Gothic';
 }
 
 .area_related .list_related {
@@ -1684,6 +1693,7 @@ aside .tag_board {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    font-family: 'Nanum Gothic';
 }
 
 .area_related .info {
@@ -1747,6 +1757,7 @@ aside .tag_board {
     font-size: 16px;
     font-weight: 900;
     color: #7195af;
+    font-family: 'Nanum Gothic';
 }
 
 .area_reply .btn_more {
@@ -1797,6 +1808,7 @@ aside .tag_board {
     font-size: 16px;
     font-weight: bold;
     color: #333;
+    font-family: 'Nanum Gothic';
 }
 
 .area_reply .item_reply .date {
@@ -1804,6 +1816,7 @@ aside .tag_board {
     padding-top: 10px;
     padding-left: 3px;
     color: #bdbebf;
+    font-family: 'Noto Sans Regular';
 }
 
 .area_reply .item_reply .date a {
@@ -1815,11 +1828,13 @@ aside .tag_board {
 .area_reply .box_reply_content .txt {
     margin: 10px 0 0 0;
     font-size: 16px;
+    font-family: 'Nanum Gothic';
 }
 
 .area_reply .item_reply .modify {
     margin-top: 8px;
     font-size: 15px;
+    font-family: 'Nanum Gothic';
 }
 
 .area_reply .modify a {
@@ -2038,6 +2053,7 @@ aside .tag_board {
     font-size: 20px;
     font-weight: 900;
     color: #7195af;
+    font-family: 'Nanum Gothic';
 }
 
 /* type_featured - 슬라이드 커버 */
@@ -2175,6 +2191,7 @@ aside .tag_board {
     text-align: center;
     flex-direction: column;
     justify-content: center;
+    font-family: 'Nanum Gothic';
 }
 
 .type_featured .slide_page {
@@ -2342,6 +2359,7 @@ aside .tag_board {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    font-family: 'Nanum Gothic';
 }
 
 /* media query - mobile */
@@ -2457,6 +2475,7 @@ aside .tag_board {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    font-family: 'Nanum Gothic';
 }
 
 .list_type_card .link_card .thumnail {
@@ -2585,6 +2604,7 @@ aside .tag_board {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    font-family: 'Nanum Gothic';
 }
 
 .list_type_card2 .link_card2 .item_card2_text {
@@ -2800,6 +2820,7 @@ aside .tag_board {
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     text-align: center;
+    font-family: 'Nanum Gothic';
 }
 
 .list_type_banner .link_banner .text {
