@@ -1260,7 +1260,8 @@ aside .tag_board {
     border-top: 1px solid #ebebeb;
     font-size: 14px;
     font-weight: normal;
-    color: #999;
+    color: #f4f4f4;
+    background: #4d4d4d;
 }
 
 #footer .inner_footer {
@@ -1277,7 +1278,7 @@ aside .tag_board {
     border-bottom: 1px solid #fff;
     font-weight: 700;
     text-decoration: none;
-    color: #777;
+    color: #f4f4f4;
     line-height: 1.27;
     text-decoration: none;
     z-index: 21;
@@ -1289,7 +1290,7 @@ aside .tag_board {
 
 #footer address {
     margin-top: 20px;
-    color: #777;
+    /* color: #777; */
     font-size: 13px;
     font-style: normal;
     text-align: center;
