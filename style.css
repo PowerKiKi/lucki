@@ -650,7 +650,7 @@ html {
 /* media query - mobile */
 @media screen and (max-width: 1023px) {
     .box_header {
-        height: 70px;
+        height: 105px;
     }
 
     .box_header .title_logo {
@@ -3380,11 +3380,11 @@ aside .tag_board {
 }
 
 .buttons a:hover img {
-    filter: contrast(80%);
+    opacity: 0.6;
     transition: 0.5s;
 }
 
 .buttons img {
-    max-width: 50px;
+    width: 50px;
     margin: 4px 5px 0 4px;
 }
