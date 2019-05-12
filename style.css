@@ -2520,6 +2520,7 @@ aside .tag_board {
     background-size: cover;
     background-position: 50% 50%;
     transition: all .2s ease-out;
+    display: flex;
 }
 
 .list_type_banner li:nth-child(even) .box_content {
@@ -2527,14 +2528,14 @@ aside .tag_board {
     text-align: right;
 }
 
-.list_type_banner li:nth-child(even) .btn_go {
-    right: 50px;
-    left: auto;
-}
 
 .list_type_banner .box_content {
-    width: 70%;
-    padding: 47px 45px 50px 48px;
+    width: 100%;
+    /* padding: 47px 45px 50px 48px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* text-align: center; */
 }
 
 .list_type_banner .link_banner:hover {
@@ -2544,13 +2545,14 @@ aside .tag_board {
 .list_type_banner .link_banner strong {
     display: block;
     max-height: 58px;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 900;
     color: #fff;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
+    text-align: center;
 }
 
 .list_type_banner .link_banner .text {
@@ -2565,18 +2567,6 @@ aside .tag_board {
     -webkit-box-orient: vertical;
 }
 
-.list_type_banner .link_banner .btn_go {
-    position: absolute;
-    left: 50px;
-    bottom: 48px;
-    width: 42px;
-    height: 42px;
-    background: #000;
-    border-radius: 42px;
-    font-size: 17px;
-    font-weight: 400;
-    color: #fff;
-}
 
 /* media query - mobile */
 @media screen and (max-width: 1023px) {
@@ -2601,10 +2591,6 @@ aside .tag_board {
         white-space: nowrap;
         font-size: 26px;
         overflow: hidden;
-    }
-
-    .list_type_banner .link_banner .btn_go {
-        display: none;
     }
 
     .list_type_banner .link_banner .text {
