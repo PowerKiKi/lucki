@@ -1451,16 +1451,6 @@ aside .tag_board {
     margin-left: -50vw;
 }
 
-.area_view .article_header:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.54);
-}
-
 .area_view .article_header .inner_header {
     width: 100%;
     background-size: cover;
@@ -1484,6 +1474,7 @@ aside .tag_board {
     color: #fff;
     z-index: 10;
     text-align: center;
+    font-size: 12px;
 }
 
 .type_article_header_common .info_text {
@@ -3213,8 +3204,9 @@ aside .tag_board {
 /* // area_index_category */
 .area_view .article_header .title_post {
     display: block;
-    font-size: 40px;
+    font-size: 27px;
     line-height: 1.5em;
+    font-weight: 700;
 }
 
 .area_view .article_header .info {
@@ -3655,8 +3647,10 @@ aside .tag_board {
 }
 
 .link_detail_category {
-    font-size: 0.8em;
+    font-size: 12px;
     color: #f4f4f4;
 }
 
-.link_detail_title {font-size: 1.7em;}
+.link_detail_title {
+    font-size: 27px;
+}
