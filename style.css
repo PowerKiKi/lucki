@@ -527,7 +527,7 @@ html {
     position: relative;
     width: 100%;
     height: 122px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid #bdbebf;
     z-index: 21;
     transition: top 0.2s ease-in-out;
     display: flex;
@@ -3024,8 +3024,8 @@ aside .tag_board {
 /* area_category */
 .area_category {
     max-width: 1000px;
-    margin: 148px auto 0 auto;
-    padding: 120px 24px 0 24px;
+    margin: 50px auto 0 auto;
+    /* padding: 120px 24px 0 24px; */
 }
 
 .area_category a {
@@ -3092,7 +3092,7 @@ aside .tag_board {
 .category_type_related .thumnail {
     display: block;
     width: 100%;
-    padding-top: 50%;
+    padding-top: 100%;
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -3106,9 +3106,10 @@ aside .tag_board {
 
 .category_type_related .link_category {
     display: block;
-    padding: 0 8px;
+    padding: 0 10px;
     background: none !important;
-    color: #333;
+    color: #4d4d4d;
+    /* border: 1px solid black; */
 }
 
 .category_type_related .box_content {
@@ -3120,7 +3121,7 @@ aside .tag_board {
     margin: 18px 0 6px 0;
     line-height: 28px;
     font-size: 18px;
-    color: #333;
+    color: #7195af;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -3146,6 +3147,7 @@ aside .tag_board {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     width: 95%;
+    font-family: 'Noto Serif KR';
 }
 
 .category_type_related .link_category .date {
@@ -3643,4 +3645,11 @@ aside .tag_board {
 
 .link_detail_title {
     font-size: 27px;
+}
+
+
+.category_type_related .link_category .info {
+    border: 1px solid #bdbebf;
+    border-top-color: transparent;
+    padding: 0 15px;
 }
