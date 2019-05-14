@@ -2177,6 +2177,9 @@ aside .tag_board {
     -webkit-box-orient: vertical;
 }
 
+.type_featured .link_detail:focus {
+    outline: transparent;
+}
 .type_featured .link_detail {
     display: flex;
     width: 100%;
