@@ -703,6 +703,7 @@ html {
     box-sizing: border-box;
     overflow: auto;
     z-index: 31;
+    box-shadow: 0 0 20px 0px #4d4d4d36;
 }
 
 .area_sidebar .sidebar_contents {
@@ -745,6 +746,10 @@ html {
     color: #4d4d4d;
 }
 
+.area_sidebar .link_logo img {
+    width: 170px;
+}
+
 .area_sidebar .btn_close {
     float: right;
     width: 48px;
@@ -771,7 +776,7 @@ html {
     padding: 15px 0 12px 0;
     font-size: 18px;
     font-weight: 700;
-    color: #4d4d4d;
+    color: #7195af;
     transition: all .2s ease-out;
 }
 
@@ -1597,7 +1602,7 @@ aside .tag_board {
 
 .area_copyright .copyright_content {
     overflow: hidden;
-    line-height: 1.8em;
+    line-height: 1.9em;
     font-size: 0.9em;
 }
 
@@ -2181,6 +2186,7 @@ aside .tag_board {
 .type_featured .link_detail:focus {
     outline: transparent;
 }
+
 .type_featured .link_detail {
     display: flex;
     width: 100%;
