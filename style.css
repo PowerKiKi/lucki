@@ -1010,6 +1010,10 @@ s
     font-weight: 900;
 }
 
+.area_popup .link_logo img {
+    width: 170px;
+}
+
 .area_popup .link_logo {
     color: #4d4d4d;
     text-decoration: none;
