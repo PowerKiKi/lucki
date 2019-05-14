@@ -2052,6 +2052,7 @@ aside .tag_board {
     font-size: 20px;
     font-weight: 900;
     color: #7195af;
+    text-align: center;
 }
 
 /* type_featured - 슬라이드 커버 */
@@ -2426,7 +2427,7 @@ aside .tag_board {
 /* type_card - 섬네일 커버*/
 .type_card {
     max-width: 1000px;
-    margin: 120px auto -60px auto;
+    margin: 70px auto -60px auto;
     overflow: hidden;
 }
 
@@ -2441,13 +2442,13 @@ aside .tag_board {
     padding: 0;
     list-style: none;
     font-size: 0;
-    border-bottom: 1px #bdbebf solid;
+    border-bottom: 1px #e9e9e9 solid;
 }
 
 .list_type_card .item_card {
     display: inline-block;
     width: 25%;
-    margin-bottom: 58px;
+    margin-bottom: 30px;
     vertical-align: top;
 }
 
@@ -2466,7 +2467,7 @@ aside .tag_board {
 .list_type_card .link_card strong {
     display: block;
     margin: 18px 8px 6px 0;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -2575,7 +2576,7 @@ aside .tag_board {
 .list_type_card2 .link_card2 .link_card2_title {
     display: block;
     margin: 18px 8px 6px 0;
-    font-size: 40px;
+    font-size: 35px;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -2691,7 +2692,7 @@ aside .tag_board {
 .list_type_card3 .link_card3 .link_card3_title {
     display: block;
     margin: 18px 8px 6px 0;
-    font-size: 40px;
+    font-size: 35px;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -2765,7 +2766,9 @@ aside .tag_board {
 /* type_banner - 와이드패널 커버 */
 .type_banner {
     max-width: 1000px;
-    margin: 120px auto 0 auto;
+    margin: 30px auto 0 auto;
+    border-top: 1px solid #e9e9e9;
+    padding-top: 30px;
 }
 
 .list_type_banner {
