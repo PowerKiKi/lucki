@@ -2575,7 +2575,7 @@ aside .tag_board {
 
 .list_type_card2 .link_card2 .link_card2_title {
     display: block;
-    margin: 18px 8px 6px 0;
+    margin: 25px 8px 6px 0;
     font-size: 35px;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -2607,7 +2607,7 @@ aside .tag_board {
 .list_type_card2 .link_card2 .item_card2_text {
     padding: 0 15px;
     border: 1px solid #bdbebf;
-    min-height: 135px;
+    min-height: 130px;
     border-top-color: transparent;
 }
 
@@ -2691,7 +2691,7 @@ aside .tag_board {
 
 .list_type_card3 .link_card3 .link_card3_title {
     display: block;
-    margin: 18px 8px 6px 0;
+    margin: 25px 8px 6px 0;
     font-size: 35px;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -2723,7 +2723,7 @@ aside .tag_board {
 .list_type_card3 .link_card3 .item_card3_text {
     padding: 0 15px;
     border: 1px solid #bdbebf;
-    min-height: 135px;
+    min-height: 130px;
     border-top-color: transparent;
 }
 
