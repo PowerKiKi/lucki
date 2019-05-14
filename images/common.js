@@ -38,10 +38,10 @@ function slider_control() {
             infinite: true,
             speed: 500,
             fade: true,
-            appendArrows: $('#' + id + ' .box_arrow'),
+            // appendArrows: $('#' + id + ' .box_arrow'),
             appendDots: $('#' + id + ' .inner_main_slide'),
-            prevArrow: $('#' + id + ' .box_arrow .btn_prev'),
-            nextArrow: $('#' + id + ' .box_arrow .btn_next'),
+            prevArrow: $('#' + id + ' .btn_prev'),
+            nextArrow: $('#' + id + ' .btn_next'),
             dotsClass: 'slide_page slick-dots thema_apply',
             customPaging: function (slider, i) {
                 return $('<button type="button" class="ico_circle"/>').text(i + 1);
