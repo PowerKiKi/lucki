@@ -104,7 +104,7 @@ select,
 textarea {
     font-family: inherit;
     /* 1 */
-    font-size: 100%;
+    font-size: 14.4px;
     /* 1 */
     line-height: 1.15;
     /* 1 */
@@ -1549,6 +1549,7 @@ aside .tag_board {
     text-decoration: none;
     margin-left: 5px;
     line-height: normal;
+    font-size: 0.9em;
 }
 
 .area_tag .tag_content a:hover {
@@ -1610,6 +1611,7 @@ aside .tag_board {
     color: #7195AF;
     text-decoration: none;
     line-height: normal;
+    font-size: 1.1em;
 }
 
 .area_copyright .copyright_content a:hover {
@@ -1695,7 +1697,7 @@ aside .tag_board {
     max-height: 45px;
     margin: 12px 0 0;
     line-height: 1.47;
-    font-size: 16px;
+    font-size: 0.9em;
     font-weight: 500;
     color: #4d4d4d;
     overflow: hidden;
@@ -1833,7 +1835,8 @@ aside .tag_board {
 
 .area_reply .box_reply_content .txt {
     margin: 10px 0 0 0;
-    font-size: 16px;
+    font-size: 0.9em;
+    line-height: 1.9em;
 }
 
 .area_reply .item_reply .modify {
