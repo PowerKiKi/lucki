@@ -2441,7 +2441,7 @@ aside .tag_board {
 /* type_card - 섬네일 커버*/
 .type_card {
     max-width: 1000px;
-    margin: 70px auto -60px auto;
+    margin: 50px auto -60px auto;
     overflow: hidden;
 }
 
@@ -2549,7 +2549,7 @@ aside .tag_board {
 /* type_card2 - 섬네일 커버*/
 .type_card2 {
     max-width: 1000px;
-    margin: 120px auto -60px auto;
+    margin: 140px auto -60px auto;
     overflow: hidden;
 }
 
@@ -2780,8 +2780,8 @@ aside .tag_board {
 /* type_banner - 와이드패널 커버 */
 .type_banner {
     max-width: 1000px;
-    margin: 30px auto 0 auto;
-    border-top: 1px solid #e9e9e9;
+    margin: 20px auto 0 auto;
+    /* border-top: 1px solid #e9e9e9; */
     padding-top: 30px;
 }
 
