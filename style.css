@@ -547,6 +547,8 @@ html {
     overflow: hidden;
     line-height: 1.25;
     text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .box_header .link_logo img {
