@@ -2230,7 +2230,7 @@ aside .tag_board {
 
     .type_featured .btn_prev,
     .type_featured .btn_next {
-        display: none;
+        display: none !important;
     }
 }
 
