@@ -33,6 +33,8 @@ function slider_control() {
         $(this).closest('.type_featured').attr('id', id);
 
         $(this).slick({
+            autoplay: true,
+            autoplaySpeed: 3000,
             arrows: true,
             dots: true,
             infinite: true,
