@@ -47,7 +47,7 @@
                 prevArrow: '<button class="slick-prev" aria-label="Previous" type="button">Previous</button>',
                 nextArrow: '<button class="slick-next" aria-label="Next" type="button">Next</button>',
                 autoplay: false,
-                autoplaySpeed: 3000,
+                autoplaySpeed: 4000,
                 centerMode: false,
                 centerPadding: '50px',
                 cssEase: 'ease',
@@ -1697,7 +1697,7 @@
 
             if (_.options.accessibility === true) {
                 _.initADA();
-                
+
                 if (_.options.focusOnChange) {
                     var $currentSlide = $(_.$slides.get(_.currentSlide));
                     $currentSlide.attr('tabindex', 0).focus();
