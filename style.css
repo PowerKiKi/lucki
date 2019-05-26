@@ -3675,3 +3675,20 @@ aside .tag_board {
     border-top-color: transparent;
     padding: 0 15px;
 }
+
+/* hide articles in listing with "more post" button */
+.type_card2 ul.list_type_card2 li.item_card2:nth-child(n+5),
+.type_card3 ul.list_type_card3 li.item_card3:nth-child(n+5) {
+    display: none;
+}
+
+/* "more post" button that is hidden by default and shown when needed */
+.btn_post_more {
+    background-image: url(./images/more-button.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 40px;
+    width: 100%;
+    border-top: 1px #dedee1 solid !important;
+    display: none;
+}

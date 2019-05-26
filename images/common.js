@@ -189,4 +189,35 @@ function display_control() {
             this.textContent = newDate;
         }
     });
+
+    // Show "more button" if there are too menu articles
+    $('.type_card2 > ul, .type_card3 > ul').each(function () {
+        $container = $(this);
+        if ($container.children('li').length > 4) {
+            $container.closest('.type_card2, .type_card3').children('.btn_post_more').show();
+        }
+    });
+
+    // Show the next rows of articles when clicking on the "more button". And
+    // when everything is shown, hide the "more button"
+    $('.type_card2 .btn_post_more, .type_card3 .btn_post_more').bind('click', function () {
+        const $btn = $(this);
+        const $container = $btn.closest('.type_card2, .type_card3');
+
+        let stillHidden = false;
+        $container.find('> ul > li:hidden').each(function (i) {
+            const $o = $(this);
+            if (i < 4) {
+                $o.slideDown();
+                $o.css('display', 'inline-block');
+            } else {
+                stillHidden = true;
+            }
+        });
+
+        // check, has hidden item
+        if (!stillHidden) {
+            $btn.hide();
+        }
+    });
 }
