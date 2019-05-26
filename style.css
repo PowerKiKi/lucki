@@ -527,7 +527,7 @@ html {
     position: relative;
     width: 100%;
     height: 122px;
-    border-bottom: 1px solid #e9e9e9;
+    border-bottom: 1px solid #dedee1;
     z-index: 21;
     transition: top 0.2s ease-in-out;
     display: flex;
@@ -1065,7 +1065,7 @@ s
     font-weight: 900;
     color: #4d4d4d;
     line-height: 1;
-    border-bottom: 1px #e9e9e9 solid;
+    border-bottom: 1px #dedee1 solid;
     background-color: transparent;
 }
 
@@ -1827,7 +1827,7 @@ aside .tag_board {
     display: inline-block;
     padding-top: 10px;
     padding-left: 3px;
-    color: #e9e9e9;
+    color: #dedee1;
     font-family: 'Noto Sans Regular';
 }
 
@@ -2019,7 +2019,7 @@ aside .tag_board {
 }
 
 .no-img {
-    background: #e9e9e9 url(./images/ico_no.svg) no-repeat center !important;
+    background: #dedee1 url(./images/ico_no.svg) no-repeat center !important;
     background-size: 30px 30px !important;
 }
 
@@ -2228,7 +2228,7 @@ aside .tag_board {
     margin: 0 3px;
     padding: 0;
     border-radius: 10px;
-    background: #e9e9e9;
+    background: #dedee1;
     cursor: pointer;
     outline: none;
     color: transparent;
@@ -2456,7 +2456,7 @@ aside .tag_board {
     padding: 0;
     list-style: none;
     font-size: 0;
-    border-bottom: 1px #e9e9e9 solid;
+    border-bottom: 1px #dedee1 solid;
 }
 
 .list_type_card .item_card {
@@ -2620,7 +2620,7 @@ aside .tag_board {
 
 .list_type_card2 .link_card2 .item_card2_text {
     padding: 0 15px;
-    border: 1px solid #e9e9e9;
+    border: 1px solid #dedee1;
     min-height: 130px;
     border-top-color: transparent;
 }
@@ -2736,7 +2736,7 @@ aside .tag_board {
 
 .list_type_card3 .link_card3 .item_card3_text {
     padding: 0 15px;
-    border: 1px solid #e9e9e9;
+    border: 1px solid #dedee1;
     min-height: 130px;
     border-top-color: transparent;
 }
@@ -2781,7 +2781,7 @@ aside .tag_board {
 .type_banner {
     max-width: 1000px;
     margin: 20px auto 0 auto;
-    /* border-top: 1px solid #e9e9e9; */
+    /* border-top: 1px solid #dedee1; */
     padding-top: 30px;
 }
 
@@ -3671,7 +3671,7 @@ aside .tag_board {
 
 
 .category_type_related .link_category .info {
-    border: 1px solid #e9e9e9;
+    border: 1px solid #dedee1;
     border-top-color: transparent;
     padding: 0 15px;
 }
