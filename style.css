@@ -3692,3 +3692,26 @@ aside .tag_board {
     border-top: 1px #dedee1 solid !important;
     display: none;
 }
+
+
+.scrollup {
+    position: fixed;
+    display: none;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 30px;
+    opacity: 0.8;
+    background-image: url(./images/top-button.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: opacity 0.2s ease-in-out;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.scrollup:hover,
+.scrollup:active {
+    opacity: 1;
+}

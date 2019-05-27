@@ -220,4 +220,22 @@ function display_control() {
             $btn.hide();
         }
     });
+
+    // Show button to scroll to top of page
+    const $window = $(window);
+    const $scrollUp = $('.scrollup');
+    $window.scroll(function () {
+        if ($window.scrollTop() > 300) {
+            return $scrollUp.fadeIn('slow');
+        } else {
+            return $scrollUp.fadeOut();
+        }
+    });
+
+    // Scroll to top of page
+    $scrollUp.click(function () {
+        return $('html, body').animate({
+            scrollTop: 0,
+        }, 600, false);
+    });
 }
