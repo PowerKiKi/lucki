@@ -2100,12 +2100,13 @@ aside .tag_board {
 }
 
 .type_featured .btn_arrow {
+    --size: 64px;
     box-sizing: border-box;
     z-index: 10;
     position: absolute;
-    top: 50%;
-    width: 64px;
-    height: 64px;
+    top: calc(50% - var(--size) / 2);
+    width: var(--size);
+    height: var(--size);
     padding-top: 4px;
     /* border-radius: 64px; */
     /* background-color: rgba(0, 0, 0, 0.7); */
