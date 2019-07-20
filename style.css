@@ -522,11 +522,15 @@ html {
     width: 100%;
 }
 
+:root {
+    --box-header-height: 122px;
+}
+
 /* box_header */
 .box_header {
     position: relative;
     width: 100%;
-    height: 122px;
+    height: var(--box-header-height);
     border-bottom: 1px solid #dedee1;
     z-index: 21;
     transition: top 0.2s ease-in-out;
@@ -2082,7 +2086,7 @@ aside .tag_board {
 .type_featured .slide_zone {
     position: relative;
     width: 100%;
-    height: calc(100vh - var(--vh-offset, 0px));
+    height: calc(100vh - var(--box-header-height, 0px));
 }
 
 .type_featured .inner_main_slide {
@@ -2131,7 +2135,7 @@ aside .tag_board {
     display: block;
     width: 100%;
     height: 100vh;
-    height: calc(100vh - var(--vh-offset, 0px));;
+    height: calc(100vh - var(--box-header-height, 0px));;
     background-size: cover;
     background-position: 50% 50%;
     overflow: hidden;
