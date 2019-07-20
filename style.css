@@ -1264,7 +1264,7 @@ aside .tag_board {
 #footer {
     clear: both;
     margin-top: 120px;
-    padding: 50px 0 50px 0;
+    padding: 0px 0 50px 0;
     border-top: 1px solid #ebebeb;
     font-size: 14px;
     font-weight: normal;
@@ -1275,7 +1275,7 @@ aside .tag_board {
 #footer .inner_footer {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding-top: 50px;
     text-align: center;
 }
 
@@ -3719,4 +3719,25 @@ aside .tag_board {
 .scrollup:hover,
 .scrollup:active {
     opacity: 1;
+}
+
+.spectragram-container {
+    background: #ccc6bb;
+    padding: 30px;
+}
+
+.spectragram {
+    text-align: center;
+}
+
+.spectragram-title {
+    font-family: "white_oleanderregular", Avenir, SpoqaHanSans, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", "Nanum Gothic", Dotum, '돋움', Helvetica, sans-serif;
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 27px;
+}
+
+.spectragram-title a {
+    color: #4d4d4d;
+    text-decoration: none;
 }

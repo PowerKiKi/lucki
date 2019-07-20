@@ -3,6 +3,16 @@ $(function () {
     display_control();
     slider_control();
 
+    jQuery.fn.spectragram.accessData = {
+        accessToken: '44564707.6d0f6f5.6f67a3f6961449388df8b34aa9d6ba9b',
+    };
+
+    $('div.spectragram').spectragram('getUserFeed', {
+        size: 'small',
+        max: 9,
+        wrapEachWith: '<span></span>',
+    });
+
     $('body').bind('click', function (e) {
         var $target = $(e.target);
         if ($target.closest('.btn_menu').length > 0) {
