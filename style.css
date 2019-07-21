@@ -2305,7 +2305,7 @@ aside .tag_board {
 /* type_post - 갤러리 커버 */
 .type_post {
     max-width: 1000px;
-    margin: 120px auto -20px auto;
+    margin: 100px auto -20px auto;
     overflow: hidden;
 }
 
@@ -2574,7 +2574,7 @@ aside .tag_board {
 .list_type_card2 .item_card2 {
     display: inline-block;
     width: 25%;
-    margin-bottom: 58px;
+    margin-bottom: 40px;
     vertical-align: top;
 }
 
@@ -2670,7 +2670,7 @@ aside .tag_board {
 /* type_card3 - 섬네일 커버*/
 .type_card3 {
     max-width: 1000px;
-    margin: 120px auto -60px auto;
+    margin: 100px auto -60px auto;
     overflow: hidden;
 }
 
@@ -2690,7 +2690,7 @@ aside .tag_board {
 .list_type_card3 .item_card3 {
     display: inline-block;
     width: 25%;
-    margin-bottom: 58px;
+    margin-bottom: 40px;
     vertical-align: top;
 }
 
