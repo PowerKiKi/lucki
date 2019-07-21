@@ -3785,3 +3785,19 @@ aside .tag_board {
     }
 
 }
+
+@media screen and (max-width: 768px) {
+    .spectragram-container{
+        padding: 18px 0;
+    }
+    .spectragram-title {
+        padding-bottom: 8px;
+    }
+
+    .spectragram {
+        white-space: normal;
+        max-width: 300px;
+        margin: auto;
+        line-height: 0;
+    }
+}
