@@ -1611,7 +1611,7 @@ aside .tag_board {
 
 .area_copyright .copyright_content {
     overflow: hidden;
-    line-height: 1.9em;
+    line-height: 2.1em;
     font-size: 0.9em;
 }
 
@@ -1619,7 +1619,6 @@ aside .tag_board {
     color: #7195AF;
     text-decoration: none;
     line-height: normal;
-    font-size: 1.1em;
 }
 
 .area_copyright .copyright_content a:hover {
