@@ -2850,12 +2850,12 @@ aside .tag_board {
 /* media query - mobile */
 @media screen and (max-width: 1023px) {
     .type_banner {
-        margin-top: 60px;
+        margin-top: 40px;
         padding: 0 24px;
     }
 
     .list_type_banner .link_banner {
-        height: 100px;
+        height: 130px;
     }
 
     .list_type_banner .box_content {
@@ -2868,7 +2868,7 @@ aside .tag_board {
         margin: 0;
         text-overflow: ellipsis;
         white-space: nowrap;
-        font-size: 26px;
+        font-size: 22px;
         overflow: hidden;
     }
 
