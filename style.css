@@ -2403,17 +2403,6 @@ aside .tag_board {
         margin: 0 0.5px;
     }
 
-    .item_post .link_post:before,
-    .category_type_post .item_category .link_category:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.65);
-    }
-
     .list_post .link_post .info,
     .category_type_post .link_category .info {
         display: flex;
@@ -2422,7 +2411,7 @@ aside .tag_board {
     .list_post .link_post .info .name,
     .category_type_post .link_category .info .name {
         width: calc(100% - 32px);
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
