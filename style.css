@@ -3744,3 +3744,15 @@ aside .tag_board {
     color: #4d4d4d;
     text-decoration: none;
 }
+
+@media screen and (max-width: 1023px) {
+    .spectragram-title a {
+        font-size: 30px;
+    }
+
+    .spectragram img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+}
