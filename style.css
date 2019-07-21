@@ -1545,11 +1545,12 @@ aside .tag_board {
     color: #7195af;
     padding-top: 6px;
     font-family: 'Noto Sans Regular';
-    width: 130px;
+    min-width: 130px;
 }
 
 .area_tag .tag_content {
-    overflow: hidden;
+    line-height: 2.1em;
+    font-size: 0.9em;
 }
 
 .area_tag .tag_content a {
@@ -1606,11 +1607,11 @@ aside .tag_board {
     color: #7195af;
     padding-top: 6px;
     font-family: 'Noto Sans Regular';
-    width: 130px;
+    min-width: 130px;
 }
 
 .area_copyright .copyright_content {
-    overflow: hidden;
+    /* overflow: hidden; */
     line-height: 2.1em;
     font-size: 0.9em;
 }
@@ -3787,9 +3788,10 @@ aside .tag_board {
 }
 
 @media screen and (max-width: 768px) {
-    .spectragram-container{
+    .spectragram-container {
         padding: 18px 0;
     }
+
     .spectragram-title {
         padding-bottom: 8px;
     }
@@ -3799,5 +3801,17 @@ aside .tag_board {
         max-width: 300px;
         margin: auto;
         line-height: 0;
+    }
+
+    .area_copyright,
+    .area_tag {
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .area_copyright .title_copyright,
+    .area_tag .title_tag {
+        margin-bottom: 3px;
     }
 }
