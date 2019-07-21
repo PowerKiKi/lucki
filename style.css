@@ -2512,7 +2512,7 @@ aside .tag_board {
 /* media query - mobile */
 @media screen and (max-width: 1023px) {
     .type_card {
-        margin: 60px auto -30px auto;
+        margin: 20px auto -30px auto;
         padding: 0 24px;
     }
 
@@ -2522,12 +2522,13 @@ aside .tag_board {
 
     .type_card .item_card {
         width: 50%;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .type_card .link_card strong {
         margin: 16px 8px 4px 0;
         -webkit-line-clamp: 1;
+        font-size: 15px;
     }
 
     .type_card .link_card {
