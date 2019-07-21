@@ -1220,7 +1220,7 @@ aside .tag_board {
     .area_popup .tag_zone a {
         border: none;
         padding: 5px 10px 5px 0;
-        line-height: 0;
+        line-height: 3px;
         font-size: 13px;
     }
 
