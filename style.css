@@ -3723,11 +3723,12 @@ aside .tag_board {
 
 .spectragram-container {
     background: #ccc6bb;
-    padding: 30px;
+    padding: 30px 0;
 }
 
 .spectragram {
     text-align: center;
+    white-space: nowrap;
 }
 
 .spectragram-title {
