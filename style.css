@@ -649,8 +649,8 @@ html {
     }
 
     .box_header .btn_menu, .box_header .btn_search {
-        width: 22px;
-        background-size: 22px auto;
+        width: 18px;
+        background-size: 18px auto;
     }
 
     .box_header .btn_menu {
@@ -3657,6 +3657,12 @@ aside .tag_board {
 .buttons img {
     width: 40px;
     margin: 4px 5px 0 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .buttons img {
+        width: 35px;
+    }
 }
 
 .link_detail_category {
