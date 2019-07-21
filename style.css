@@ -1194,7 +1194,7 @@ aside .tag_board {
 
     .area_popup .box_form .inp_search {
         margin-top: 20px;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .area_popup .box_form .btn_search_del {
@@ -1214,13 +1214,14 @@ aside .tag_board {
 
     .area_popup .title_sidebar {
         margin-top: 32px;
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .area_popup .tag_zone a {
         border: none;
         padding: 5px 10px 5px 0;
-        font-size: 16px;
+        line-height: 0;
+        font-size: 13px;
     }
 
     .area_popup .tag_zone a:hover {
@@ -1236,7 +1237,7 @@ aside .tag_board {
     }
 
     .area_popup .item_sidebar a {
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .area_popup div:nth-child(3),
