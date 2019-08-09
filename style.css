@@ -3110,15 +3110,6 @@ aside .tag_board {
     display: none;
 }
 
-/* // category_type_post - list_category */
-/* media query - mobile */
-@media screen and (max-width: 1023px) {
-
-    .area_category .title_section {
-        text-align: left;
-    }
-}
-
 /* type_related */
 .category_type_related .list_category {
     list-style: none;
