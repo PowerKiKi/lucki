@@ -3113,10 +3113,6 @@ aside .tag_board {
 /* // category_type_post - list_category */
 /* media query - mobile */
 @media screen and (max-width: 1023px) {
-    .area_category {
-        margin-top: 70px;
-        padding-top: 60px;
-    }
 
     .area_category .title_section {
         text-align: left;
