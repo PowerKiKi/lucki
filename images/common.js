@@ -139,15 +139,18 @@ function display_control() {
         var $o = $(this),
             thumbnail_path = $o.css('background-image').replace(/^url\(['"](.+)['"]\)/, '$1'),
             base_path = window.TistoryBlog.url + pathname;
-        if (thumbnail_path == base_path) {
+        if (thumbnail_path === base_path) {
             $o.addClass('no-img');
         }
     });
 
     // 글 출력이 있는 경우
-    if ($('.area_view').length != false) {
-        var seoImage = $('meta[property="og:image"]').attr('content');
-        if (seoImage != undefined && seoImage != false) {
+    if ($('.area_view').length !== false) {
+        let seoImage = $('meta[property="og:image"]').attr('content');
+        if (seoImage) {
+            const screenSize = $(window).width();
+            const imageSize = screenSize <= 1024 ? 1024 : 2000;
+            seoImage = seoImage.replace('thumb/R800x0', 'thumb/R' + imageSize + 'x0');
             $('.area_view .article_header .inner_header').css({
                 'background-image': 'url(' + seoImage + ')',
             });
