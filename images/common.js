@@ -4,7 +4,7 @@ $(function () {
     slider_control();
 
     jQuery.fn.spectragram.accessData = {
-        accessToken: '44564707.6d0f6f5.6f67a3f6961449388df8b34aa9d6ba9b',
+        accessToken: '44564707.c6f1b97.34c9ebbe8baa4fca98205d336c6d07ff',
     };
 
     $('div.spectragram').spectragram('getUserFeed', {
