@@ -3,16 +3,6 @@ $(function () {
     display_control();
     slider_control();
 
-    jQuery.fn.spectragram.accessData = {
-        accessToken: '44564707.c6f1b97.34c9ebbe8baa4fca98205d336c6d07ff',
-    };
-
-    $('div.spectragram').spectragram('getUserFeed', {
-        size: 'small',
-        max: 9,
-        wrapEachWith: '<span></span>',
-    });
-
     $('body').bind('click', function (e) {
         var $target = $(e.target);
         if ($target.closest('.btn_menu').length > 0) {
