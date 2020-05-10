@@ -1412,13 +1412,8 @@ aside .tag_board {
     }
 
     .area_paging .link_num:last-child span:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -10px;
-        width: 10px;
-        height: 29px;
-        background: url(./images/ico_slash.png) no-repeat left center;
+        content: '/ ';
+        color: #dedee1;
     }
 
     .area_paging .link_num:last-child span.selected:before {
