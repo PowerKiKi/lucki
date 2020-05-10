@@ -1113,6 +1113,7 @@ s
     font-size: 16px;
     color: #4d4d4d;
     text-decoration: none;
+    font-family: 'Noto Serif KR';
 }
 
 .tag_zone a:hover {
@@ -1142,6 +1143,7 @@ aside .list_sidebar .item_sidebar {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-family: 'Noto Serif KR';
 }
 
 .tag_board {
@@ -1218,9 +1220,8 @@ aside .tag_board {
     }
 
     .area_popup .tag_zone a {
-        border: none;
-        padding: 5px 10px 9px 0;
-        line-height: 3px;
+        padding: 5px 10px 9px 5px;
+        line-height: 5px;
         font-size: 13px;
     }
 
@@ -3716,4 +3717,9 @@ aside .tag_board {
     .area_tag .title_tag {
         margin-bottom: 3px;
     }
+}
+
+
+figcaption {
+    line-height: 22px;
 }
