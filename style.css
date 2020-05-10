@@ -1553,7 +1553,6 @@ aside .tag_board {
 /* area_copyright - 상세페이지 태그  */
 .area_copyright {
     padding: 40px 0;
-    border-bottom: 1px solid #eee;
     border-top: 1px solid #eee;
     display: flex;
     flex-direction: row;
