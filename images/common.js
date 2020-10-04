@@ -220,7 +220,9 @@ function display_control() {
 
         // check, has hidden item
         if (!stillHidden) {
-            $btn.hide();
+            $btn.fadeTo(200, 0, function () {
+                $btn.css('visibility', 'hidden');
+            });
         }
     });
 
