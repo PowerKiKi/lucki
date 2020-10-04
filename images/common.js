@@ -13,7 +13,7 @@ $(function () {
             $('.area_sidebar').hide();
             $('.area_popup').show();
             $('body').css('overflow', 'hidden');
-        } else if ($target.closest('.inner_sidebar').length == 0 && $target.closest('.area_popup').length == 0) {
+        } else if ($target.closest('.inner_sidebar').length === 0 && $target.closest('.area_popup').length === 0) {
             $('.area_sidebar').hide();
             $('.area_popup').hide();
             $('body').css('overflow', '');
@@ -113,7 +113,7 @@ function display_control() {
             thumbnail_path = $o.css('background-image').replace(/^url\(['"](.+)['"]\)/, '$1'),
             base_path = window.TistoryBlog.url + pathname;
 
-        if (thumbnail_path == base_path || thumbnail_path == href) {
+        if (thumbnail_path === base_path || thumbnail_path === href) {
             $o.addClass('no-img');
         }
     });
@@ -121,7 +121,7 @@ function display_control() {
         var $o = $(this),
             thumbnail_path = $o.css('background-image').replace(/^url\(['"](.+)['"]\)/, '$1'),
             base_path = window.TistoryBlog.url + pathname;
-        if (thumbnail_path == base_path) {
+        if (thumbnail_path === base_path) {
             $o.addClass('no-img');
         }
     });
