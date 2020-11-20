@@ -68,7 +68,7 @@ function addImagesToFeed(string $content): string
 }
 
 $url = 'https://www.lucki.kr/feed';
-$feed = get($url, true);
+$feed = get($url, false);
 
 header('Content-Type: text/xml; charset=utf-8');
 echo addImagesToFeed($feed);
